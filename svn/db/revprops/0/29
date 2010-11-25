@@ -1,0 +1,23 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-05-25T07:24:55.248898Z
+K 7
+svn:log
+V 122
+perl:
+    MyPlace::Google::Search::HTML, using ip address to search
+wiki:
+    source/xr*.pl,support readable format
+    
+
+
+END

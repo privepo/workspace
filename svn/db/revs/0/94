@@ -1,0 +1,162 @@
+id: 1fv-23.0-94.r94/0
+type: dir
+pred: 1fv-23.0-60.r60/0
+count: 2
+text: 23 13196994 229 229 9e331607da04efe3d9497a078f8fbba3
+cpath: /text/trunk/reading
+copyfrom: 93 /reading/trunk
+
+PLAIN
+K 4
+blog
+V 20
+dir 3-50.0.r50/23283
+K 7
+myplace
+V 23
+dir e-50.0-62.r91/13853
+K 7
+reading
+V 21
+dir 1fv-23.0-94.r94/0
+K 7
+sandbox
+V 23
+dir 174-50.0.r50/231469
+K 7
+weblogs
+V 20
+dir 44-23.0-93.r93/0
+K 4
+wiki
+V 24
+dir 17k-50.0-62.r79/5804
+K 8
+writting
+V 21
+dir 59s-23.0-92.r92/0
+END
+ENDREP
+id: 1-50.0-62.r94/470
+type: dir
+pred: 1-50.0-62.r93/425
+count: 6
+text: 94 180 277 277 1cbd883edfb08b176ed17401a9b577db
+cpath: /text/trunk
+copyroot: 62 /text/trunk
+
+PLAIN
+K 5
+trunk
+V 21
+dir 1-50.0-62.r94/470
+END
+ENDREP
+id: 0-62.0.r94/688
+type: dir
+pred: 0-62.0.r93/643
+count: 5
+text: 94 634 41 41 aba8dc4af539cdfdd23e8d1e2db24b41
+cpath: /text
+copyroot: 0 /
+
+PLAIN
+END
+ENDREP
+id: 0-60.0.r94/844
+type: dir
+pred: 0-60.0.r60/233
+count: 1
+text: 94 827 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /reading
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r93/799
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 4
+epub
+V 23
+dir 0-75.0.r83/13329241
+K 7
+firefox
+V 23
+dir 0-66.0.r87/12557701
+K 9
+freebasic
+V 18
+dir 0-58.0.r58/237
+K 7
+reading
+V 18
+dir 0-60.0.r94/844
+K 11
+shellscript
+V 20
+dir 0-61.0.r90/14914
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 4
+text
+V 18
+dir 0-62.0.r94/688
+K 5
+trunk
+V 17
+dir 3-1.0.r69/456
+K 4
+usys
+V 18
+dir 0-63.0.r63/219
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+K 8
+writting
+V 18
+dir 0-64.0.r92/773
+K 3
+www
+V 20
+dir 0-65.0.r80/36672
+END
+ENDREP
+id: 0.0.r94/1629
+type: dir
+pred: 0.0.r93/1582
+count: 94
+text: 94 984 632 632 a77419823da9a53aa1b5d9e35ba0f855
+cpath: /
+copyroot: 0 /
+
+1fv-23._0.t93-2l add-dir false false /text/trunk/reading
+93 /reading/trunk
+1fv-23.0-60.r60/0 delete-dir false false /reading/trunk
+
+
+1629 1763

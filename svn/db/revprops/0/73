@@ -1,0 +1,22 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-06-05T17:41:34.083681Z
+K 7
+svn:log
+V 277
+perl:
+    "svn-add-keyword", added as a shortcut for svn add and propset svn:keywords
+    "modules/MyPlace/Usage.pm", addes for processing script usage using POD
+    "script_template",  updated, made using "MyPlace::Usage"
+    "plnew", Reflected changed from "script_template"
+
+END

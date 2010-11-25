@@ -1,0 +1,22 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-05-28T16:54:46.743976Z
+K 7
+svn:log
+V 160
+perl:
+    some bug fixing
+wiki:
+    source/zimstyle.pl  modified for using Markdown markup language
+    source/xrzio.pl     add chmod for files and directories
+
+END

@@ -1,0 +1,24 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-05-26T13:02:32.512186Z
+K 7
+svn:log
+V 483
+perl:
+    MyPlace::Config     added, for database alkie operation on plain readable file
+    r-config            added, command line interface for "MyPlace::Config"
+    MyPlace::URLRule    modified, move some functions from "urlrule_action"
+    urlrule_action      modified, move some functions to "MyPlace::URLRule"
+    urlrule_database    rewrote, using "r-config"
+    urlrule_task        rewrote, using Module "MyPlace::URLRule" instead of command line interface "urlrule_action"
+
+END

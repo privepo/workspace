@@ -1,0 +1,17 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-05-24T08:20:10.988692Z
+K 7
+svn:log
+V 105
+[PERL]: \n\tmodule "Google::Search" move to "Google::Search::Ajax"\n\tmodule "Google::Search::HTML" added
+END

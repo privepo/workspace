@@ -1,0 +1,91 @@
+PLAIN
+K 5
+batch
+V 23
+dir 1-23.0.r23/12908022
+K 5
+blogs
+V 24
+dir 44-23.0.r23/13192519
+K 1
+c
+V 24
+dir 4q-23.0.r23/13145630
+K 3
+cpp
+V 25
+dir 189-23.0.r23/13163761
+K 7
+drawing
+V 25
+dir 1b9-23.0.r23/13201193
+K 7
+firefox
+V 17
+dir 1-4.0.r44/458
+K 9
+freebasic
+V 25
+dir 1bt-23.0.r23/13188735
+K 4
+perl
+V 19
+dir 1-2.0.r45/10965
+K 7
+reading
+V 25
+dir 1fv-23.0.r23/13197236
+K 11
+shellscript
+V 20
+dir 1-5.0.r36/236333
+K 4
+usys
+V 22
+dir 1-10.0.r10/9335201
+K 8
+writting
+V 25
+dir 59s-23.0.r23/13195768
+END
+ENDREP
+id: 3-1.0.r49/495
+type: dir
+pred: 3-1.0.r48/530
+count: 48
+text: 49 0 482 482 0f49fed87bf10c4da7363f0dcf94ee2d
+props: 45 11735 120 0 0ef64165309ce58f6ae3d5bbc5bd75a8
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 17
+dir 3-1.0.r49/495
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r49/835
+type: dir
+pred: 0.0.r48/871
+count: 49
+text: 49 689 133 133 56557cf18c9976e3a1ff6cf7fa8d351f
+cpath: /
+copyroot: 0 /
+
+1-18.0-47.r47/17 delete-dir false false /trunk/text
+
+
+835 967

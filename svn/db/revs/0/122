@@ -1,0 +1,43 @@
+PLAIN
+K 5
+batch
+V 20
+dir 0-53.0.r106/4486
+K 1
+c
+V 20
+dir 0-55.0.r107/2358
+K 3
+cpp
+V 20
+dir 0-56.0.r108/1235
+K 7
+drawing
+V 20
+dir 0-57.0.r109/1096
+K 7
+firefox
+V 20
+dir 0-66.0.r103/7667
+K 11
+shellscript
+V 21
+dir 0-61.0.r102/14773
+K 3
+www
+V 20
+dir 0-65.0.r111/1221
+END
+ENDREP
+id: 0.0.r122/273
+type: dir
+pred: 0.0.r121/310
+count: 122
+text: 122 0 260 260 64de7199bed8bfa6f2650129c7360590
+cpath: /
+copyroot: 0 /
+
+0-64.0.r92/773 delete-dir false false /writting
+
+
+273 407

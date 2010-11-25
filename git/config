@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[svn-remote "svn"]
+	url = file:///myplace/workspace/tmp/zrepos/workspace/trunk/svn
+	fetch = :refs/remotes/git-svn
+[svn]
+	authorsfile = /myplace/workspace/authors.txt

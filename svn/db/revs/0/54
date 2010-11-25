@@ -1,0 +1,63 @@
+id: 44-23.0-54.r54/0
+type: dir
+pred: 44-23.0.r23/13192519
+count: 1
+text: 23 13192418 88 88 5af40eea7569c071375dc9ed1a5ba2fd
+cpath: /blogs/trunk
+copyfrom: 48 /trunk/blogs
+
+PLAIN
+K 5
+trunk
+V 20
+dir 44-23.0-54.r54/0
+END
+ENDREP
+id: 0-54.0.r54/224
+type: dir
+count: 0
+text: 54 171 40 40 1fcd95cad526d65dde5fdbf6f3f50e1a
+cpath: /blogs
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r54/559
+type: dir
+pred: 0.0.r53/526
+count: 54
+text: 54 343 203 203 060ae21dab974fe5b29dcbf55129c0b5
+cpath: /
+copyroot: 0 /
+
+_0.0.t53-1h add-dir false false /blogs
+
+44-23._0.t53-1h add-dir false false /blogs/trunk
+48 /trunk/blogs
+
+559 691

@@ -1,0 +1,79 @@
+id: 1bt-23.0-58.r58/0
+type: dir
+pred: 1bt-23.0.r23/13188735
+count: 1
+text: 23 13188335 387 387 2e01d4629b4a868150747f123657124b
+cpath: /freebasic/trunk
+copyfrom: 48 /trunk/freebasic
+
+PLAIN
+K 5
+trunk
+V 21
+dir 1bt-23.0-58.r58/0
+END
+ENDREP
+id: 0-58.0.r58/237
+type: dir
+count: 0
+text: 58 183 41 41 09eb16b8c0bb3729f1bcdd265cc47725
+cpath: /freebasic
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 9
+freebasic
+V 18
+dir 0-58.0.r58/237
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r58/712
+type: dir
+pred: 0.0.r57/668
+count: 58
+text: 58 360 339 339 6f19244b4990965a3f127de9f4b8d1e2
+cpath: /
+copyroot: 0 /
+
+_0.0.t57-1l add-dir false false /freebasic
+
+1bt-23._0.t57-1l add-dir false false /freebasic/trunk
+48 /trunk/freebasic
+
+712 844

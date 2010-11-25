@@ -1,0 +1,21 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-05-25T10:11:48.649754Z
+K 7
+svn:log
+V 305
+perl:
+    "urlrule_database"      added for manipulate urlrule database
+    "google.search.image"   updated for supporting "startpage" parameter, some related rules updated too
+    "urlrule_action"        updated for providing two callback function "callback_process_data" and "callback_process_passdown"
+
+END

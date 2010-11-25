@@ -1,0 +1,95 @@
+id: 1-50.0-62.r62/0
+type: dir
+pred: 1-50.0.r50/231780
+count: 1
+text: 50 231611 156 156 035828caab5b2c6c95fa832260cac477
+cpath: /text/trunk
+copyfrom: 50 /trunk/text
+
+PLAIN
+K 5
+trunk
+V 19
+dir 1-50.0-62.r62/0
+END
+ENDREP
+id: 0-62.0.r62/217
+type: dir
+count: 0
+text: 62 165 39 39 f011e408cd2bc799fbb28d20340f6c7c
+cpath: /text
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 9
+freebasic
+V 18
+dir 0-58.0.r58/237
+K 4
+perl
+V 20
+dir 0-59.0.r59/11628
+K 7
+reading
+V 18
+dir 0-60.0.r60/233
+K 11
+shellscript
+V 18
+dir 0-61.0.r61/232
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 4
+text
+V 18
+dir 0-62.0.r62/217
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r62/832
+type: dir
+pred: 0.0.r61/821
+count: 62
+text: 62 335 484 484 092f4fae69e07743f01b550fa4b2a95e
+cpath: /
+copyroot: 0 /
+
+_0.0.t61-1p add-dir false false /text
+
+1-50._0.t61-1p add-dir false false /text/trunk
+50 /trunk/text
+
+832 964

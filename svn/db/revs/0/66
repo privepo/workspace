@@ -1,0 +1,112 @@
+id: 1-4.0-66.r66/0
+type: dir
+pred: 1-4.0.r52/77783
+count: 7
+text: 52 77389 381 381 75052b431db712a3fe6262110fdfdf58
+props: 44 328 117 0 8435b01d6e37cdd833d96f9b86f0e68d
+cpath: /firefox/trunk
+copyfrom: 65 /trunk/firefox
+
+PLAIN
+K 5
+trunk
+V 18
+dir 1-4.0-66.r66/0
+END
+ENDREP
+id: 0-66.0.r66/271
+type: dir
+count: 0
+text: 66 220 38 38 16bb6295826f9e81ec60e157ff0dfe1d
+cpath: /firefox
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 7
+firefox
+V 18
+dir 0-66.0.r66/271
+K 9
+freebasic
+V 18
+dir 0-58.0.r58/237
+K 4
+perl
+V 20
+dir 0-59.0.r59/11628
+K 7
+reading
+V 18
+dir 0-60.0.r60/233
+K 11
+shellscript
+V 18
+dir 0-61.0.r61/232
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 4
+text
+V 18
+dir 0-62.0.r62/217
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+usys
+V 18
+dir 0-63.0.r63/219
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+K 8
+writting
+V 18
+dir 0-64.0.r64/235
+K 3
+www
+V 18
+dir 0-65.0.r65/221
+END
+ENDREP
+id: 0.0.r66/1027
+type: dir
+pred: 0.0.r65/937
+count: 66
+text: 66 392 622 622 b3a3861fd995f47920789250cead024f
+cpath: /
+copyroot: 0 /
+
+_0.0.t65-1t add-dir false false /firefox
+
+1-4._0.t65-1t add-dir false false /firefox/trunk
+65 /trunk/firefox
+
+1027 1160

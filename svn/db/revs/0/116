@@ -1,0 +1,67 @@
+PLAIN
+K 5
+batch
+V 20
+dir 0-53.0.r106/4486
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 20
+dir 0-55.0.r107/2358
+K 3
+cpp
+V 20
+dir 0-56.0.r108/1235
+K 7
+drawing
+V 20
+dir 0-57.0.r109/1096
+K 7
+firefox
+V 20
+dir 0-66.0.r103/7667
+K 7
+reading
+V 18
+dir 0-60.0.r94/844
+K 11
+shellscript
+V 21
+dir 0-61.0.r102/14773
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 17
+dir 3-1.0.r69/456
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+K 8
+writting
+V 18
+dir 0-64.0.r92/773
+K 3
+www
+V 20
+dir 0-65.0.r111/1221
+END
+ENDREP
+id: 0.0.r116/475
+type: dir
+pred: 0.0.r115/509
+count: 116
+text: 116 0 462 462 189214069efa7b979d25edf55b2d814c
+cpath: /
+copyroot: 0 /
+
+0-54.0.r93/799 delete-dir false false /blogs
+
+
+475 609

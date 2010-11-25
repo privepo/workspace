@@ -1,0 +1,24 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-05-30T12:15:50.197932Z
+K 7
+svn:log
+V 238
+perl:
+    "nightgun" move to external "https://nightgun.googlecode.com/svn/trunk"
+firefox:
+    "websaver2" move to external "https://websaver2.googlecode.com/svn/trunk"
+vb6:
+    move to external "https://xrzvb6.googlecode.com/svn/trunk"
+
+
+END

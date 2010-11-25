@@ -1,0 +1,154 @@
+PLAIN
+K 33
+gm_scripts_2010-05-21_15-34-26.7z
+V 21
+file 2-17.0.r17/76845
+K 10
+helloworld
+V 20
+dir 1o-4.0.r4/393966
+K 9
+htmlsaver
+V 20
+dir 2g-4.0.r4/376917
+K 9
+realsaver
+V 20
+dir 56-4.0.r4/356703
+K 15
+saveimginfolder
+V 20
+dir 7y-4.0.r4/396671
+K 6
+xrzlib
+V 20
+dir ci-4.0.r4/389829
+K 8
+zhreader
+V 20
+dir dg-4.0.r4/360094
+END
+ENDREP
+PLAIN
+K 13
+svn:externals
+V 55
+websaver2   https://websaver2.googlecode.com/svn/trunk
+
+K 10
+svn:ignore
+V 11
+gm_scripts
+
+END
+ENDREP
+id: 1-4.0.r44/458
+type: dir
+pred: 1-4.0.r17/77534
+count: 4
+text: 44 0 315 315 ca2cddf9ef613f7ff6bb52e1bc424152
+props: 44 328 117 0 8435b01d6e37cdd833d96f9b86f0e68d
+cpath: /trunk/firefox
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 23
+dir 1-23.0.r23/12908022
+K 5
+blogs
+V 24
+dir 44-23.0.r23/13192519
+K 1
+c
+V 24
+dir 4q-23.0.r23/13145630
+K 3
+cpp
+V 25
+dir 189-23.0.r23/13163761
+K 7
+drawing
+V 25
+dir 1b9-23.0.r23/13201193
+K 7
+firefox
+V 17
+dir 1-4.0.r44/458
+K 9
+freebasic
+V 25
+dir 1bt-23.0.r23/13188735
+K 4
+perl
+V 16
+dir 1-2.0.r43/96
+K 7
+reading
+V 25
+dir 1fv-23.0.r23/13197236
+K 11
+shellscript
+V 20
+dir 1-5.0.r36/236333
+K 4
+usys
+V 22
+dir 1-10.0.r10/9335201
+K 3
+vb6
+V 25
+dir 1g5-23.0.r23/14130687
+K 4
+wiki
+V 21
+dir 1-18.0.r36/221898
+K 8
+writting
+V 25
+dir 59s-23.0.r23/13195768
+END
+ENDREP
+id: 3-1.0.r44/1226
+type: dir
+pred: 3-1.0.r43/861
+count: 43
+text: 44 659 554 554 9128ccbd2309ae3b44a0fd8c5777a410
+props: 22 9750 47 0 f557e852c538d8c9e39890daeee63e71
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 18
+dir 3-1.0.r44/1226
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r44/1568
+type: dir
+pred: 0.0.r43/1203
+count: 44
+text: 44 1421 134 134 0ea8d33fa062d9441b3522e12a32dff3
+cpath: /
+copyroot: 0 /
+
+1-4.0.t43-17 modify-dir false true /trunk/firefox
+
+8f-4.0.r4/339539 delete-dir false false /trunk/firefox/websaver2
+
+
+1568 1703

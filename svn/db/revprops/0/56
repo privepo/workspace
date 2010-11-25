@@ -1,0 +1,17 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-06-03T14:11:47.112412Z
+K 7
+svn:log
+V 51
+reconstruct directory from /trunk/cpp to /cpp/trunk
+END

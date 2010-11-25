@@ -1,0 +1,59 @@
+id: 1-23.0-53.r53/0
+type: dir
+pred: 1-23.0.r23/12908022
+count: 1
+text: 23 12904452 3557 3557 767a73805606d6e4e2d430437c91adb8
+cpath: /batch/trunk
+copyfrom: 48 /trunk/batch
+
+PLAIN
+K 5
+trunk
+V 19
+dir 1-23.0-53.r53/0
+END
+ENDREP
+id: 0-53.0.r53/225
+type: dir
+count: 0
+text: 53 173 39 39 58565e571cd92b24364bdb797a3029f3
+cpath: /batch
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r53/526
+type: dir
+pred: 0.0.r52/78910
+count: 53
+text: 53 344 169 169 8eb073a4a668b620ff6af0e1f3de5fa4
+cpath: /
+copyroot: 0 /
+
+_0.0.t52-1g add-dir false false /batch
+
+1-23._0.t52-1g add-dir false false /batch/trunk
+48 /trunk/batch
+
+526 660

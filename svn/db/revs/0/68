@@ -1,0 +1,99 @@
+PLAIN
+END
+ENDREP
+id: 3-1.0.r68/17
+type: dir
+pred: 3-1.0.r67/256
+count: 53
+text: 68 0 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+props: 45 11735 120 0 0ef64165309ce58f6ae3d5bbc5bd75a8
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 7
+firefox
+V 18
+dir 0-66.0.r66/271
+K 9
+freebasic
+V 18
+dir 0-58.0.r58/237
+K 4
+perl
+V 20
+dir 0-59.0.r59/11628
+K 7
+reading
+V 18
+dir 0-60.0.r60/233
+K 11
+shellscript
+V 18
+dir 0-61.0.r61/232
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 4
+text
+V 18
+dir 0-62.0.r62/217
+K 5
+trunk
+V 16
+dir 3-1.0.r68/17
+K 4
+usys
+V 18
+dir 0-63.0.r63/219
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+K 8
+writting
+V 18
+dir 0-64.0.r64/235
+K 3
+www
+V 18
+dir 0-65.0.r65/221
+END
+ENDREP
+id: 0.0.r68/838
+type: dir
+pred: 0.0.r67/1085
+count: 68
+text: 68 206 619 619 1974348b1686e1208e08988bcb269215
+cpath: /
+copyroot: 0 /
+
+1-2.0.r67/17 delete-dir false false /trunk/perl
+
+
+838 971

@@ -1,0 +1,71 @@
+id: 189-23.0-56.r56/0
+type: dir
+pred: 189-23.0.r23/13163761
+count: 1
+text: 23 13163432 316 316 df96945ffa567616106b2809b7d4e232
+cpath: /cpp/trunk
+copyfrom: 48 /trunk/cpp
+
+PLAIN
+K 5
+trunk
+V 21
+dir 189-23.0-56.r56/0
+END
+ENDREP
+id: 0-56.0.r56/225
+type: dir
+count: 0
+text: 56 171 41 41 bc507dc6d1a2218f9b4cf015f5281824
+cpath: /cpp
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r56/620
+type: dir
+pred: 0.0.r55/581
+count: 56
+text: 56 342 265 265 a993fd95e55b58907bb65524b0356aa9
+cpath: /
+copyroot: 0 /
+
+_0.0.t55-1j add-dir false false /cpp
+
+189-23._0.t55-1j add-dir false false /cpp/trunk
+48 /trunk/cpp
+
+620 752

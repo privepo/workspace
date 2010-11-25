@@ -1,0 +1,19 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-06-07T17:01:23.997041Z
+K 7
+svn:log
+V 78
+perl:
+    add some EPUB related scripts for converting text,html to epub book
+
+END

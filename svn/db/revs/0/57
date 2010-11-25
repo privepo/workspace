@@ -1,0 +1,75 @@
+id: 1b9-23.0-57.r57/0
+type: dir
+pred: 1b9-23.0.r23/13201193
+count: 1
+text: 23 13200660 520 520 f1d7a5def741ca37148687220c349cd3
+cpath: /drawing/trunk
+copyfrom: 48 /trunk/drawing
+
+PLAIN
+K 5
+trunk
+V 21
+dir 1b9-23.0-57.r57/0
+END
+ENDREP
+id: 0-57.0.r57/233
+type: dir
+count: 0
+text: 57 179 41 41 38d9e45bca68eb8539c5c008512375ff
+cpath: /drawing
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r57/668
+type: dir
+pred: 0.0.r56/620
+count: 57
+text: 57 354 301 301 c8416395543b68b3c23af367bfd69bdf
+cpath: /
+copyroot: 0 /
+
+_0.0.t56-1k add-dir false false /drawing
+
+1b9-23._0.t56-1k add-dir false false /drawing/trunk
+48 /trunk/drawing
+
+668 800

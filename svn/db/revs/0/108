@@ -1,0 +1,181 @@
+PLAIN
+K 14
+svn:executable
+V 1
+*
+END
+ENDREP
+id: 5-108.0-56.r108/43
+type: file
+count: 0
+text: 23 310573 160 143 fb51c825138d4ad23f525e43e3d801f3 ff208c2002d53ea95da9140a5df334f697c8d34f 107-2z/_6
+props: 108 0 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /cpp/trunk/.ignore
+copyroot: 56 /cpp/trunk
+
+PLAIN
+K 14
+svn:executable
+V 1
+*
+END
+ENDREP
+id: 2-108.0-56.r108/339
+type: file
+count: 0
+text: 107 0 162 145 129b5b863c32008e2433392628575ea9 1b4da214ac7e5f2e5ea66f096455c696bd216369 107-2z/_4
+props: 108 296 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /cpp/trunk/.gitignore
+copyroot: 56 /cpp/trunk
+
+PLAIN
+K 10
+.gitignore
+V 24
+file 2-108.0-56.r108/339
+K 7
+.ignore
+V 23
+file 5-108.0-56.r108/43
+K 8
+HelloLib
+V 25
+dir 18a-23.0.r23/13158431
+K 8
+btstring
+V 25
+dir 18t-23.0.r23/13162428
+K 13
+cppPrimerPlus
+V 25
+dir 193-23.0.r23/13155400
+K 8
+indexzip
+V 25
+dir 1af-23.0.r23/13159995
+K 7
+replace
+V 25
+dir 1ap-23.0.r23/13160854
+K 9
+strhandle
+V 25
+dir 1av-23.0.r23/13146853
+K 6
+wgetcc
+V 25
+dir 1b3-23.0.r23/13163290
+END
+ENDREP
+id: 189-23.0-56.r108/1010
+type: dir
+pred: 189-23.0-56.r56/0
+count: 2
+text: 108 594 403 403 8319610c4b249cc90ae74c7c3933c822
+cpath: /cpp/trunk
+copyroot: 56 /cpp/trunk
+
+PLAIN
+K 5
+trunk
+V 25
+dir 189-23.0-56.r108/1010
+END
+ENDREP
+id: 0-56.0.r108/1235
+type: dir
+pred: 0-56.0.r56/225
+count: 1
+text: 108 1177 45 45 3d79c08d64661d68f1f35745ddc8a1f4
+cpath: /cpp
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 20
+dir 0-53.0.r106/4486
+K 5
+blogs
+V 18
+dir 0-54.0.r93/799
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 20
+dir 0-55.0.r107/2358
+K 3
+cpp
+V 20
+dir 0-56.0.r108/1235
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 4
+epub
+V 23
+dir 0-75.0.r83/13329241
+K 7
+firefox
+V 20
+dir 0-66.0.r103/7667
+K 9
+freebasic
+V 18
+dir 0-58.0.r58/237
+K 7
+reading
+V 18
+dir 0-60.0.r94/844
+K 11
+shellscript
+V 21
+dir 0-61.0.r102/14773
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 4
+text
+V 20
+dir 0-62.0.r104/6524
+K 5
+trunk
+V 17
+dir 3-1.0.r69/456
+K 4
+usys
+V 18
+dir 0-63.0.r63/219
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+K 8
+writting
+V 18
+dir 0-64.0.r92/773
+K 3
+www
+V 20
+dir 0-65.0.r80/36672
+END
+ENDREP
+id: 0.0.r108/2028
+type: dir
+pred: 0.0.r107/3147
+count: 108
+text: 108 1377 638 638 f00c6436efb586d3e091eb4d1d3d8a72
+cpath: /
+copyroot: 0 /
+
+_5.0-56.t107-2z add-file true true /cpp/trunk/.ignore
+
+_2.0-56.t107-2z add-file true true /cpp/trunk/.gitignore
+
+
+2028 2167

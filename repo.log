@@ -1,0 +1,2919 @@
+WORKSPACE:
+
+Path: svn
+URL: file:///myplace/workspace/tmp/zrepos/workspace/trunk/svn
+Repository Root: file:///myplace/workspace/tmp/zrepos/workspace/trunk/svn
+Repository UUID: a8330270-cc75-4588-81b2-ce32834bf887
+Revision: 137
+Node Kind: directory
+Last Changed Author: eotect
+Last Changed Rev: 137
+Last Changed Date: 2010-11-19 21:32:49 +0800 (Fri, 19 Nov 2010)
+
+------------------------------------------------------------------------
+r137 | eotect | 2010-11-19 21:32:49 +0800 (Fri, 19 Nov 2010) | 1 line
+
+[firefox] re-orgnized directory tree
+------------------------------------------------------------------------
+
+Path  : git
+Date  : 2010-11-19 13:32:49 +0000
+Author: Nahn Eoetct
+Commit: 564f6702bc3e897ab98ee54b8af159b4a591721d
+
+    [firefox] re-orgnized directory tree
+
+git-svn-id: file:///myplace/workspace/tmp/zrepos/workspace/trunk/svn@137 a8330270-cc75-4588-81b2-ce32834bf887
+
+
+ firefox/trunk/.gitignore                           |    3 +
+ firefox/trunk/allowme.sh                           |   25 +
+ firefox/trunk/chrome/userChrome-example.css        |   54 +
+ firefox/trunk/chrome/userContent-example.css       |   35 +
+ firefox/trunk/devel/helloworld/chrome.manifest     |    9 +
+ firefox/trunk/devel/helloworld/content/hello.xul   |   14 +
+ firefox/trunk/devel/helloworld/content/menu.xul    |   18 +
+ firefox/trunk/devel/helloworld/content/overlay.js  |   14 +
+ firefox/trunk/devel/helloworld/content/overlay.xul |   16 +
+ firefox/trunk/devel/helloworld/install.rdf         |   31 +
+ .../trunk/devel/helloworld/locale/en-US/hello.dtd  |    4 +
+ .../devel/helloworld/locale/en-US/overlay.dtd      |    2 +
+ firefox/trunk/devel/helloworld/skin/overlay.css    |    4 +
+ firefox/trunk/devel/htmlsaver/chrome.manifest      |    9 +
+ firefox/trunk/devel/htmlsaver/content/contmenu.js  |  130 +
+ firefox/trunk/devel/htmlsaver/content/contmenu.xul |   70 +
+ .../trunk/devel/htmlsaver/content/htmlsaverapp.js  |   42 +
+ .../trunk/devel/htmlsaver/content/htmlsavervar.js  |  325 ++
+ .../trunk/devel/htmlsaver/content/managestore.js   |  521 +++
+ .../trunk/devel/htmlsaver/content/managestore.xul  |   94 +
+ firefox/trunk/devel/htmlsaver/content/options.js   |  379 ++
+ firefox/trunk/devel/htmlsaver/content/options.xul  |  129 +
+ firefox/trunk/devel/htmlsaver/content/savestore.js |  423 ++
+ .../trunk/devel/htmlsaver/content/savestore.xul    |   24 +
+ firefox/trunk/devel/htmlsaver/content/setfolder.js |   96 +
+ .../trunk/devel/htmlsaver/content/setfolder.xul    |   79 +
+ firefox/trunk/devel/htmlsaver/content/statusbar.js |   31 +
+ .../trunk/devel/htmlsaver/content/statusbar.xul    |   29 +
+ .../trunk/devel/htmlsaver/content/xrlin.debug.js   |   14 +
+ .../trunk/devel/htmlsaver/content/xrlin.fileio.js  |   49 +
+ .../trunk/devel/htmlsaver/content/xrlin.pref.js    |   39 +
+ .../trunk/devel/htmlsaver/content/xrlin.system.js  |   22 +
+ firefox/trunk/devel/htmlsaver/content/xrlin.xml.js |   26 +
+ firefox/trunk/devel/htmlsaver/content/xrlin.zip.js |   33 +
+ .../devel/htmlsaver/defaults/preferences/prefs.js  |    1 +
+ firefox/trunk/devel/htmlsaver/install.rdf          |   25 +
+ .../devel/htmlsaver/locale/en-US/contents.rdf      |   23 +
+ .../htmlsaver/locale/en-US/htmlsaver.description   |    1 +
+ .../devel/htmlsaver/locale/en-US/htmlsaver.dtd     |   57 +
+ .../htmlsaver/locale/en-US/htmlsaver.properties    |   35 +
+ .../trunk/devel/htmlsaver/skin/classic/browse.png  |  Bin 0 -> 391 bytes
+ .../devel/htmlsaver/skin/classic/contents.rdf      |   26 +
+ .../trunk/devel/htmlsaver/skin/classic/delete.png  |  Bin 0 -> 192 bytes
+ .../trunk/devel/htmlsaver/skin/classic/down.png    |  Bin 0 -> 511 bytes
+ .../trunk/devel/htmlsaver/skin/classic/edit.png    |  Bin 0 -> 161 bytes
+ .../devel/htmlsaver/skin/classic/htmlsaver.css     |    7 +
+ .../devel/htmlsaver/skin/classic/htmlsaver16.png   |  Bin 0 -> 1166 bytes
+ .../devel/htmlsaver/skin/classic/htmlsaver24.png   |  Bin 0 -> 2454 bytes
+ .../devel/htmlsaver/skin/classic/htmlsaver32.png   |  Bin 0 -> 4254 bytes
+ .../devel/htmlsaver/skin/classic/managestore.css   |   32 +
+ firefox/trunk/devel/htmlsaver/skin/classic/new.png |  Bin 0 -> 214 bytes
+ .../trunk/devel/htmlsaver/skin/classic/options.css |   60 +
+ .../devel/htmlsaver/skin/classic/separator.png     |  Bin 0 -> 214 bytes
+ firefox/trunk/devel/htmlsaver/skin/classic/up.png  |  Bin 0 -> 512 bytes
+ firefox/trunk/devel/realsaver/chrome.manifest      |    9 +
+ firefox/trunk/devel/realsaver/content/contmenu.js  |  166 +
+ firefox/trunk/devel/realsaver/content/contmenu.xul |   70 +
+ .../trunk/devel/realsaver/content/managestore.js   |  519 +++
+ .../trunk/devel/realsaver/content/managestore.xul  |   93 +
+ firefox/trunk/devel/realsaver/content/options.js   |  378 ++
+ firefox/trunk/devel/realsaver/content/options.xul  |  127 +
+ .../trunk/devel/realsaver/content/realsaverapp.js  |   42 +
+ .../trunk/devel/realsaver/content/realsavervar.js  |  243 ++
+ firefox/trunk/devel/realsaver/content/savestore.js |  167 +
+ .../trunk/devel/realsaver/content/savestore.xul    |   23 +
+ firefox/trunk/devel/realsaver/content/setfolder.js |   83 +
+ .../trunk/devel/realsaver/content/setfolder.xul    |   76 +
+ firefox/trunk/devel/realsaver/content/statusbar.js |   31 +
+ .../trunk/devel/realsaver/content/statusbar.xul    |   28 +
+ .../trunk/devel/realsaver/content/xrlin.debug.js   |   14 +
+ .../trunk/devel/realsaver/content/xrlin.fileio.js  |   48 +
+ .../trunk/devel/realsaver/content/xrlin.pref.js    |   39 +
+ .../trunk/devel/realsaver/content/xrlin.system.js  |   22 +
+ firefox/trunk/devel/realsaver/content/xrlin.xml.js |   26 +
+ firefox/trunk/devel/realsaver/content/xrlin.zip.js |   33 +
+ firefox/trunk/devel/realsaver/convert.sh           |    3 +
+ .../devel/realsaver/defaults/preferences/prefs.js  |    1 +
+ firefox/trunk/devel/realsaver/install.rdf          |   25 +
+ .../devel/realsaver/locale/en-US/contents.rdf      |   23 +
+ .../realsaver/locale/en-US/realsaver.description   |    1 +
+ .../devel/realsaver/locale/en-US/realsaver.dtd     |   56 +
+ .../realsaver/locale/en-US/realsaver.properties    |   35 +
+ .../trunk/devel/realsaver/skin/classic/browse.png  |  Bin 0 -> 391 bytes
+ .../devel/realsaver/skin/classic/contents.rdf      |   26 +
+ .../trunk/devel/realsaver/skin/classic/delete.png  |  Bin 0 -> 192 bytes
+ .../trunk/devel/realsaver/skin/classic/down.png    |  Bin 0 -> 511 bytes
+ .../trunk/devel/realsaver/skin/classic/edit.png    |  Bin 0 -> 161 bytes
+ .../devel/realsaver/skin/classic/managestore.css   |   32 +
+ firefox/trunk/devel/realsaver/skin/classic/new.png |  Bin 0 -> 214 bytes
+ .../trunk/devel/realsaver/skin/classic/options.css |   60 +
+ .../devel/realsaver/skin/classic/realsaver.css     |    7 +
+ .../devel/realsaver/skin/classic/realsaver16.png   |  Bin 0 -> 1166 bytes
+ .../devel/realsaver/skin/classic/realsaver24.png   |  Bin 0 -> 2454 bytes
+ .../devel/realsaver/skin/classic/realsaver32.png   |  Bin 0 -> 4254 bytes
+ .../devel/realsaver/skin/classic/separator.png     |  Bin 0 -> 214 bytes
+ firefox/trunk/devel/realsaver/skin/classic/up.png  |  Bin 0 -> 512 bytes
+ .../trunk/devel/saveimginfolder/chrome.manifest    |   38 +
+ .../devel/saveimginfolder/content/contents.rdf     |   28 +
+ .../trunk/devel/saveimginfolder/content/notify.xul |   87 +
+ .../devel/saveimginfolder/content/options.xul      |  794 ++++
+ .../saveimginfolder/content/saveimageinfolder.xul  |  874 ++++
+ .../devel/saveimginfolder/content/setfolder.xul    |  262 ++
+ firefox/trunk/devel/xrzlib/chrome.manifest         |    3 +
+ firefox/trunk/devel/xrzlib/chrome/content/base.js  |   62 +
+ firefox/trunk/devel/xrzlib/chrome/content/debug.js |   25 +
+ firefox/trunk/devel/xrzlib/chrome/content/dom.js   |   22 +
+ .../trunk/devel/xrzlib/chrome/content/fileio.js    |   50 +
+ firefox/trunk/devel/xrzlib/chrome/content/menu.js  |   38 +
+ firefox/trunk/devel/xrzlib/chrome/content/pref.js  |   78 +
+ .../trunk/devel/xrzlib/chrome/content/string.js    |   24 +
+ .../trunk/devel/xrzlib/chrome/content/system.js    |   64 +
+ firefox/trunk/devel/xrzlib/chrome/content/utils.js |   34 +
+ .../trunk/devel/xrzlib/chrome/content/window.js    |   14 +
+ firefox/trunk/devel/xrzlib/chrome/content/xml.js   |   26 +
+ firefox/trunk/devel/xrzlib/chrome/content/zip.js   |   34 +
+ firefox/trunk/devel/xrzlib/install.rdf             |   24 +
+ firefox/trunk/extensions.cache                     |   34 +
+ firefox/trunk/extensions.rdf                       | 1662 ++++++++
+ .../SoCoolFox@sjcmankimo.tw/chrome.manifest        |    4 +
+ .../SoCoolFox@sjcmankimo.tw/chrome/SoCool.jar      |  Bin 0 -> 561061 bytes
+ .../extensions/SoCoolFox@sjcmankimo.tw/icon.png    |  Bin 0 -> 893 bytes
+ .../extensions/SoCoolFox@sjcmankimo.tw/install.rdf |   36 +
+ .../extensions/SoCoolFox@sjcmankimo.tw/preview.png |  Bin 0 -> 28377 bytes
+ .../autoproxy@autoproxy.org/chrome.manifest        |   14 +
+ .../autoproxy@autoproxy.org/chrome/autoproxy.jar   |  Bin 0 -> 460368 bytes
+ .../components/AutoProxy.js                        |  533 +++
+ .../defaults/preferences/autoproxy.js              |   32 +
+ .../extensions/autoproxy@autoproxy.org/install.rdf |  101 +
+ .../extensions/cfxHelper@Triton/chrome.manifest    |    8 +
+ .../extensions/cfxHelper@Triton/chrome/cfxc.jar    |  Bin 0 -> 26169 bytes
+ .../cfxHelper@Triton/components/IDwmCalls.xpt      |  Bin 0 -> 347 bytes
+ .../cfxHelper@Triton/components/dwmxpcom.dll       |  Bin 0 -> 61952 bytes
+ .../defaults/preferences/defaults.js               |   15 +
+ .../trunk/extensions/cfxHelper@Triton/install.rdf  |   21 +
+ .../trunk/extensions/cfxe@Triton/chrome.manifest   |    9 +
+ .../extensions/cfxe@Triton/chrome/LICENSE.TXT      |   37 +
+ .../trunk/extensions/cfxe@Triton/chrome/cfxe.jar   |  Bin 0 -> 978975 bytes
+ firefox/trunk/extensions/cfxe@Triton/icon.png      |  Bin 0 -> 5307 bytes
+ firefox/trunk/extensions/cfxe@Triton/install.rdf   |   23 +
+ firefox/trunk/extensions/cfxe@Triton/preview.png   |  Bin 0 -> 42965 bytes
+ firefox/trunk/extensions/fix_perm.sh               |    3 +
+ .../foxmarks@kei.com/META-INF/manifest.mf          | 1373 ++++++
+ .../foxmarks@kei.com/META-INF/zigbert.rsa          |  Bin 0 -> 2073 bytes
+ .../foxmarks@kei.com/META-INF/zigbert.sf           | 1376 ++++++
+ .../extensions/foxmarks@kei.com/chrome.manifest    |   47 +
+ .../chrome/content/foxmarks-bookmark.js            |  322 ++
+ .../chrome/content/foxmarks-bookmarkconflict.xul   |  107 +
+ .../chrome/content/foxmarks-changeprofile.js       |   41 +
+ .../chrome/content/foxmarks-changeprofile.xul      |   71 +
+ .../chrome/content/foxmarks-clobber.js             |   37 +
+ .../chrome/content/foxmarks-clobber.xul            |   53 +
+ .../chrome/content/foxmarks-command.js             |  101 +
+ .../chrome/content/foxmarks-conflicts.js           |   84 +
+ .../chrome/content/foxmarks-core.js                |  959 +++++
+ .../chrome/content/foxmarks-dialog.js              | 1022 +++++
+ .../chrome/content/foxmarks-dialog.xul             |  349 ++
+ .../chrome/content/foxmarks-discover.js            |  400 ++
+ .../chrome/content/foxmarks-folderconflict.xul     |   81 +
+ .../chrome/content/foxmarks-invalidpin.js          |   30 +
+ .../chrome/content/foxmarks-invalidpin.xul         |   49 +
+ .../chrome/content/foxmarks-json.js                |  273 ++
+ .../chrome/content/foxmarks-login.js               |  125 +
+ .../chrome/content/foxmarks-login.xul              |   69 +
+ .../chrome/content/foxmarks-manageroverlay.xul     |   33 +
+ .../chrome/content/foxmarks-moresecurityinfo.xul   |   56 +
+ .../chrome/content/foxmarks-nodes.js               |  824 ++++
+ .../chrome/content/foxmarks-overlay.js             |  111 +
+ .../chrome/content/foxmarks-overlay.xul            |  166 +
+ .../chrome/content/foxmarks-ownserverdlg.js        |   53 +
+ .../chrome/content/foxmarks-ownserverdlg.xul       |   78 +
+ .../chrome/content/foxmarks-parentconflict.xul     |   89 +
+ .../chrome/content/foxmarks-password.js            |  832 ++++
+ .../chrome/content/foxmarks-passwordconflict.js    |   45 +
+ .../chrome/content/foxmarks-passwordconflict.xul   |   85 +
+ .../chrome/content/foxmarks-places.js              | 1393 ++++++
+ .../chrome/content/foxmarks-placesoverlay-mac.xul  |   46 +
+ .../chrome/content/foxmarks-placesoverlay.xul      |   48 +
+ .../chrome/content/foxmarks-progress.js            |  195 +
+ .../chrome/content/foxmarks-progress.xul           |   66 +
+ .../chrome/content/foxmarks-pwprefoverlay.js       |   18 +
+ .../chrome/content/foxmarks-pwprefoverlay.xul      |   20 +
+ .../chrome/content/foxmarks-pwsanitizeoverlay.js   |   28 +
+ .../chrome/content/foxmarks-pwsanitizeoverlay.xul  |   20 +
+ .../chrome/content/foxmarks-rdf.js                 |  811 ++++
+ .../chrome/content/foxmarks-resetpin.js            |   33 +
+ .../chrome/content/foxmarks-resetpin.xul           |   75 +
+ .../chrome/content/foxmarks-server.js              | 1912 +++++++++
+ .../chrome/content/foxmarks-settings.js            |   13 +
+ .../chrome/content/foxmarks-setup.js               |  801 ++++
+ .../chrome/content/foxmarks-setup.xul              |  353 ++
+ .../chrome/content/foxmarks-statusbar.js           |  415 ++
+ .../chrome/content/foxmarks-statusbar.xul          |   52 +
+ .../chrome/content/foxmarks-test.js                |   27 +
+ .../chrome/content/foxmarks-turbotags.js           |  561 +++
+ .../chrome/content/foxmarks-turbotags.xul          |   22 +
+ .../chrome/content/foxmarks-uitools.js             |  558 +++
+ .../chrome/content/foxmarks-unittest.js            |  324 ++
+ .../chrome/content/foxmarks-update.js              |  129 +
+ .../chrome/content/foxmarks-utils.js               |  202 +
+ .../foxmarks@kei.com/chrome/content/newuser.js     |  122 +
+ .../foxmarks@kei.com/chrome/content/review.xml     |  418 ++
+ .../chrome/content/shared/Base64.js                |  151 +
+ .../chrome/content/shared/CreateAESManager.js      |  454 ++
+ .../chrome/content/shared/passwordmeter.js         |  205 +
+ .../foxmarks@kei.com/chrome/content/tabs.js        |  211 +
+ .../foxmarks@kei.com/chrome/content/tabs.xul       |   41 +
+ .../chrome/locale/ar/conflicts.dtd                 |   19 +
+ .../foxmarks@kei.com/chrome/locale/ar/foxmarks.dtd |  177 +
+ .../chrome/locale/ar/foxmarks.properties           |  373 ++
+ .../foxmarks@kei.com/chrome/locale/ar/setup.dtd    |   80 +
+ .../chrome/locale/bg-BG/conflicts.dtd              |   19 +
+ .../chrome/locale/bg-BG/foxmarks.dtd               |  177 +
+ .../chrome/locale/bg-BG/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/bg-BG/setup.dtd |   80 +
+ .../chrome/locale/bn-IN/conflicts.dtd              |   19 +
+ .../chrome/locale/bn-IN/foxmarks.dtd               |  177 +
+ .../chrome/locale/bn-IN/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/bn-IN/setup.dtd |   80 +
+ .../chrome/locale/cs-CZ/conflicts.dtd              |   19 +
+ .../chrome/locale/cs-CZ/foxmarks.dtd               |  177 +
+ .../chrome/locale/cs-CZ/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/cs-CZ/setup.dtd |   80 +
+ .../chrome/locale/da-DK/conflicts.dtd              |   19 +
+ .../chrome/locale/da-DK/foxmarks.dtd               |  177 +
+ .../chrome/locale/da-DK/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/da-DK/setup.dtd |   80 +
+ .../chrome/locale/de/conflicts.dtd                 |   19 +
+ .../foxmarks@kei.com/chrome/locale/de/foxmarks.dtd |  177 +
+ .../chrome/locale/de/foxmarks.properties           |  373 ++
+ .../foxmarks@kei.com/chrome/locale/de/setup.dtd    |   80 +
+ .../chrome/locale/el-GR/conflicts.dtd              |   19 +
+ .../chrome/locale/el-GR/foxmarks.dtd               |  177 +
+ .../chrome/locale/el-GR/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/el-GR/setup.dtd |   80 +
+ .../chrome/locale/en-US/conflicts.dtd              |   19 +
+ .../chrome/locale/en-US/foxmarks.dtd               |  177 +
+ .../chrome/locale/en-US/foxmarks.properties        |  352 ++
+ .../foxmarks@kei.com/chrome/locale/en-US/setup.dtd |   81 +
+ .../chrome/locale/es-ES/conflicts.dtd              |   19 +
+ .../chrome/locale/es-ES/foxmarks.dtd               |  177 +
+ .../chrome/locale/es-ES/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/es-ES/setup.dtd |   80 +
+ .../chrome/locale/et-EE/conflicts.dtd              |   19 +
+ .../chrome/locale/et-EE/foxmarks.dtd               |  177 +
+ .../chrome/locale/et-EE/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/et-EE/setup.dtd |   80 +
+ .../chrome/locale/eu-ES/conflicts.dtd              |   19 +
+ .../chrome/locale/eu-ES/foxmarks.dtd               |  177 +
+ .../chrome/locale/eu-ES/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/eu-ES/setup.dtd |   80 +
+ .../chrome/locale/fi-FI/conflicts.dtd              |   19 +
+ .../chrome/locale/fi-FI/foxmarks.dtd               |  177 +
+ .../chrome/locale/fi-FI/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/fi-FI/setup.dtd |   80 +
+ .../chrome/locale/fr/conflicts.dtd                 |   19 +
+ .../foxmarks@kei.com/chrome/locale/fr/foxmarks.dtd |  177 +
+ .../chrome/locale/fr/foxmarks.properties           |  373 ++
+ .../foxmarks@kei.com/chrome/locale/fr/setup.dtd    |   80 +
+ .../chrome/locale/fy-NL/conflicts.dtd              |   19 +
+ .../chrome/locale/fy-NL/foxmarks.dtd               |  177 +
+ .../chrome/locale/fy-NL/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/fy-NL/setup.dtd |   80 +
+ .../chrome/locale/hu-HU/conflicts.dtd              |   19 +
+ .../chrome/locale/hu-HU/foxmarks.dtd               |  177 +
+ .../chrome/locale/hu-HU/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/hu-HU/setup.dtd |   80 +
+ .../chrome/locale/it-IT/conflicts.dtd              |   19 +
+ .../chrome/locale/it-IT/foxmarks.dtd               |  177 +
+ .../chrome/locale/it-IT/foxmarks.properties        |  357 ++
+ .../foxmarks@kei.com/chrome/locale/it-IT/setup.dtd |   80 +
+ .../chrome/locale/ja-JP/conflicts.dtd              |   19 +
+ .../chrome/locale/ja-JP/foxmarks.dtd               |  177 +
+ .../chrome/locale/ja-JP/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/ja-JP/setup.dtd |   80 +
+ .../chrome/locale/ko-KR/conflicts.dtd              |   19 +
+ .../chrome/locale/ko-KR/foxmarks.dtd               |  177 +
+ .../chrome/locale/ko-KR/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/ko-KR/setup.dtd |   80 +
+ .../chrome/locale/nl/conflicts.dtd                 |   19 +
+ .../foxmarks@kei.com/chrome/locale/nl/foxmarks.dtd |  177 +
+ .../chrome/locale/nl/foxmarks.properties           |  373 ++
+ .../foxmarks@kei.com/chrome/locale/nl/setup.dtd    |   80 +
+ .../chrome/locale/nn-NO/conflicts.dtd              |   19 +
+ .../chrome/locale/nn-NO/foxmarks.dtd               |  177 +
+ .../chrome/locale/nn-NO/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/nn-NO/setup.dtd |   80 +
+ .../chrome/locale/pl-PL/conflicts.dtd              |   19 +
+ .../chrome/locale/pl-PL/foxmarks.dtd               |  177 +
+ .../chrome/locale/pl-PL/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/pl-PL/setup.dtd |   80 +
+ .../chrome/locale/pt-BR/conflicts.dtd              |   19 +
+ .../chrome/locale/pt-BR/foxmarks.dtd               |  177 +
+ .../chrome/locale/pt-BR/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/pt-BR/setup.dtd |   80 +
+ .../chrome/locale/pt-PT/conflicts.dtd              |   19 +
+ .../chrome/locale/pt-PT/foxmarks.dtd               |  177 +
+ .../chrome/locale/pt-PT/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/pt-PT/setup.dtd |   80 +
+ .../chrome/locale/ro/conflicts.dtd                 |   19 +
+ .../foxmarks@kei.com/chrome/locale/ro/foxmarks.dtd |  177 +
+ .../chrome/locale/ro/foxmarks.properties           |  373 ++
+ .../foxmarks@kei.com/chrome/locale/ro/setup.dtd    |   80 +
+ .../chrome/locale/ru-RU/conflicts.dtd              |   19 +
+ .../chrome/locale/ru-RU/foxmarks.dtd               |  177 +
+ .../chrome/locale/ru-RU/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/ru-RU/setup.dtd |   80 +
+ .../chrome/locale/sk-SK/conflicts.dtd              |   19 +
+ .../chrome/locale/sk-SK/foxmarks.dtd               |  177 +
+ .../chrome/locale/sk-SK/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/sk-SK/setup.dtd |   80 +
+ .../chrome/locale/sv-SE/conflicts.dtd              |   19 +
+ .../chrome/locale/sv-SE/foxmarks.dtd               |  177 +
+ .../chrome/locale/sv-SE/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/sv-SE/setup.dtd |   80 +
+ .../chrome/locale/tr-TR/conflicts.dtd              |   19 +
+ .../chrome/locale/tr-TR/foxmarks.dtd               |  177 +
+ .../chrome/locale/tr-TR/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/tr-TR/setup.dtd |   80 +
+ .../chrome/locale/uk-UA/conflicts.dtd              |   19 +
+ .../chrome/locale/uk-UA/foxmarks.dtd               |  177 +
+ .../chrome/locale/uk-UA/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/uk-UA/setup.dtd |   80 +
+ .../chrome/locale/vi/conflicts.dtd                 |   19 +
+ .../foxmarks@kei.com/chrome/locale/vi/foxmarks.dtd |  177 +
+ .../chrome/locale/vi/foxmarks.properties           |  373 ++
+ .../foxmarks@kei.com/chrome/locale/vi/setup.dtd    |   80 +
+ .../chrome/locale/zh-CN/conflicts.dtd              |   19 +
+ .../chrome/locale/zh-CN/foxmarks.dtd               |  177 +
+ .../chrome/locale/zh-CN/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/zh-CN/setup.dtd |   80 +
+ .../chrome/locale/zh-TW/conflicts.dtd              |   19 +
+ .../chrome/locale/zh-TW/foxmarks.dtd               |  177 +
+ .../chrome/locale/zh-TW/foxmarks.properties        |  373 ++
+ .../foxmarks@kei.com/chrome/locale/zh-TW/setup.dtd |   80 +
+ .../chrome/skin/modern/foxmarks.css                |  271 ++
+ .../chrome/skin/modern/images/Throbber-small.gif   |  Bin 0 -> 825 bytes
+ .../chrome/skin/modern/images/browser_chrome.png   |  Bin 0 -> 985 bytes
+ .../chrome/skin/modern/images/browser_firefox.png  |  Bin 0 -> 938 bytes
+ .../chrome/skin/modern/images/browser_ie.png       |  Bin 0 -> 1044 bytes
+ .../chrome/skin/modern/images/browser_safari.png   |  Bin 0 -> 931 bytes
+ .../chrome/skin/modern/images/bubble_bkg.png       |  Bin 0 -> 5214 bytes
+ .../chrome/skin/modern/images/bubble_close.png     |  Bin 0 -> 290 bytes
+ .../chrome/skin/modern/images/check-24.png         |  Bin 0 -> 858 bytes
+ .../chrome/skin/modern/images/computer.png         |  Bin 0 -> 780 bytes
+ .../chrome/skin/modern/images/dirty.png            |  Bin 0 -> 1013 bytes
+ .../chrome/skin/modern/images/error.png            |  Bin 0 -> 1069 bytes
+ .../chrome/skin/modern/images/foxmarks-active.png  |  Bin 0 -> 547 bytes
+ .../chrome/skin/modern/images/foxmarks-default.png |  Bin 0 -> 545 bytes
+ .../chrome/skin/modern/images/foxmarks-hover.png   |  Bin 0 -> 549 bytes
+ .../chrome/skin/modern/images/foxmarks.ico         |  Bin 0 -> 4286 bytes
+ .../chrome/skin/modern/images/foxmarks_bug.png     |  Bin 0 -> 472 bytes
+ .../skin/modern/images/foxmarks_my_toolbutton.png  |  Bin 0 -> 1513 bytes
+ .../modern/images/foxmarks_my_toolbutton_down.png  |  Bin 0 -> 1617 bytes
+ .../modern/images/foxmarks_settings_toolbutton.png |  Bin 0 -> 1401 bytes
+ .../images/foxmarks_settings_toolbutton_down.png   |  Bin 0 -> 1543 bytes
+ .../images/foxmarks_similarsites_toolbutton.png    |  Bin 0 -> 1135 bytes
+ .../foxmarks_similarsites_toolbutton_down.png      |  Bin 0 -> 1304 bytes
+ .../modern/images/foxmarks_sync_toolbutton.png     |  Bin 0 -> 1583 bytes
+ .../images/foxmarks_sync_toolbutton_down.png       |  Bin 0 -> 1638 bytes
+ .../chrome/skin/modern/images/foxmarks_tiny.png    |  Bin 0 -> 472 bytes
+ .../chrome/skin/modern/images/get-info-18x18.png   |  Bin 0 -> 474 bytes
+ .../chrome/skin/modern/images/getinfo.ico          |  Bin 0 -> 894 bytes
+ .../chrome/skin/modern/images/info_button.png      |  Bin 0 -> 1198 bytes
+ .../chrome/skin/modern/images/info_button_cap.png  |  Bin 0 -> 413 bytes
+ .../chrome/skin/modern/images/info_icon.png        |  Bin 0 -> 1320 bytes
+ .../chrome/skin/modern/images/information.png      |  Bin 0 -> 778 bytes
+ .../chrome/skin/modern/images/logo_poweredby.png   |  Bin 0 -> 2146 bytes
+ .../chrome/skin/modern/images/myfoxmarks_bug.png   |  Bin 0 -> 47946 bytes
+ .../skin/modern/images/pane-selector-advanced.png  |  Bin 0 -> 2536 bytes
+ .../skin/modern/images/pane-selector-bg-hover.png  |  Bin 0 -> 1742 bytes
+ .../modern/images/pane-selector-bg-selected.png    |  Bin 0 -> 232 bytes
+ .../chrome/skin/modern/images/pane-selector-bg.png |  Bin 0 -> 231 bytes
+ .../skin/modern/images/pane-selector-discovery.png |  Bin 0 -> 1624 bytes
+ .../skin/modern/images/pane-selector-general.png   |  Bin 0 -> 1305 bytes
+ .../skin/modern/images/pane-selector-icons.png     |  Bin 0 -> 3797 bytes
+ .../modern/images/pane-selector-macosx-bg-sel.png  |  Bin 0 -> 211 bytes
+ .../skin/modern/images/pane-selector-macosx-bg.png |  Bin 0 -> 880 bytes
+ .../modern/images/pane-selector-profiles_TEMP.png  |  Bin 0 -> 1971 bytes
+ .../skin/modern/images/pane-selector-restore.png   |  Bin 0 -> 1990 bytes
+ .../skin/modern/images/pane-selector-types.png     |  Bin 0 -> 1064 bytes
+ .../chrome/skin/modern/images/progress-good.png    |  Bin 0 -> 1068 bytes
+ .../chrome/skin/modern/images/rating_0_stars.png   |  Bin 0 -> 1483 bytes
+ .../chrome/skin/modern/images/rating_1.5_stars.png |  Bin 0 -> 2151 bytes
+ .../chrome/skin/modern/images/rating_1_stars.png   |  Bin 0 -> 1868 bytes
+ .../chrome/skin/modern/images/rating_2.5_stars.png |  Bin 0 -> 2162 bytes
+ .../chrome/skin/modern/images/rating_2_stars.png   |  Bin 0 -> 2006 bytes
+ .../chrome/skin/modern/images/rating_3.5_stars.png |  Bin 0 -> 2051 bytes
+ .../chrome/skin/modern/images/rating_3_stars.png   |  Bin 0 -> 1984 bytes
+ .../chrome/skin/modern/images/rating_4.5_stars.png |  Bin 0 -> 1866 bytes
+ .../chrome/skin/modern/images/rating_4_stars.png   |  Bin 0 -> 1790 bytes
+ .../chrome/skin/modern/images/rating_5_stars.png   |  Bin 0 -> 1656 bytes
+ .../chrome/skin/modern/images/rating_stars.png     |  Bin 0 -> 9225 bytes
+ .../chrome/skin/modern/images/ready.png            |  Bin 0 -> 781 bytes
+ .../chrome/skin/modern/images/restore_icon.png     |  Bin 0 -> 262 bytes
+ .../skin/modern/images/restore_icon_selected.png   |  Bin 0 -> 242 bytes
+ .../chrome/skin/modern/images/security-icon-bg.png |  Bin 0 -> 1143 bytes
+ .../skin/modern/images/similar-sites-icon.png      |  Bin 0 -> 574 bytes
+ .../chrome/skin/modern/images/small-ginkgo.png     |  Bin 0 -> 47946 bytes
+ .../chrome/skin/modern/images/status-bad.png       |  Bin 0 -> 1406 bytes
+ .../chrome/skin/modern/images/status-dirty.png     |  Bin 0 -> 1361 bytes
+ .../chrome/skin/modern/images/status-good.png      |  Bin 0 -> 4127 bytes
+ .../chrome/skin/modern/images/wheel.gif            |  Bin 0 -> 1522 bytes
+ .../chrome/skin/modern/images/wheel36x28.gif       |  Bin 0 -> 1488 bytes
+ .../chrome/skin/modern/images/wheel_16.gif         |  Bin 0 -> 60781 bytes
+ .../chrome/skin/modern/images/working.gif          |  Bin 0 -> 60781 bytes
+ .../chrome/skin/modern/images/xmarks_logo.png      |  Bin 0 -> 2484 bytes
+ .../chrome/skin/modern/turbotags-mac.css           |   26 +
+ .../components/foxmarks-service.js                 |   50 +
+ .../components/foxmarks-service.xpt                |  Bin 0 -> 825 bytes
+ .../foxmarks@kei.com/defaults/preferences/prefs.js |   18 +
+ .../trunk/extensions/foxmarks@kei.com/install.rdf  |   34 +
+ .../extensions/foxmarks@kei.com/modules/base64.jsm |   11 +
+ .../foxmarks@kei.com/modules/history.jsm           |  489 +++
+ .../foxmarks@kei.com/modules/network.jsm           |  356 ++
+ .../foxmarks@kei.com/modules/reviews.jsm           |  263 ++
+ .../foxmarks@kei.com/modules/service.jsm           | 1010 +++++
+ .../foxmarks@kei.com/modules/settings.jsm          | 1669 ++++++++
+ .../foxmarks@kei.com/modules/tabsync.jsm           |  200 +
+ .../trunk/extensions/foxyproxy@eric.h.jung/LICENSE |   24 +
+ .../foxyproxy@eric.h.jung/chrome.manifest          |   95 +
+ .../foxyproxy@eric.h.jung/chrome/content/about.js  |   28 +
+ .../foxyproxy@eric.h.jung/chrome/content/about.xul |  106 +
+ .../chrome/content/addeditproxy.js                 |  442 ++
+ .../chrome/content/addeditproxy.xul                |  392 ++
+ .../chrome/content/blockedpagepattern.js           |   35 +
+ .../chrome/content/blockedpagepattern.xul          |   42 +
+ .../chrome/content/chooseproxy.js                  |   56 +
+ .../chrome/content/chooseproxy.xul                 |   88 +
+ .../chrome/content/colorpicker2.css                |  109 +
+ .../chrome/content/colorpicker2.xml                |  472 +++
+ .../chrome/content/colorvalidator.js               |  222 +
+ .../chrome/content/firefoxOptionsOverlay.xul       |   14 +
+ .../chrome/content/firefoxOverlay-svg.xul          |  124 +
+ .../chrome/content/firefoxOverlay.xul              |   92 +
+ .../chrome/content/foxyproxy-win.css               |   19 +
+ .../chrome/content/foxyproxy.css                   |  303 ++
+ .../chrome/content/foxyproxySongbird.css           |   26 +
+ .../chrome/content/images/16x16.gif                |  Bin 0 -> 630 bytes
+ .../chrome/content/images/arrow_refresh.png        |  Bin 0 -> 685 bytes
+ .../chrome/content/images/cbox-check.gif           |  Bin 0 -> 54 bytes
+ .../chrome/content/images/delete-disabled.png      |  Bin 0 -> 672 bytes
+ .../chrome/content/images/delete.png               |  Bin 0 -> 715 bytes
+ .../chrome/content/images/dialog-information.png   |  Bin 0 -> 863 bytes
+ .../chrome/content/images/disk-disabled.png        |  Bin 0 -> 585 bytes
+ .../chrome/content/images/disk.png                 |  Bin 0 -> 620 bytes
+ .../chrome/content/images/edit-clear-disabled.png  |  Bin 0 -> 767 bytes
+ .../chrome/content/images/edit-clear.png           |  Bin 0 -> 773 bytes
+ .../chrome/content/images/emblem-favorite.png      |  Bin 0 -> 788 bytes
+ .../chrome/content/images/foxyproxy-nocopy.gif     |  Bin 0 -> 1552 bytes
+ .../chrome/content/images/fpplus.png               |  Bin 0 -> 992 bytes
+ .../chrome/content/images/go-down-disabled.png     |  Bin 0 -> 628 bytes
+ .../chrome/content/images/go-down.png              |  Bin 0 -> 683 bytes
+ .../chrome/content/images/go-up-disabled.png       |  Bin 0 -> 614 bytes
+ .../chrome/content/images/go-up.png                |  Bin 0 -> 652 bytes
+ .../chrome/content/images/help-browser.png         |  Bin 0 -> 932 bytes
+ .../chrome/content/images/internet-web-browser.png |  Bin 0 -> 928 bytes
+ .../chrome/content/images/lightning_add.png        |  Bin 0 -> 746 bytes
+ .../chrome/content/images/monitor.png              |  Bin 0 -> 612 bytes
+ .../chrome/content/images/monitor_add.png          |  Bin 0 -> 692 bytes
+ .../content/images/monitor_delete-disabled.png     |  Bin 0 -> 653 bytes
+ .../chrome/content/images/monitor_delete.png       |  Bin 0 -> 691 bytes
+ .../content/images/monitor_edit-disabled.png       |  Bin 0 -> 713 bytes
+ .../chrome/content/images/monitor_edit.png         |  Bin 0 -> 769 bytes
+ .../chrome/content/images/monitor_go-disabled.png  |  Bin 0 -> 636 bytes
+ .../chrome/content/images/monitor_go.png           |  Bin 0 -> 696 bytes
+ .../chrome/content/images/monitor_link.png         |  Bin 0 -> 736 bytes
+ .../chrome/content/images/page.png                 |  Bin 0 -> 635 bytes
+ .../chrome/content/images/page_add.png             |  Bin 0 -> 739 bytes
+ .../chrome/content/images/page_copy.png            |  Bin 0 -> 663 bytes
+ .../chrome/content/images/page_delete.png          |  Bin 0 -> 740 bytes
+ .../chrome/content/images/page_edit.png            |  Bin 0 -> 807 bytes
+ .../chrome/content/images/page_white_copy.png      |  Bin 0 -> 309 bytes
+ .../chrome/content/images/preferences-system.png   |  Bin 0 -> 611 bytes
+ .../chrome/content/images/satval.png               |  Bin 0 -> 10343 bytes
+ .../chrome/content/images/slide.gif                |  Bin 0 -> 70 bytes
+ .../chrome/content/images/slidehue.gif             |  Bin 0 -> 68 bytes
+ .../chrome/content/images/tab_go-disabled.png      |  Bin 0 -> 556 bytes
+ .../chrome/content/images/tab_go.png               |  Bin 0 -> 552 bytes
+ .../chrome/content/images/text_align_justify.png   |  Bin 0 -> 209 bytes
+ .../chrome/content/images/tick.png                 |  Bin 0 -> 537 bytes
+ .../chrome/content/images/wand.png                 |  Bin 0 -> 570 bytes
+ .../chrome/content/images/world.png                |  Bin 0 -> 923 bytes
+ .../chrome/content/includes.xul                    |  354 ++
+ .../chrome/content/options.js                      |  679 +++
+ .../chrome/content/options.xul                     | 1067 +++++
+ .../chrome/content/optionsOverlay.js               |   38 +
+ .../chrome/content/overlay.js                      |  991 +++++
+ .../chrome/content/pattern.js                      |   59 +
+ .../chrome/content/pattern.xul                     |   93 +
+ .../chrome/content/selection.js                    |  144 +
+ .../chrome/content/strings.xml                     |  117 +
+ .../chrome/content/superadd.js                     |   73 +
+ .../chrome/content/superadd.xul                    |  108 +
+ .../chrome/content/tbirdOverlay.xul                |   80 +
+ .../chrome/content/torwizhelp.xhtml                |   67 +
+ .../chrome/content/triquestion.js                  |   28 +
+ .../chrome/content/triquestion.xul                 |   35 +
+ .../chrome/icons/default/foxyproxyaboutdlg2.ico    |  Bin 0 -> 1150 bytes
+ .../chrome/icons/default/foxyproxyaddproxydlg2.ico |  Bin 0 -> 1150 bytes
+ .../chrome/icons/default/foxyproxyoptions2.ico     |  Bin 0 -> 1150 bytes
+ .../chrome/icons/default/foxyproxypatterndlg2.ico  |  Bin 0 -> 1150 bytes
+ .../chrome/icons/default/foxyproxyquickadddlg2.ico |  Bin 0 -> 1150 bytes
+ .../chrome/locale/ar/amo.properties                |    3 +
+ .../chrome/locale/ar/foxyproxy.dtd                 |  481 +++
+ .../chrome/locale/ar/foxyproxy.properties          |  166 +
+ .../chrome/locale/ar/torwizhelp.dtd                |   13 +
+ .../chrome/locale/cs/amo.properties                |    3 +
+ .../chrome/locale/cs/foxyproxy.dtd                 |  481 +++
+ .../chrome/locale/cs/foxyproxy.properties          |  166 +
+ .../chrome/locale/cs/torwizhelp.dtd                |   13 +
+ .../chrome/locale/da-DK/amo.properties             |    3 +
+ .../chrome/locale/da-DK/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/da-DK/foxyproxy.properties       |  166 +
+ .../chrome/locale/da-DK/torwizhelp.dtd             |   13 +
+ .../chrome/locale/de/amo.properties                |    3 +
+ .../chrome/locale/de/foxyproxy.dtd                 |  481 +++
+ .../chrome/locale/de/foxyproxy.properties          |  166 +
+ .../chrome/locale/de/torwizhelp.dtd                |   13 +
+ .../chrome/locale/el-GR/amo.properties             |    3 +
+ .../chrome/locale/el-GR/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/el-GR/foxyproxy.properties       |  166 +
+ .../chrome/locale/el-GR/torwizhelp.dtd             |   13 +
+ .../chrome/locale/en-US/amo.properties             |    3 +
+ .../chrome/locale/en-US/foxyproxy.dtd              |  615 +++
+ .../chrome/locale/en-US/foxyproxy.properties       |  161 +
+ .../chrome/locale/en-US/torwizhelp.dtd             |   13 +
+ .../chrome/locale/es-AR/amo.properties             |    3 +
+ .../chrome/locale/es-AR/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/es-AR/foxyproxy.properties       |  166 +
+ .../chrome/locale/es-AR/torwizhelp.dtd             |   13 +
+ .../chrome/locale/es-ES/amo.properties             |    3 +
+ .../chrome/locale/es-ES/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/es-ES/foxyproxy.properties       |  166 +
+ .../chrome/locale/es-ES/torwizhelp.dtd             |   13 +
+ .../chrome/locale/fa-IR/amo.properties             |    3 +
+ .../chrome/locale/fa-IR/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/fa-IR/foxyproxy.properties       |  166 +
+ .../chrome/locale/fa-IR/torwizhelp.dtd             |   13 +
+ .../chrome/locale/fi-FI/amo.properties             |    3 +
+ .../chrome/locale/fi-FI/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/fi-FI/foxyproxy.properties       |  166 +
+ .../chrome/locale/fi-FI/torwizhelp.dtd             |   13 +
+ .../chrome/locale/fr/amo.properties                |    3 +
+ .../chrome/locale/fr/foxyproxy.dtd                 |  481 +++
+ .../chrome/locale/fr/foxyproxy.properties          |  166 +
+ .../chrome/locale/fr/torwizhelp.dtd                |   13 +
+ .../chrome/locale/gl-ES/amo.properties             |    3 +
+ .../chrome/locale/gl-ES/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/gl-ES/foxyproxy.properties       |  166 +
+ .../chrome/locale/gl-ES/torwizhelp.dtd             |   13 +
+ .../chrome/locale/hr-HR/amo.properties             |    3 +
+ .../chrome/locale/hr-HR/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/hr-HR/foxyproxy.properties       |  166 +
+ .../chrome/locale/hr-HR/torwizhelp.dtd             |   13 +
+ .../chrome/locale/hu-HU/amo.properties             |    3 +
+ .../chrome/locale/hu-HU/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/hu-HU/foxyproxy.properties       |  166 +
+ .../chrome/locale/hu-HU/torwizhelp.dtd             |   13 +
+ .../chrome/locale/it-IT/amo.properties             |    3 +
+ .../chrome/locale/it-IT/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/it-IT/foxyproxy.properties       |  160 +
+ .../chrome/locale/it-IT/torwizhelp.dtd             |   13 +
+ .../chrome/locale/ja-JP/amo.properties             |    3 +
+ .../chrome/locale/ja-JP/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/ja-JP/foxyproxy.properties       |  166 +
+ .../chrome/locale/ja-JP/torwizhelp.dtd             |   13 +
+ .../chrome/locale/lv-LV/amo.properties             |    3 +
+ .../chrome/locale/lv-LV/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/lv-LV/foxyproxy.properties       |  160 +
+ .../chrome/locale/lv-LV/torwizhelp.dtd             |   13 +
+ .../chrome/locale/nl/amo.properties                |    3 +
+ .../chrome/locale/nl/foxyproxy.dtd                 |  481 +++
+ .../chrome/locale/nl/foxyproxy.properties          |  166 +
+ .../chrome/locale/nl/torwizhelp.dtd                |   13 +
+ .../chrome/locale/pl-PL/amo.properties             |    3 +
+ .../chrome/locale/pl-PL/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/pl-PL/foxyproxy.properties       |  166 +
+ .../chrome/locale/pl-PL/torwizhelp.dtd             |   13 +
+ .../chrome/locale/pt-BR/amo.properties             |    3 +
+ .../chrome/locale/pt-BR/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/pt-BR/foxyproxy.properties       |  166 +
+ .../chrome/locale/pt-BR/torwizhelp.dtd             |   13 +
+ .../chrome/locale/pt-PT/amo.properties             |    3 +
+ .../chrome/locale/pt-PT/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/pt-PT/foxyproxy.properties       |  166 +
+ .../chrome/locale/pt-PT/torwizhelp.dtd             |   13 +
+ .../chrome/locale/ru-RU/amo.properties             |    3 +
+ .../chrome/locale/ru-RU/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/ru-RU/foxyproxy.properties       |  166 +
+ .../chrome/locale/ru-RU/torwizhelp.dtd             |   13 +
+ .../chrome/locale/sk/amo.properties                |    3 +
+ .../chrome/locale/sk/foxyproxy.dtd                 |  481 +++
+ .../chrome/locale/sk/foxyproxy.properties          |  166 +
+ .../chrome/locale/sk/torwizhelp.dtd                |   13 +
+ .../chrome/locale/sr/amo.properties                |    3 +
+ .../chrome/locale/sr/foxyproxy.dtd                 |  481 +++
+ .../chrome/locale/sr/foxyproxy.properties          |  166 +
+ .../chrome/locale/sr/torwizhelp.dtd                |   13 +
+ .../chrome/locale/sv-SE/amo.properties             |    3 +
+ .../chrome/locale/sv-SE/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/sv-SE/foxyproxy.properties       |  166 +
+ .../chrome/locale/sv-SE/torwizhelp.dtd             |   13 +
+ .../chrome/locale/th-TH/amo.properties             |    3 +
+ .../chrome/locale/th-TH/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/th-TH/foxyproxy.properties       |  166 +
+ .../chrome/locale/th-TH/torwizhelp.dtd             |   13 +
+ .../chrome/locale/tr-TR/amo.properties             |    3 +
+ .../chrome/locale/tr-TR/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/tr-TR/foxyproxy.properties       |  166 +
+ .../chrome/locale/tr-TR/torwizhelp.dtd             |   13 +
+ .../chrome/locale/uk-UA/amo.properties             |    3 +
+ .../chrome/locale/uk-UA/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/uk-UA/foxyproxy.properties       |  166 +
+ .../chrome/locale/uk-UA/torwizhelp.dtd             |   13 +
+ .../chrome/locale/vi/amo.properties                |    3 +
+ .../chrome/locale/vi/foxyproxy.dtd                 |  481 +++
+ .../chrome/locale/vi/foxyproxy.properties          |  166 +
+ .../chrome/locale/vi/torwizhelp.dtd                |   13 +
+ .../chrome/locale/zh-CN/amo.properties             |    3 +
+ .../chrome/locale/zh-CN/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/zh-CN/foxyproxy.properties       |  166 +
+ .../chrome/locale/zh-CN/torwizhelp.dtd             |   13 +
+ .../chrome/locale/zh-TW/amo.properties             |    3 +
+ .../chrome/locale/zh-TW/foxyproxy.dtd              |  481 +++
+ .../chrome/locale/zh-TW/foxyproxy.properties       |  166 +
+ .../chrome/locale/zh-TW/torwizhelp.dtd             |   13 +
+ .../foxyproxy@eric.h.jung/components/autoconf.js   |  493 +++
+ .../components/commandlinehandler.js               |   63 +
+ .../foxyproxy@eric.h.jung/components/common.js     |  320 ++
+ .../foxyproxy@eric.h.jung/components/foxyproxy.js  | 1771 ++++++++
+ .../components/foxyproxyprotocolhandler.js         |  198 +
+ .../foxyproxy@eric.h.jung/components/match.js      |  171 +
+ .../foxyproxy@eric.h.jung/components/proxy.js      |  546 +++
+ .../components/relativeprotocolhandler.js          |   73 +
+ .../defaults/preferences/prefs.js                  |    3 +
+ .../extensions/foxyproxy@eric.h.jung/install.rdf   |   73 +
+ .../foxyproxy@eric.h.jung/modules/superadd.js      |  388 ++
+ .../inspector@mozilla.org/chrome.manifest          |   25 +
+ .../inspector@mozilla.org/chrome/inspector.jar     |  Bin 0 -> 695328 bytes
+ .../components/inspector-cmdline.js                |   93 +
+ .../defaults/preferences/inspector.js              |   47 +
+ .../extensions/inspector@mozilla.org/install.rdf   |   79 +
+ .../chrome/icons/default/winInspectorMain.xpm      |   41 +
+ .../chrome/icons/default/winInspectorMain16.xpm    |   25 +
+ .../OS2/chrome/icons/default/winInspectorMain.ico  |  Bin 0 -> 7824 bytes
+ .../chrome/icons/default/winInspectorMain.ico      |  Bin 0 -> 3638 bytes
+ .../isreaditlater@ideashower.com/chrome.manifest   |    9 +
+ .../chrome/isreaditlater.jar                       |  Bin 0 -> 133225 bytes
+ .../components/RILAPIRequest.js                    |  190 +
+ .../components/RILAPIRequest.xpt                   |  Bin 0 -> 317 bytes
+ .../components/RILassetManager.js                  |  339 ++
+ .../components/RILassetManager.xpt                 |  Bin 0 -> 743 bytes
+ .../components/RILdelegate.js                      | 1291 ++++++
+ .../components/RILlist.js                          | 1226 ++++++
+ .../components/RILofflineQueue.js                  |  446 ++
+ .../components/RILprefs.js                         |  190 +
+ .../components/RILsync.js                          |  673 +++
+ .../components/RILtextDownloader.js                |  151 +
+ .../components/RILtextDownloader.xpt               |  Bin 0 -> 493 bytes
+ .../components/RILwebDownloader.js                 |  795 ++++
+ .../components/RILwebDownloader.xpt                |  Bin 0 -> 411 bytes
+ .../defaults/preferences/prefs.js                  |    1 +
+ .../isreaditlater@ideashower.com/install.rdf       |   30 +
+ .../savesession@noasobi.net/chrome.manifest        |   12 +
+ .../chrome/content/savesession.xul                 |  117 +
+ .../chrome/locale/de-DE/savesession.dtd            |    8 +
+ .../chrome/locale/en-US/savesession.dtd            |    8 +
+ .../chrome/locale/en-US/savesession.properties     |    1 +
+ .../chrome/locale/es-ES/savesession.dtd            |    8 +
+ .../chrome/locale/es-ES/savesession.properties     |    2 +
+ .../chrome/locale/it-IT/savesession.dtd            |    8 +
+ .../chrome/locale/it-IT/savesession.properties     |    2 +
+ .../chrome/locale/ja/savesession.dtd               |    8 +
+ .../chrome/locale/ja/savesession.properties        |    3 +
+ .../chrome/locale/sv-SE/savesession.dtd            |    8 +
+ .../chrome/locale/sv-SE/savesession.properties     |    2 +
+ .../chrome/locale/zh-TW/savesession.dtd            |    8 +
+ .../chrome/locale/zh-TW/savesession.properties     |    2 +
+ .../chrome/skin/SaveExit16x16.png                  |  Bin 0 -> 767 bytes
+ .../chrome/skin/SaveExit24x24.png                  |  Bin 0 -> 939 bytes
+ .../chrome/skin/savesession.css                    |   20 +
+ .../chrome/skin/savesession16x16.png               |  Bin 0 -> 691 bytes
+ .../chrome/skin/savesession24x24.png               |  Bin 0 -> 1502 bytes
+ .../defaults/preferences/savesession.js            |    2 +
+ .../extensions/savesession@noasobi.net/install.rdf |   27 +
+ firefox/trunk/extensions/setVersion.sh             |   10 +
+ .../sharing@addons.mozilla.org/chrome.manifest     |   77 +
+ .../chrome/bandwagon.jar                           |  Bin 0 -> 1534620 bytes
+ .../components/bandwagon-service.js                | 1821 ++++++++
+ .../defaults/preferences/bandwagon.js              |   63 +
+ .../sharing@addons.mozilla.org/install.rdf         |  469 +++
+ .../zhreader@myplace.hell/chrome.manifest          |    8 +
+ .../zhreader@myplace.hell/content/overlay.js       |  201 +
+ .../zhreader@myplace.hell/content/overlay.xul      |   14 +
+ .../zhreader@myplace.hell/content/pref.js          |  110 +
+ .../zhreader@myplace.hell/content/xrlin.pref.js    |   37 +
+ .../extensions/zhreader@myplace.hell/install.rdf   |   23 +
+ .../zhreader@myplace.hell/locale/en-US/overlay.dtd |    2 +
+ .../locale/en-US/zhreader.dtd                      |    2 +
+ .../zhreader@myplace.hell/skin/zhreader.png        |  Bin 0 -> 4270 bytes
+ .../chrome.manifest                                |   16 +
+ .../chrome/content/binding.xml                     |   26 +
+ .../chrome/content/gladder.js                      | 1282 ++++++
+ .../chrome/content/gladder.xul                     |   85 +
+ .../chrome/content/options.xul                     |  160 +
+ .../chrome/locale/en-US/gladder.dtd                |   91 +
+ .../chrome/locale/en-US/gladder.properties         |   14 +
+ .../chrome/locale/zh-CN/gladder.dtd                |   91 +
+ .../chrome/locale/zh-CN/gladder.properties         |   14 +
+ .../chrome/skin/classic/gladder.css                |   27 +
+ .../chrome/skin/classic/gladder.png                |  Bin 0 -> 709 bytes
+ .../chrome/skin/classic/gladderD.png               |  Bin 0 -> 505 bytes
+ .../chrome/skin/classic/gladderG.png               |  Bin 0 -> 526 bytes
+ .../chrome/skin/classic/options.css                |   70 +
+ .../chrome/skin/classic/proxyIcon.png              |  Bin 0 -> 902 bytes
+ .../components/glNetworkStatus.js                  |  208 +
+ .../components/glNetworkStatus.xpt                 |  Bin 0 -> 181 bytes
+ .../components/glPHProxy.js                        |  303 ++
+ .../components/glPHProxy.xpt                       |  Bin 0 -> 229 bytes
+ .../components/glPHProxyManager.js                 |  412 ++
+ .../components/glPHProxyManager.xpt                |  Bin 0 -> 323 bytes
+ .../defaults/preferences/options.js                |   18 +
+ .../install.rdf                                    |   36 +
+ .../license.txt                                    |   23 +
+ .../chrome.manifest                                |   21 +
+ .../chrome/littlefox.jar                           |  Bin 0 -> 435248 bytes
+ .../icon.png                                       |  Bin 0 -> 393 bytes
+ .../install.rdf                                    |   20 +
+ .../preview.png                                    |  Bin 0 -> 5656 bytes
+ .../META-INF/manifest.mf                           |  148 +
+ .../META-INF/zigbert.rsa                           |  Bin 0 -> 3056 bytes
+ .../META-INF/zigbert.sf                            |  151 +
+ .../chrome.manifest                                |   62 +
+ .../chrome/deliciousBookmarks.jar                  |  Bin 0 -> 1051536 bytes
+ .../components/build.sh                            |   16 +
+ .../components/deliciousAwesomebarSearch.js        |  325 ++
+ .../components/nsIAutoCompleteSearchShare.js       |  225 +
+ .../components/nsISocialStore.idl                  |  179 +
+ .../components/nsISocialStore.xpt                  |  Bin 0 -> 934 bytes
+ .../components/nsISocialStoreCallback.idl          |    9 +
+ .../components/nsISocialStoreCallback.xpt          |  Bin 0 -> 207 bytes
+ .../components/nsIYBookmark.idl                    |   27 +
+ .../components/nsIYBookmark.xpt                    |  Bin 0 -> 900 bytes
+ .../components/nsIYBookmarkSyncService.idl         |   48 +
+ .../components/nsIYBookmarkSyncService.xpt         |  Bin 0 -> 353 bytes
+ .../components/nsIYBundle.idl                      |   11 +
+ .../components/nsIYBundle.xpt                      |  Bin 0 -> 290 bytes
+ .../components/nsIYDebugService.idl                |   30 +
+ .../components/nsIYDebugService.xpt                |  Bin 0 -> 178 bytes
+ .../components/nsIYDelLocalStore.idl               |  661 +++
+ .../components/nsIYDelLocalStore.xpt               |  Bin 0 -> 2869 bytes
+ .../components/nsYBookmarkSyncService.js           | 1853 ++++++++
+ .../components/nsYDebugService.js                  |  161 +
+ .../components/nsYDelLocalStore.js                 | 4413 ++++++++++++++++++++
+ .../components/ssrDelicious.js                     | 1815 ++++++++
+ .../components/ybAutoComplete.js                   |  193 +
+ .../defaults/preferences/ybookmarks.js             |   98 +
+ .../install.rdf                                    |   20 +
+ .../resource/modules/ybjson.jsm                    |   83 +
+ .../searchplugins/delicious.png                    |  Bin 0 -> 897 bytes
+ .../searchplugins/delicious.src                    |   18 +
+ .../LICENSE.txt                                    |  133 +
+ .../META-INF/manifest.mf                           |  168 +
+ .../META-INF/zigbert.rsa                           |  Bin 0 -> 3312 bytes
+ .../META-INF/zigbert.sf                            |  171 +
+ .../chrome.manifest                                |   83 +
+ .../chrome/google-toolbar.jar                      |  Bin 0 -> 1145650 bytes
+ .../components/bootstrap.js                        |  376 ++
+ .../components/googletoolbar.xpt                   |  Bin 0 -> 4320 bytes
+ .../components/metrics-module.js                   |   23 +
+ .../defaults/components/dictionaries_config.json   |  582 +++
+ .../defaults/components/html-sanitizer-minified.js |   24 +
+ .../defaults/components/json_comp.js               |   21 +
+ .../defaults/components/share_providers.json       |   83 +
+ .../defaults/components/suggest_window.html        |  113 +
+ .../defaults/contenthandling/doc.ico               |  Bin 0 -> 22486 bytes
+ .../defaults/custombuttons/books.google.com.xml    |  116 +
+ .../defaults/custombuttons/calendar.google.com.xml |  118 +
+ .../defaults/custombuttons/docs.google.com.xml     |  116 +
+ .../custombuttons/google.com_blog_search.xml       |  102 +
+ .../defaults/custombuttons/google.com_finance.xml  |  116 +
+ .../defaults/custombuttons/google.com_patents.xml  |  116 +
+ .../defaults/custombuttons/google.com_scholar.xml  |  116 +
+ .../defaults/custombuttons/photos.google.com.xml   |  116 +
+ .../toolbar.google.com_CTK0Y7F4MTG6NKYH03WT.xml    |  117 +
+ .../toolbar.google.com_J66T77NJDBMW4FEUU7FA.xml    |  198 +
+ .../toolbar.google.com_O8Y91YHB24Z6SR0SGYSK.xml    |  162 +
+ .../defaults/custombuttons/video.google.com.xml    |  117 +
+ .../defaults/preferences/options.js                |  117 +
+ .../install.rdf                                    |   72 +
+ .../lib/metrics.js                                 |   97 +
+ .../lib/toolbar.js                                 | 2741 ++++++++++++
+ .../lib/unitsdata.bz2                              |  Bin 0 -> 4081 bytes
+ .../chrome.manifest                                |   21 +
+ .../chrome/microfox.jar                            |  Bin 0 -> 319618 bytes
+ .../icon.png                                       |  Bin 0 -> 244 bytes
+ .../install.rdf                                    |   20 +
+ .../preview.png                                    |  Bin 0 -> 1650 bytes
+ .../chrome.manifest                                |    5 +
+ .../chrome/mc.xpi                                  |  Bin 0 -> 1015164 bytes
+ .../icon.png                                       |  Bin 0 -> 3423 bytes
+ .../install.rdf                                    |   20 +
+ .../preview.png                                    |  Bin 0 -> 7265 bytes
+ .../LICENSE.txt                                    |   36 +
+ .../chrome.manifest                                |   36 +
+ .../chrome/scrapbook.jar                           |  Bin 0 -> 1073746 bytes
+ .../defaults/preferences/scrapbook-prefs.js        |   27 +
+ .../install.rdf                                    |   51 +
+ .../chrome.manifest                                |   14 +
+ .../chrome/linux/browser/Go-arrow-rtl.png          |  Bin 0 -> 570 bytes
+ .../chrome/linux/browser/Go-arrow.png              |  Bin 0 -> 573 bytes
+ .../chrome/linux/browser/Info.png                  |  Bin 0 -> 767 bytes
+ .../chrome/linux/browser/Search-glass-rtl.png      |  Bin 0 -> 324 bytes
+ .../chrome/linux/browser/Search-glass.png          |  Bin 0 -> 385 bytes
+ .../chrome/linux/browser/Secure.png                |  Bin 0 -> 373 bytes
+ .../chrome/linux/browser/Security-broken.png       |  Bin 0 -> 443 bytes
+ .../chrome/linux/browser/Throbber-small.png        |  Bin 0 -> 214 bytes
+ .../chrome/linux/browser/Throbber.gif              |  Bin 0 -> 913 bytes
+ .../chrome/linux/browser/Throbber.png              |  Bin 0 -> 223 bytes
+ .../chrome/linux/browser/Toolbar-small.png         |  Bin 0 -> 5754 bytes
+ .../chrome/linux/browser/Toolbar.png               |  Bin 0 -> 8668 bytes
+ .../chrome/linux/browser/bf-drop-small.png         |  Bin 0 -> 163 bytes
+ .../chrome/linux/browser/bf-drop.png               |  Bin 0 -> 165 bytes
+ .../chrome/linux/browser/browser-default.css       | 1339 ++++++
+ .../browser/browser-newwave-menu-statusbar.css     |  110 +
+ .../chrome/linux/browser/browser-newwave.css       |  402 ++
+ .../chrome/linux/browser/browser.css               |    7 +
+ .../chrome/linux/browser/browser.xml               |   18 +
+ .../chrome/linux/browser/engineManager.css         |    9 +
+ .../chrome/linux/browser/feeds/audioFeedIcon.png   |  Bin 0 -> 1794 bytes
+ .../chrome/linux/browser/feeds/audioFeedIcon16.png |  Bin 0 -> 799 bytes
+ .../chrome/linux/browser/feeds/feedIcon.png        |  Bin 0 -> 1794 bytes
+ .../chrome/linux/browser/feeds/feedIcon16.png      |  Bin 0 -> 799 bytes
+ .../chrome/linux/browser/feeds/subscribe.css       |  183 +
+ .../chrome/linux/browser/feeds/videoFeedIcon.png   |  Bin 0 -> 1794 bytes
+ .../chrome/linux/browser/feeds/videoFeedIcon16.png |  Bin 0 -> 799 bytes
+ .../chrome/linux/browser/identity.png              |  Bin 0 -> 10096 bytes
+ .../chrome/linux/browser/monitor.png               |  Bin 0 -> 6217 bytes
+ .../chrome/linux/browser/monitor_16-10.png         |  Bin 0 -> 6787 bytes
+ .../chrome/linux/browser/newtab.png                |  Bin 0 -> 206 bytes
+ .../linux/browser/newwave-gradient-reverse.png     |  Bin 0 -> 232 bytes
+ .../chrome/linux/browser/newwave-gradient.png      |  Bin 0 -> 233 bytes
+ .../chrome/linux/browser/newwave-list-selected.png |  Bin 0 -> 331 bytes
+ .../chrome/linux/browser/newwave-menubar.png       |  Bin 0 -> 172 bytes
+ .../chrome/linux/browser/newwave-newtab.png        |  Bin 0 -> 185 bytes
+ .../chrome/linux/browser/newwave-shadow-top.png    |  Bin 0 -> 208 bytes
+ .../chrome/linux/browser/newwave-statusbar.png     |  Bin 0 -> 231 bytes
+ .../chrome/linux/browser/newwave-tab-active.png    |  Bin 0 -> 191 bytes
+ .../chrome/linux/browser/newwave-tab-animated.png  |  Bin 0 -> 985 bytes
+ .../browser/newwave-tab-close-active-hover.png     |  Bin 0 -> 630 bytes
+ .../browser/newwave-tab-close-active-pressed.png   |  Bin 0 -> 703 bytes
+ .../linux/browser/newwave-tab-close-active.png     |  Bin 0 -> 448 bytes
+ .../browser/newwave-tab-close-inactive-hover.png   |  Bin 0 -> 554 bytes
+ .../browser/newwave-tab-close-inactive-pressed.png |  Bin 0 -> 715 bytes
+ .../linux/browser/newwave-tab-close-inactive.png   |  Bin 0 -> 463 bytes
+ .../chrome/linux/browser/newwave-tab-over.png      |  Bin 0 -> 985 bytes
+ .../chrome/linux/browser/newwave-tab.png           |  Bin 0 -> 226 bytes
+ .../linux/browser/newwave-tabs-container.png       |  Bin 0 -> 228 bytes
+ .../chrome/linux/browser/newwave-toolbar.png       |  Bin 0 -> 216 bytes
+ .../chrome/linux/browser/page-livemarks.png        |  Bin 0 -> 830 bytes
+ .../chrome/linux/browser/pageInfo.css              |  259 ++
+ .../chrome/linux/browser/pageInfo.png              |  Bin 0 -> 8874 bytes
+ .../chrome/linux/browser/places/MenuBarBg.png      |  Bin 0 -> 201 bytes
+ .../linux/browser/places/bookmarkProperties.css    |   68 +
+ .../chrome/linux/browser/places/bookmarksMenu.png  |  Bin 0 -> 461 bytes
+ .../linux/browser/places/bookmarksToolbar.png      |  Bin 0 -> 508 bytes
+ .../chrome/linux/browser/places/calendar.png       |  Bin 0 -> 670 bytes
+ .../linux/browser/places/editBookmarkOverlay.css   |   71 +
+ .../chrome/linux/browser/places/livemark-item.png  |  Bin 0 -> 732 bytes
+ .../chrome/linux/browser/places/organizer.css      |  313 ++
+ .../chrome/linux/browser/places/organizer.xml      |   18 +
+ .../chrome/linux/browser/places/pageStarred.png    |  Bin 0 -> 767 bytes
+ .../chrome/linux/browser/places/places.css         |  204 +
+ .../chrome/linux/browser/places/query.png          |  Bin 0 -> 678 bytes
+ .../chrome/linux/browser/places/searching_16.png   |  Bin 0 -> 4167 bytes
+ .../chrome/linux/browser/places/starPage.png       |  Bin 0 -> 595 bytes
+ .../chrome/linux/browser/places/starred48.png      |  Bin 0 -> 2658 bytes
+ .../chrome/linux/browser/places/tag.png            |  Bin 0 -> 877 bytes
+ .../linux/browser/places/toolbarDropMarker.png     |  Bin 0 -> 575 bytes
+ .../chrome/linux/browser/places/twisty-closed.gif  |  Bin 0 -> 372 bytes
+ .../chrome/linux/browser/places/twisty-open.gif    |  Bin 0 -> 372 bytes
+ .../linux/browser/places/unsortedBookmarks.png     |  Bin 0 -> 748 bytes
+ .../chrome/linux/browser/places/unstarred48.png    |  Bin 0 -> 2255 bytes
+ .../chrome/linux/browser/places/wrench.png         |  Bin 0 -> 610 bytes
+ .../chrome/linux/browser/preferences/Options.png   |  Bin 0 -> 12334 bytes
+ .../chrome/linux/browser/preferences/alwaysAsk.png |  Bin 0 -> 637 bytes
+ .../linux/browser/preferences/application.png      |  Bin 0 -> 547 bytes
+ .../linux/browser/preferences/applications.css     |   98 +
+ .../chrome/linux/browser/preferences/mail.png      |  Bin 0 -> 548 bytes
+ .../linux/browser/preferences/preferences.css      |  146 +
+ .../chrome/linux/browser/searchbar.css             |   99 +
+ .../chrome/linux/browser/setDesktopBackground.css  |   14 +
+ .../chrome/linux/browser/statusgrip.png            |  Bin 0 -> 436 bytes
+ .../linux/browser/tabbrowser/tab-arrow-end.png     |  Bin 0 -> 255 bytes
+ .../linux/browser/tabbrowser/tab-arrow-start.png   |  Bin 0 -> 277 bytes
+ .../linux/browser/tabbrowser/tabDragIndicator.png  |  Bin 0 -> 451 bytes
+ .../chrome/linux/browser/urlbar-favicon-glow.png   |  Bin 0 -> 619 bytes
+ .../linux/browser/urlbar/sb_smoothline-active.png  |  Bin 0 -> 1038 bytes
+ .../linux/browser/urlbar/sb_smoothline-over.png    |  Bin 0 -> 1032 bytes
+ .../chrome/linux/browser/urlbar/sb_smoothline.png  |  Bin 0 -> 275 bytes
+ .../chrome/linux/communicator/b_favicon.png        |  Bin 0 -> 475 bytes
+ .../chrome/linux/communicator/bookmark-24.png      |  Bin 0 -> 970 bytes
+ .../chrome/linux/communicator/bookmark-icons.png   |  Bin 0 -> 1197 bytes
+ .../linux/communicator/bookmark_calendar.png       |  Bin 0 -> 1443 bytes
+ .../linux/communicator/bookmark_facebook.png       |  Bin 0 -> 1310 bytes
+ .../chrome/linux/communicator/bookmark_google.png  |  Bin 0 -> 1810 bytes
+ .../chrome/linux/communicator/bookmark_mail.png    |  Bin 0 -> 1765 bytes
+ .../chrome/linux/communicator/bookmarks-small.png  |  Bin 0 -> 855 bytes
+ .../chrome/linux/communicator/bookmarks.png        |  Bin 0 -> 1025 bytes
+ .../chrome/linux/communicator/communicator.css     |    2 +
+ .../chrome/linux/communicator/copy-small.png       |  Bin 0 -> 1461 bytes
+ .../chrome/linux/communicator/copy.png             |  Bin 0 -> 1987 bytes
+ .../chrome/linux/communicator/cut-small.png        |  Bin 0 -> 1595 bytes
+ .../chrome/linux/communicator/cut.png              |  Bin 0 -> 2368 bytes
+ .../chrome/linux/communicator/dl_manager-small.png |  Bin 0 -> 1006 bytes
+ .../chrome/linux/communicator/dl_manager.png       |  Bin 0 -> 1380 bytes
+ .../chrome/linux/communicator/history-16.png       |  Bin 0 -> 793 bytes
+ .../chrome/linux/communicator/history-small.png    |  Bin 0 -> 1550 bytes
+ .../chrome/linux/communicator/history1.png         |  Bin 0 -> 1948 bytes
+ .../chrome/linux/communicator/history2.png         |  Bin 0 -> 2098 bytes
+ .../chrome/linux/communicator/home-16-bg.png       |  Bin 0 -> 462 bytes
+ .../chrome/linux/communicator/home-16.png          |  Bin 0 -> 713 bytes
+ .../chrome/linux/communicator/home-small.png       |  Bin 0 -> 1065 bytes
+ .../chrome/linux/communicator/home.png             |  Bin 0 -> 1357 bytes
+ .../chrome/linux/communicator/newTab-small.png     |  Bin 0 -> 950 bytes
+ .../chrome/linux/communicator/newTab.png           |  Bin 0 -> 1381 bytes
+ .../chrome/linux/communicator/new_window-small.png |  Bin 0 -> 1100 bytes
+ .../chrome/linux/communicator/new_window.png       |  Bin 0 -> 1618 bytes
+ .../chrome/linux/communicator/newtabbar.png        |  Bin 0 -> 294 bytes
+ .../chrome/linux/communicator/paste-small.png      |  Bin 0 -> 1593 bytes
+ .../chrome/linux/communicator/paste.png            |  Bin 0 -> 2138 bytes
+ .../chrome/linux/communicator/print-small.png      |  Bin 0 -> 886 bytes
+ .../chrome/linux/communicator/print.png            |  Bin 0 -> 1073 bytes
+ .../chrome/linux/communicator/progress.png         |  Bin 0 -> 165 bytes
+ .../chrome/linux/mozapps/downloads/buttons.png     |  Bin 0 -> 2288 bytes
+ .../linux/mozapps/downloads/downloadIcon.png       |  Bin 0 -> 1533 bytes
+ .../linux/mozapps/downloads/downloadStatusIcon.png |  Bin 0 -> 744 bytes
+ .../chrome/linux/mozapps/downloads/downloads.css   |  110 +
+ .../mozapps/downloads/newwave-list-selected.png    |  Bin 0 -> 331 bytes
+ .../linux/mozapps/downloads/unknownContentType.css |   26 +
+ .../chrome/linux/mozapps/plugins/missingPlugin.css |   37 +
+ .../linux/mozapps/plugins/pluginGeneric-16.png     |  Bin 0 -> 794 bytes
+ .../chrome/linux/mozapps/plugins/pluginGeneric.png |  Bin 0 -> 1894 bytes
+ .../chrome/linux/mozapps/shared/itemFader.png      |  Bin 0 -> 849 bytes
+ .../chrome/linux/mozapps/shared/itemSelected.png   |  Bin 0 -> 1589 bytes
+ .../chrome/linux/mozapps/shared/richview.css       |   21 +
+ .../chrome/linux/mozapps/shared/richview.xml       |   22 +
+ .../chrome/linux/mozapps/shared/viewFader.png      |  Bin 0 -> 849 bytes
+ .../chrome/linux/mozapps/viewsource/viewsource.css |   49 +
+ .../icon.png                                       |  Bin 0 -> 1121 bytes
+ .../install.rdf                                    |   33 +
+ .../preview.png                                    |  Bin 0 -> 7061 bytes
+ .../chrome.manifest                                |    3 +
+ .../chrome/internal.jar                            |  Bin 0 -> 495826 bytes
+ .../icon.png                                       |  Bin 0 -> 1944 bytes
+ .../install.rdf                                    |   35 +
+ .../preview.png                                    |  Bin 0 -> 12991 bytes
+ .../7zip.bat                                       |   20 +
+ .../build.py                                       |  136 +
+ .../chrome.manifest                                |   10 +
+ .../chrome/icons/default/extensionbuilder.ico      |  Bin 0 -> 1150 bytes
+ .../chrome/icons/default/extensionbuilder.xbm      |    6 +
+ .../chrome/icons/default/htmledit.ico              |  Bin 0 -> 1406 bytes
+ .../chrome/icons/default/htmledit.xbm              |    6 +
+ .../chrome/icons/default/jrx.ico                   |  Bin 0 -> 1406 bytes
+ .../chrome/icons/default/jrx.xbm                   |    6 +
+ .../chrome/icons/default/jsenvironment.ico         |  Bin 0 -> 1406 bytes
+ .../chrome/icons/default/jsenvironment.xbm         |    6 +
+ .../chrome/icons/default/jsshell.ico               |  Bin 0 -> 1406 bytes
+ .../chrome/icons/default/jsshell.xbm               |    6 +
+ .../chrome/icons/default/xpathtester.ico           |  Bin 0 -> 1406 bytes
+ .../chrome/icons/default/xpathtester.xbm           |    6 +
+ .../chrome/icons/default/xuledit.ico               |  Bin 0 -> 1406 bytes
+ .../chrome/icons/default/xuledit.xbm               |    6 +
+ .../config_build.sh                                |    6 +
+ .../content/chromeShellExtras.js                   |  128 +
+ .../content/commonOverlay.xul                      |   10 +
+ .../content/contents.rdf                           |   38 +
+ .../content/extensionbuilder.js                    | 1212 ++++++
+ .../content/extensionbuilder.xul                   |   72 +
+ .../content/extensiondevOverlay.js                 |  165 +
+ .../content/firefoxOverlay.xul                     |   87 +
+ .../content/htmledit.xul                           |   53 +
+ .../content/htmledit/editbox.html                  |   57 +
+ .../content/htmledit/index.html                    |   13 +
+ .../content/injector.js                            |   48 +
+ .../content/injector.xul                           |   42 +
+ .../content/install-edit.js                        |  419 ++
+ .../content/install-edit.xul                       |  174 +
+ .../content/jrx.html                               | 1493 +++++++
+ .../content/jrx.xul                                |   20 +
+ .../content/jsenv.js                               |   62 +
+ .../content/jsenv.xul                              |   44 +
+ .../content/jsenv/blank.html                       |    1 +
+ .../content/jsenv/index.html                       |   21 +
+ .../content/jsenv/input.html                       |   31 +
+ .../content/jsenv/jsenv.diff                       |   36 +
+ .../content/jsenv/toolbar.html                     |  196 +
+ .../content/loadsaveutils.js                       |  110 +
+ .../content/options.xul                            |   84 +
+ .../content/rdfhistory.js                          |  150 +
+ .../content/read-install-rdf.js                    |  128 +
+ .../content/seamonkeyOverlay.xul                   |   60 +
+ .../content/shell.html                             |  776 ++++
+ .../content/shell.xul                              |   20 +
+ .../content/thunderbirdOverlay.xul                 |   85 +
+ .../content/xpath.js                               |  135 +
+ .../content/xpath.xul                              |   59 +
+ .../content/xpathblank.html                        |   33 +
+ .../content/xuledit.js                             |   82 +
+ .../content/xuledit.xul                            |   38 +
+ .../cygzip.bat                                     |   21 +
+ .../install.js                                     |   49 +
+ .../install.rdf                                    |   59 +
+ .../locale/en-US/contents.rdf                      |   22 +
+ .../locale/en-US/extensiondev.dtd                  |  109 +
+ .../locale/en-US/prefwindow.dtd                    |    9 +
+ .../skin/contents.rdf                              |   32 +
+ .../skin/extensionbuilder-large.png                |  Bin 0 -> 1066 bytes
+ .../skin/extensionbuilder-small.png                |  Bin 0 -> 653 bytes
+ .../skin/extensiondev.css                          |  100 +
+ .../skin/extensiondev.png                          |  Bin 0 -> 1230 bytes
+ .../skin/htmledit-large.png                        |  Bin 0 -> 349 bytes
+ .../skin/htmledit-small.png                        |  Bin 0 -> 298 bytes
+ .../skin/jrx-large.png                             |  Bin 0 -> 398 bytes
+ .../skin/jrx-small.png                             |  Bin 0 -> 183 bytes
+ .../skin/jsenv-large.png                           |  Bin 0 -> 394 bytes
+ .../skin/jsenv-small.png                           |  Bin 0 -> 318 bytes
+ .../skin/jsinj-large.png                           |  Bin 0 -> 291 bytes
+ .../skin/jsinj-small.png                           |  Bin 0 -> 334 bytes
+ .../skin/jsshell-large.png                         |  Bin 0 -> 165 bytes
+ .../skin/jsshell-small.png                         |  Bin 0 -> 134 bytes
+ .../skin/reloadchrome-large.png                    |  Bin 0 -> 1893 bytes
+ .../skin/reloadchrome-small.png                    |  Bin 0 -> 983 bytes
+ .../skin/xpath-large.png                           |  Bin 0 -> 187 bytes
+ .../skin/xpath-small.png                           |  Bin 0 -> 161 bytes
+ .../skin/xpath.css                                 |    6 +
+ .../skin/xuledit-large.png                         |  Bin 0 -> 258 bytes
+ .../skin/xuledit-small.png                         |  Bin 0 -> 246 bytes
+ .../version-notes.html                             |   30 +
+ .../winrar.bat                                     |   18 +
+ .../winzip.bat                                     |   18 +
+ .../wzcline.bat                                    |   18 +
+ .../{75739dec-72db-4020-aa9a-6afa6744759b}/zip.bat |   15 +
+ .../{75739dec-72db-4020-aa9a-6afa6744759b}/zip.sh  |    9 +
+ .../chrome.manifest                                |   14 +
+ .../defaults/preferences/tamperdata.js             |   62 +
+ .../install.rdf                                    |   46 +
+ .../tamperdata.jar                                 |  Bin 0 -> 81214 bytes
+ .../META-INF/manifest.mf                           |   29 +
+ .../META-INF/zigbert.rsa                           |  Bin 0 -> 3070 bytes
+ .../META-INF/zigbert.sf                            |   32 +
+ .../chrome.manifest                                |   16 +
+ .../chrome/stumbleupon.jar                         |  Bin 0 -> 336800 bytes
+ .../components/stumbleuponService.js               |  894 ++++
+ .../install.js                                     |   88 +
+ .../install.rdf                                    |   50 +
+ .../{DDC359D1-844A-42a7-9AA1-88A850A938A8}/GPL     |  340 ++
+ .../{DDC359D1-844A-42a7-9AA1-88A850A938A8}/LGPL    |  504 +++
+ .../{DDC359D1-844A-42a7-9AA1-88A850A938A8}/LICENSE |   24 +
+ .../{DDC359D1-844A-42a7-9AA1-88A850A938A8}/MPL     |  470 +++
+ .../chrome.manifest                                |   99 +
+ .../chrome/chrome.jar                              |  Bin 0 -> 1376323 bytes
+ .../chrome/icons/default/DownThemAll.ico           |  Bin 0 -> 11926 bytes
+ .../chrome/icons/default/DownThemAll.xpm           |  325 ++
+ .../components/contentHandling.js                  |  112 +
+ .../components/contenthandling.idl                 |   51 +
+ .../components/contenthandling.xpt                 |  Bin 0 -> 192 bytes
+ .../components/debugService.idl                    |   55 +
+ .../components/debugService.js                     |  160 +
+ .../components/debugService.xpt                    |  Bin 0 -> 293 bytes
+ .../components/filterManager.idl                   |   78 +
+ .../components/filterManager.js                    |  472 +++
+ .../components/filterManager.xpt                   |  Bin 0 -> 757 bytes
+ .../components/migrationService.js                 |  223 +
+ .../components/privacycontrol.js                   |  131 +
+ .../defaults/preferences/dta.js                    |   43 +
+ .../defaults/preferences/filters.js                |   47 +
+ .../defaults/preferences/privacycontrol.js         |    4 +
+ .../icon.png                                       |  Bin 0 -> 1926 bytes
+ .../install.rdf                                    |   57 +
+ .../modules/cothread.jsm                           |  164 +
+ .../modules/loggedprompter.jsm                     |   92 +
+ .../modules/mediator.jsm                           |  153 +
+ .../modules/preallocator.jsm                       |  155 +
+ .../modules/preferences.jsm                        |  208 +
+ .../modules/prompts.jsm                            |  130 +
+ .../modules/utils.jsm                              |  238 ++
+ .../modules/version.jsm                            |   21 +
+ .../META-INF/manifest.mf                           |   58 +
+ .../META-INF/zigbert.rsa                           |  Bin 0 -> 3291 bytes
+ .../META-INF/zigbert.sf                            |   61 +
+ .../application.ini                                |    9 +
+ .../chrome.manifest                                |    2 +
+ .../chrome/jslib.jar                               |  Bin 0 -> 171635 bytes
+ .../chrome/jsliblive/contents.rdf                  |   47 +
+ .../chrome/jsliblive/jsliblive.xul                 |   34 +
+ .../components/jslib-dom.js                        |  147 +
+ .../components/jslib-service.js                    |  519 +++
+ .../components/jslib.xpt                           |  Bin 0 -> 135 bytes
+ .../defaults/preferences/prefs.js                  |    1 +
+ .../install.js                                     |  231 +
+ .../install.rdf                                    |  123 +
+ .../chrome.manifest                                |  164 +
+ .../chrome/dwhelper.jar                            |  Bin 0 -> 493938 bytes
+ .../components/dhAddToBlackListProcessor.js        |   84 +
+ .../components/dhConvConfHandler.js                |  227 +
+ .../components/dhConvertMgr.js                     | 1279 ++++++
+ .../components/dhCopyUrlProcessor.js               |   86 +
+ .../components/dhCore.js                           | 1713 ++++++++
+ .../components/dhDOMHook.js                        |  209 +
+ .../components/dhDownloadConvertProcessor.js       |   80 +
+ .../components/dhDownloadMgr.js                    |  391 ++
+ .../components/dhDownloadProcessor.js              |   76 +
+ .../components/dhDumpProcessor.js                  |   84 +
+ .../components/dhFlashgotDownloadProcessor.js      |   87 +
+ .../components/dhIContextItem.xpt                  |  Bin 0 -> 308 bytes
+ .../components/dhIConversionListener.xpt           |  Bin 0 -> 248 bytes
+ .../components/dhIConvertMgr.xpt                   |  Bin 0 -> 1039 bytes
+ .../components/dhICore.xpt                         |  Bin 0 -> 1122 bytes
+ .../components/dhIDOMHook.xpt                      |  Bin 0 -> 179 bytes
+ .../components/dhIDownloadListener.xpt             |  Bin 0 -> 248 bytes
+ .../components/dhIDownloadMgr.xpt                  |  Bin 0 -> 713 bytes
+ .../components/dhIMP3Tunes.xpt                     |  Bin 0 -> 395 bytes
+ .../components/dhIMediaListMgr.xpt                 |  Bin 0 -> 372 bytes
+ .../components/dhIPreProcessor.xpt                 |  Bin 0 -> 234 bytes
+ .../components/dhIProbe.xpt                        |  Bin 0 -> 324 bytes
+ .../components/dhIProbeMouseListener.xpt           |  Bin 0 -> 215 bytes
+ .../components/dhIProcessor.xpt                    |  Bin 0 -> 352 bytes
+ .../components/dhISmartNamer.xpt                   |  Bin 0 -> 464 bytes
+ .../components/dhITwitter.xpt                      |  Bin 0 -> 232 bytes
+ .../components/dhIUtilService.xpt                  |  Bin 0 -> 3732 bytes
+ .../components/dhIYTHQChecker.xpt                  |  Bin 0 -> 269 bytes
+ .../components/dhIYTHQCheckerListener.xpt          |  Bin 0 -> 203 bytes
+ .../components/dhIYTInfo.xpt                       |  Bin 0 -> 303 bytes
+ .../components/dhIYTLinkFinder.xpt                 |  Bin 0 -> 271 bytes
+ .../components/dhIYoutubeTool.xpt                  |  Bin 0 -> 196 bytes
+ .../components/dhLicenseHandler.js                 |  183 +
+ .../components/dhMP3Tunes.js                       |  372 ++
+ .../components/dhMP3TunesLockerProcessor.js        |   77 +
+ .../components/dhMP3TunesMobileProcessor.js        |   79 +
+ .../components/dhMediaListMgr.js                   |  243 ++
+ .../components/dhMedialinkProbe.js                 |  208 +
+ .../components/dhNetworkProbe.js                   |  454 ++
+ .../components/dhQuickDownloadProcessor.js         |   75 +
+ .../components/dhSafeModeHandler.js                |  261 ++
+ .../components/dhSecretHelperProcessor.js          |   88 +
+ .../components/dhSmartNamer.js                     |  669 +++
+ .../components/dhTwitterProcessor.js               |  335 ++
+ .../components/dhUtilService.js                    | 1165 ++++++
+ .../components/dhYTInfo.js                         |  113 +
+ .../components/dhYoutubeLinksContextItem.js        |  325 ++
+ .../components/dhYoutubeProbe.js                   |  263 ++
+ .../defaults/preferences/prefs-dwhelper.js         |   90 +
+ .../install.rdf                                    |   94 +
+ .../local/wm.png                                   |  Bin 0 -> 2494 bytes
+ .../chrome.manifest                                |   24 +
+ .../chrome/wmlbrowser.jar                          |  Bin 0 -> 98008 bytes
+ .../components/wml-service.js                      |  363 ++
+ .../defaults/preferences/prefs.js                  |    1 +
+ .../install.js                                     |  231 +
+ .../install.rdf                                    |   66 +
+ .../META-INF/manifest.mf                           |  118 +
+ .../META-INF/zigbert.rsa                           |  Bin 0 -> 4746 bytes
+ .../META-INF/zigbert.sf                            |  121 +
+ .../chrome.manifest                                |   69 +
+ .../chrome/adblockplus.jar                         |  Bin 0 -> 1456436 bytes
+ .../components/Initializer.js                      |  107 +
+ .../defaults/patterns.ini                          |   14 +
+ .../defaults/preferences/adblockplus.js            |   32 +
+ .../icon.png                                       |  Bin 0 -> 708 bytes
+ .../install.rdf                                    |  499 +++
+ .../modules/AppIntegration.jsm                     | 1264 ++++++
+ .../modules/AppIntegrationFennec.jsm               |  270 ++
+ .../modules/Bootstrap.jsm                          |  255 ++
+ .../modules/ContentPolicy.jsm                      |  632 +++
+ .../modules/ElemHide.jsm                           |  377 ++
+ .../modules/FilterClasses.jsm                      |  773 ++++
+ .../modules/FilterListener.jsm                     |  210 +
+ .../modules/FilterStorage.jsm                      |  766 ++++
+ .../modules/Matcher.jsm                            |  391 ++
+ .../modules/ObjectTabs.jsm                         |  523 +++
+ .../modules/Prefs.jsm                              |  316 ++
+ .../modules/Public.jsm                             |  209 +
+ .../modules/RequestNotifier.jsm                    |  401 ++
+ .../modules/SubscriptionClasses.jsm                |  460 ++
+ .../modules/Synchronizer.jsm                       |  568 +++
+ .../modules/Utils.jsm                              |  449 ++
+ .../chrome.manifest                                |    5 +
+ .../chrome/chrome.jar                              |  Bin 0 -> 514447 bytes
+ .../icon.png                                       |  Bin 0 -> 1832 bytes
+ .../install.rdf                                    |   32 +
+ .../preview.png                                    |  Bin 0 -> 3400 bytes
+ .../chrome.manifest                                |   45 +
+ .../components/gmIBrowserWindow.xpt                |  Bin 0 -> 265 bytes
+ .../components/gmIGreasemonkeyService.xpt          |  Bin 0 -> 267 bytes
+ .../components/gmIMenuCommand.xpt                  |  Bin 0 -> 378 bytes
+ .../components/greasemonkey.js                     |  552 +++
+ .../content/accelimation.js                        |  123 +
+ .../content/browser.js                             |  666 +++
+ .../content/browser.xul                            |  135 +
+ .../content/config.js                              |  642 +++
+ .../content/convert2RegExp.js                      |   53 +
+ .../content/icon_medium.png                        |  Bin 0 -> 2421 bytes
+ .../content/icon_small.png                         |  Bin 0 -> 889 bytes
+ .../content/icon_small_disabled.png                |  Bin 0 -> 885 bytes
+ .../content/install.js                             |  117 +
+ .../content/install.xul                            |   75 +
+ .../content/manage.css                             |   61 +
+ .../content/manage.js                              |  267 ++
+ .../content/manage.xul                             |   73 +
+ .../content/menucommander.js                       |  174 +
+ .../content/miscapis.js                            |  124 +
+ .../content/newscript.js                           |  102 +
+ .../content/newscript.xul                          |   48 +
+ .../content/pages-overlay.js                       |  142 +
+ .../content/pages-overlay.xul                      |   61 +
+ .../content/prefmanager.js                         |  150 +
+ .../content/scriptdownloader.js                    |  290 ++
+ .../content/template.user.js                       |    6 +
+ .../content/test.html                              |   25 +
+ .../content/utils.js                               |  368 ++
+ .../content/xmlhttprequester.js                    |  139 +
+ .../defaults/preferences/greasemonkey.js           |    4 +
+ .../install.rdf                                    |   67 +
+ .../license.txt                                    |   28 +
+ .../locale/ar-SA/gm-browser.properties             |   27 +
+ .../locale/ar-SA/gm-manage.properties              |    6 +
+ .../locale/ar-SA/greasemonkey.dtd                  |   37 +
+ .../locale/ar-SA/greasemonkey.properties           |    1 +
+ .../locale/ar/gm-browser.properties                |   27 +
+ .../locale/ar/gm-manage.properties                 |    6 +
+ .../locale/ar/greasemonkey.dtd                     |   37 +
+ .../locale/ar/greasemonkey.properties              |    1 +
+ .../locale/bn-IN/gm-browser.properties             |   27 +
+ .../locale/bn-IN/gm-manage.properties              |    6 +
+ .../locale/bn-IN/greasemonkey.dtd                  |   37 +
+ .../locale/bn-IN/greasemonkey.properties           |    1 +
+ .../locale/ca-AD/gm-browser.properties             |   27 +
+ .../locale/ca-AD/gm-manage.properties              |    6 +
+ .../locale/ca-AD/greasemonkey.dtd                  |   37 +
+ .../locale/ca-AD/greasemonkey.properties           |    1 +
+ .../locale/ca-ES/gm-browser.properties             |   27 +
+ .../locale/ca-ES/gm-manage.properties              |    6 +
+ .../locale/ca-ES/greasemonkey.dtd                  |   37 +
+ .../locale/ca-ES/greasemonkey.properties           |    1 +
+ .../locale/cs-CZ/gm-browser.properties             |   27 +
+ .../locale/cs-CZ/gm-manage.properties              |    6 +
+ .../locale/cs-CZ/greasemonkey.dtd                  |   37 +
+ .../locale/cs-CZ/greasemonkey.properties           |    1 +
+ .../locale/cs/gm-browser.properties                |   27 +
+ .../locale/cs/gm-manage.properties                 |    6 +
+ .../locale/cs/greasemonkey.dtd                     |   37 +
+ .../locale/cs/greasemonkey.properties              |    1 +
+ .../locale/da-DK/gm-browser.properties             |   27 +
+ .../locale/da-DK/gm-manage.properties              |    6 +
+ .../locale/da-DK/greasemonkey.dtd                  |   37 +
+ .../locale/da-DK/greasemonkey.properties           |    1 +
+ .../locale/de-DE/gm-browser.properties             |   27 +
+ .../locale/de-DE/gm-manage.properties              |    6 +
+ .../locale/de-DE/greasemonkey.dtd                  |   37 +
+ .../locale/de-DE/greasemonkey.properties           |    1 +
+ .../locale/en-US/gm-browser.properties             |   27 +
+ .../locale/en-US/gm-manage.properties              |    6 +
+ .../locale/en-US/greasemonkey.dtd                  |   37 +
+ .../locale/en-US/greasemonkey.properties           |    1 +
+ .../locale/es-ES/gm-browser.properties             |   27 +
+ .../locale/es-ES/gm-manage.properties              |    6 +
+ .../locale/es-ES/greasemonkey.dtd                  |   37 +
+ .../locale/es-ES/greasemonkey.properties           |    1 +
+ .../locale/eu-ES/gm-browser.properties             |   27 +
+ .../locale/eu-ES/gm-manage.properties              |    6 +
+ .../locale/eu-ES/greasemonkey.dtd                  |   37 +
+ .../locale/eu-ES/greasemonkey.properties           |    1 +
+ .../locale/fa-IR/gm-browser.properties             |   27 +
+ .../locale/fa-IR/gm-manage.properties              |    6 +
+ .../locale/fa-IR/greasemonkey.dtd                  |   37 +
+ .../locale/fa-IR/greasemonkey.properties           |    1 +
+ .../locale/fi-FI/gm-browser.properties             |   27 +
+ .../locale/fi-FI/gm-manage.properties              |    6 +
+ .../locale/fi-FI/greasemonkey.dtd                  |   37 +
+ .../locale/fi-FI/greasemonkey.properties           |    1 +
+ .../locale/fr-FR/gm-browser.properties             |   27 +
+ .../locale/fr-FR/gm-manage.properties              |    6 +
+ .../locale/fr-FR/greasemonkey.dtd                  |   37 +
+ .../locale/fr-FR/greasemonkey.properties           |    1 +
+ .../locale/fr/gm-browser.properties                |   27 +
+ .../locale/fr/gm-manage.properties                 |    6 +
+ .../locale/fr/greasemonkey.dtd                     |   37 +
+ .../locale/fr/greasemonkey.properties              |    1 +
+ .../locale/gl-ES/gm-browser.properties             |   27 +
+ .../locale/gl-ES/gm-manage.properties              |    6 +
+ .../locale/gl-ES/greasemonkey.dtd                  |   37 +
+ .../locale/gl-ES/greasemonkey.properties           |    1 +
+ .../locale/he-IL/gm-browser.properties             |   27 +
+ .../locale/he-IL/gm-manage.properties              |    6 +
+ .../locale/he-IL/greasemonkey.dtd                  |   37 +
+ .../locale/he-IL/greasemonkey.properties           |    1 +
+ .../locale/he/gm-browser.properties                |   27 +
+ .../locale/he/gm-manage.properties                 |    6 +
+ .../locale/he/greasemonkey.dtd                     |   37 +
+ .../locale/he/greasemonkey.properties              |    1 +
+ .../locale/hr-HR/gm-browser.properties             |   27 +
+ .../locale/hr-HR/gm-manage.properties              |    6 +
+ .../locale/hr-HR/greasemonkey.dtd                  |   37 +
+ .../locale/hr-HR/greasemonkey.properties           |    1 +
+ .../locale/hu-HU/gm-browser.properties             |   27 +
+ .../locale/hu-HU/gm-manage.properties              |    6 +
+ .../locale/hu-HU/greasemonkey.dtd                  |   37 +
+ .../locale/hu-HU/greasemonkey.properties           |    1 +
+ .../locale/id-ID/gm-browser.properties             |   27 +
+ .../locale/id-ID/gm-manage.properties              |    6 +
+ .../locale/id-ID/greasemonkey.dtd                  |   37 +
+ .../locale/id-ID/greasemonkey.properties           |    1 +
+ .../locale/it-IT/gm-browser.properties             |   27 +
+ .../locale/it-IT/gm-manage.properties              |    6 +
+ .../locale/it-IT/greasemonkey.dtd                  |   37 +
+ .../locale/it-IT/greasemonkey.properties           |    1 +
+ .../locale/ja-JP/gm-browser.properties             |   27 +
+ .../locale/ja-JP/gm-manage.properties              |    6 +
+ .../locale/ja-JP/greasemonkey.dtd                  |   37 +
+ .../locale/ja-JP/greasemonkey.properties           |    1 +
+ .../locale/ko-KR/gm-browser.properties             |   27 +
+ .../locale/ko-KR/gm-manage.properties              |    6 +
+ .../locale/ko-KR/greasemonkey.dtd                  |   37 +
+ .../locale/ko-KR/greasemonkey.properties           |    1 +
+ .../locale/nl-NL/gm-browser.properties             |   27 +
+ .../locale/nl-NL/gm-manage.properties              |    6 +
+ .../locale/nl-NL/greasemonkey.dtd                  |   37 +
+ .../locale/nl-NL/greasemonkey.properties           |    1 +
+ .../locale/nl/gm-browser.properties                |   27 +
+ .../locale/nl/gm-manage.properties                 |    6 +
+ .../locale/nl/greasemonkey.dtd                     |   37 +
+ .../locale/nl/greasemonkey.properties              |    1 +
+ .../locale/pl-PL/gm-browser.properties             |   27 +
+ .../locale/pl-PL/gm-manage.properties              |    6 +
+ .../locale/pl-PL/greasemonkey.dtd                  |   37 +
+ .../locale/pl-PL/greasemonkey.properties           |    1 +
+ .../locale/pt-BR/gm-browser.properties             |   27 +
+ .../locale/pt-BR/gm-manage.properties              |    6 +
+ .../locale/pt-BR/greasemonkey.dtd                  |   37 +
+ .../locale/pt-BR/greasemonkey.properties           |    1 +
+ .../locale/pt-PT/gm-browser.properties             |   27 +
+ .../locale/pt-PT/gm-manage.properties              |    6 +
+ .../locale/pt-PT/greasemonkey.dtd                  |   37 +
+ .../locale/pt-PT/greasemonkey.properties           |    1 +
+ .../locale/ro-RO/gm-browser.properties             |   27 +
+ .../locale/ro-RO/gm-manage.properties              |    6 +
+ .../locale/ro-RO/greasemonkey.dtd                  |   37 +
+ .../locale/ro-RO/greasemonkey.properties           |    1 +
+ .../locale/ru-RU/gm-browser.properties             |   27 +
+ .../locale/ru-RU/gm-manage.properties              |    6 +
+ .../locale/ru-RU/greasemonkey.dtd                  |   37 +
+ .../locale/ru-RU/greasemonkey.properties           |    1 +
+ .../locale/sk-SK/gm-browser.properties             |   27 +
+ .../locale/sk-SK/gm-manage.properties              |    6 +
+ .../locale/sk-SK/greasemonkey.dtd                  |   37 +
+ .../locale/sk-SK/greasemonkey.properties           |    1 +
+ .../locale/sl-SI/gm-browser.properties             |   27 +
+ .../locale/sl-SI/gm-manage.properties              |    6 +
+ .../locale/sl-SI/greasemonkey.dtd                  |   37 +
+ .../locale/sl-SI/greasemonkey.properties           |    1 +
+ .../locale/sr-RS/gm-browser.properties             |   27 +
+ .../locale/sr-RS/gm-manage.properties              |    6 +
+ .../locale/sr-RS/greasemonkey.dtd                  |   37 +
+ .../locale/sr-RS/greasemonkey.properties           |    1 +
+ .../locale/sv-SE/gm-browser.properties             |   27 +
+ .../locale/sv-SE/gm-manage.properties              |    6 +
+ .../locale/sv-SE/greasemonkey.dtd                  |   37 +
+ .../locale/sv-SE/greasemonkey.properties           |    1 +
+ .../locale/tr-TR/gm-browser.properties             |   27 +
+ .../locale/tr-TR/gm-manage.properties              |    6 +
+ .../locale/tr-TR/greasemonkey.dtd                  |   37 +
+ .../locale/tr-TR/greasemonkey.properties           |    1 +
+ .../locale/uk-UA/gm-browser.properties             |   27 +
+ .../locale/uk-UA/gm-manage.properties              |    6 +
+ .../locale/uk-UA/greasemonkey.dtd                  |   37 +
+ .../locale/uk-UA/greasemonkey.properties           |    1 +
+ .../locale/vi-VN/gm-browser.properties             |   27 +
+ .../locale/vi-VN/gm-manage.properties              |    6 +
+ .../locale/vi-VN/greasemonkey.dtd                  |   37 +
+ .../locale/vi-VN/greasemonkey.properties           |    1 +
+ .../locale/vi/gm-browser.properties                |   27 +
+ .../locale/vi/gm-manage.properties                 |    6 +
+ .../locale/vi/greasemonkey.dtd                     |   37 +
+ .../locale/vi/greasemonkey.properties              |    1 +
+ .../locale/zh-CN/gm-browser.properties             |   27 +
+ .../locale/zh-CN/gm-manage.properties              |    6 +
+ .../locale/zh-CN/greasemonkey.dtd                  |   37 +
+ .../locale/zh-CN/greasemonkey.properties           |    1 +
+ .../locale/zh-TW/gm-browser.properties             |   27 +
+ .../locale/zh-TW/gm-manage.properties              |    6 +
+ .../locale/zh-TW/greasemonkey.dtd                  |   37 +
+ .../locale/zh-TW/greasemonkey.properties           |    1 +
+ .../chrome.manifest                                |   36 +
+ .../chrome/foxlingo.jar                            |  Bin 0 -> 1711144 bytes
+ .../defaults/preferences/foxlingo.js               |  342 ++
+ .../install.rdf                                    |   54 +
+ firefox/trunk/git-svn-clone-externals              |   22 -
+ firefox/trunk/helloworld/chrome.manifest           |    9 -
+ firefox/trunk/helloworld/content/hello.xul         |   14 -
+ firefox/trunk/helloworld/content/menu.xul          |   18 -
+ firefox/trunk/helloworld/content/overlay.js        |   14 -
+ firefox/trunk/helloworld/content/overlay.xul       |   16 -
+ firefox/trunk/helloworld/install.rdf               |   31 -
+ firefox/trunk/helloworld/locale/en-US/hello.dtd    |    4 -
+ firefox/trunk/helloworld/locale/en-US/overlay.dtd  |    2 -
+ firefox/trunk/helloworld/skin/overlay.css          |    4 -
+ firefox/trunk/htmlsaver/chrome.manifest            |    9 -
+ firefox/trunk/htmlsaver/content/contmenu.js        |  130 -
+ firefox/trunk/htmlsaver/content/contmenu.xul       |   70 -
+ firefox/trunk/htmlsaver/content/htmlsaverapp.js    |   42 -
+ firefox/trunk/htmlsaver/content/htmlsavervar.js    |  325 --
+ firefox/trunk/htmlsaver/content/managestore.js     |  521 ---
+ firefox/trunk/htmlsaver/content/managestore.xul    |   94 -
+ firefox/trunk/htmlsaver/content/options.js         |  379 --
+ firefox/trunk/htmlsaver/content/options.xul        |  129 -
+ firefox/trunk/htmlsaver/content/savestore.js       |  423 --
+ firefox/trunk/htmlsaver/content/savestore.xul      |   24 -
+ firefox/trunk/htmlsaver/content/setfolder.js       |   96 -
+ firefox/trunk/htmlsaver/content/setfolder.xul      |   79 -
+ firefox/trunk/htmlsaver/content/statusbar.js       |   31 -
+ firefox/trunk/htmlsaver/content/statusbar.xul      |   29 -
+ firefox/trunk/htmlsaver/content/xrlin.debug.js     |   14 -
+ firefox/trunk/htmlsaver/content/xrlin.fileio.js    |   49 -
+ firefox/trunk/htmlsaver/content/xrlin.pref.js      |   39 -
+ firefox/trunk/htmlsaver/content/xrlin.system.js    |   22 -
+ firefox/trunk/htmlsaver/content/xrlin.xml.js       |   26 -
+ firefox/trunk/htmlsaver/content/xrlin.zip.js       |   33 -
+ .../trunk/htmlsaver/defaults/preferences/prefs.js  |    1 -
+ firefox/trunk/htmlsaver/install.rdf                |   25 -
+ firefox/trunk/htmlsaver/locale/en-US/contents.rdf  |   23 -
+ .../htmlsaver/locale/en-US/htmlsaver.description   |    1 -
+ firefox/trunk/htmlsaver/locale/en-US/htmlsaver.dtd |   57 -
+ .../htmlsaver/locale/en-US/htmlsaver.properties    |   35 -
+ firefox/trunk/htmlsaver/skin/classic/browse.png    |  Bin 391 -> 0 bytes
+ firefox/trunk/htmlsaver/skin/classic/contents.rdf  |   26 -
+ firefox/trunk/htmlsaver/skin/classic/delete.png    |  Bin 192 -> 0 bytes
+ firefox/trunk/htmlsaver/skin/classic/down.png      |  Bin 511 -> 0 bytes
+ firefox/trunk/htmlsaver/skin/classic/edit.png      |  Bin 161 -> 0 bytes
+ firefox/trunk/htmlsaver/skin/classic/htmlsaver.css |    7 -
+ .../trunk/htmlsaver/skin/classic/htmlsaver16.png   |  Bin 1166 -> 0 bytes
+ .../trunk/htmlsaver/skin/classic/htmlsaver24.png   |  Bin 2454 -> 0 bytes
+ .../trunk/htmlsaver/skin/classic/htmlsaver32.png   |  Bin 4254 -> 0 bytes
+ .../trunk/htmlsaver/skin/classic/managestore.css   |   32 -
+ firefox/trunk/htmlsaver/skin/classic/new.png       |  Bin 214 -> 0 bytes
+ firefox/trunk/htmlsaver/skin/classic/options.css   |   60 -
+ firefox/trunk/htmlsaver/skin/classic/separator.png |  Bin 214 -> 0 bytes
+ firefox/trunk/htmlsaver/skin/classic/up.png        |  Bin 512 -> 0 bytes
+ firefox/trunk/lnshare.sh                           |   19 +
+ firefox/trunk/newprofile.sh                        |   23 +
+ firefox/trunk/profiles/allowme.sh                  |   25 -
+ firefox/trunk/profiles/newprofile.sh               |   23 -
+ firefox/trunk/profiles/setmod.sh                   |    3 -
+ .../profiles/shared/chrome/userChrome-example.css  |   54 -
+ .../profiles/shared/chrome/userContent-example.css |   35 -
+ firefox/trunk/profiles/shared/extensions.cache     |   34 -
+ firefox/trunk/profiles/shared/extensions.ini       |   15 -
+ firefox/trunk/profiles/shared/extensions.rdf       | 1662 --------
+ .../SoCoolFox@sjcmankimo.tw/chrome.manifest        |    4 -
+ .../SoCoolFox@sjcmankimo.tw/chrome/SoCool.jar      |  Bin 561061 -> 0 bytes
+ .../extensions/SoCoolFox@sjcmankimo.tw/icon.png    |  Bin 893 -> 0 bytes
+ .../extensions/SoCoolFox@sjcmankimo.tw/install.rdf |   36 -
+ .../extensions/SoCoolFox@sjcmankimo.tw/preview.png |  Bin 28377 -> 0 bytes
+ .../autoproxy@autoproxy.org/chrome.manifest        |   14 -
+ .../autoproxy@autoproxy.org/chrome/autoproxy.jar   |  Bin 460368 -> 0 bytes
+ .../components/AutoProxy.js                        |  533 ---
+ .../defaults/preferences/autoproxy.js              |   32 -
+ .../extensions/autoproxy@autoproxy.org/install.rdf |  101 -
+ .../extensions/cfxHelper@Triton/chrome.manifest    |    8 -
+ .../extensions/cfxHelper@Triton/chrome/cfxc.jar    |  Bin 26169 -> 0 bytes
+ .../cfxHelper@Triton/components/IDwmCalls.xpt      |  Bin 347 -> 0 bytes
+ .../cfxHelper@Triton/components/dwmxpcom.dll       |  Bin 61952 -> 0 bytes
+ .../defaults/preferences/defaults.js               |   15 -
+ .../shared/extensions/cfxHelper@Triton/install.rdf |   21 -
+ .../shared/extensions/cfxe@Triton/chrome.manifest  |    9 -
+ .../extensions/cfxe@Triton/chrome/LICENSE.TXT      |   37 -
+ .../shared/extensions/cfxe@Triton/chrome/cfxe.jar  |  Bin 978975 -> 0 bytes
+ .../shared/extensions/cfxe@Triton/icon.png         |  Bin 5307 -> 0 bytes
+ .../shared/extensions/cfxe@Triton/install.rdf      |   23 -
+ .../shared/extensions/cfxe@Triton/preview.png      |  Bin 42965 -> 0 bytes
+ .../trunk/profiles/shared/extensions/fix_perm.sh   |    3 -
+ .../foxmarks@kei.com/META-INF/manifest.mf          | 1373 ------
+ .../foxmarks@kei.com/META-INF/zigbert.rsa          |  Bin 2073 -> 0 bytes
+ .../foxmarks@kei.com/META-INF/zigbert.sf           | 1376 ------
+ .../extensions/foxmarks@kei.com/chrome.manifest    |   47 -
+ .../chrome/content/foxmarks-bookmark.js            |  322 --
+ .../chrome/content/foxmarks-bookmarkconflict.xul   |  107 -
+ .../chrome/content/foxmarks-changeprofile.js       |   41 -
+ .../chrome/content/foxmarks-changeprofile.xul      |   71 -
+ .../chrome/content/foxmarks-clobber.js             |   37 -
+ .../chrome/content/foxmarks-clobber.xul            |   53 -
+ .../chrome/content/foxmarks-command.js             |  101 -
+ .../chrome/content/foxmarks-conflicts.js           |   84 -
+ .../chrome/content/foxmarks-core.js                |  959 -----
+ .../chrome/content/foxmarks-dialog.js              | 1022 -----
+ .../chrome/content/foxmarks-dialog.xul             |  349 --
+ .../chrome/content/foxmarks-discover.js            |  400 --
+ .../chrome/content/foxmarks-folderconflict.xul     |   81 -
+ .../chrome/content/foxmarks-invalidpin.js          |   30 -
+ .../chrome/content/foxmarks-invalidpin.xul         |   49 -
+ .../chrome/content/foxmarks-json.js                |  273 --
+ .../chrome/content/foxmarks-login.js               |  125 -
+ .../chrome/content/foxmarks-login.xul              |   69 -
+ .../chrome/content/foxmarks-manageroverlay.xul     |   33 -
+ .../chrome/content/foxmarks-moresecurityinfo.xul   |   56 -
+ .../chrome/content/foxmarks-nodes.js               |  824 ----
+ .../chrome/content/foxmarks-overlay.js             |  111 -
+ .../chrome/content/foxmarks-overlay.xul            |  166 -
+ .../chrome/content/foxmarks-ownserverdlg.js        |   53 -
+ .../chrome/content/foxmarks-ownserverdlg.xul       |   78 -
+ .../chrome/content/foxmarks-parentconflict.xul     |   89 -
+ .../chrome/content/foxmarks-password.js            |  832 ----
+ .../chrome/content/foxmarks-passwordconflict.js    |   45 -
+ .../chrome/content/foxmarks-passwordconflict.xul   |   85 -
+ .../chrome/content/foxmarks-places.js              | 1393 ------
+ .../chrome/content/foxmarks-placesoverlay-mac.xul  |   46 -
+ .../chrome/content/foxmarks-placesoverlay.xul      |   48 -
+ .../chrome/content/foxmarks-progress.js            |  195 -
+ .../chrome/content/foxmarks-progress.xul           |   66 -
+ .../chrome/content/foxmarks-pwprefoverlay.js       |   18 -
+ .../chrome/content/foxmarks-pwprefoverlay.xul      |   20 -
+ .../chrome/content/foxmarks-pwsanitizeoverlay.js   |   28 -
+ .../chrome/content/foxmarks-pwsanitizeoverlay.xul  |   20 -
+ .../chrome/content/foxmarks-rdf.js                 |  811 ----
+ .../chrome/content/foxmarks-resetpin.js            |   33 -
+ .../chrome/content/foxmarks-resetpin.xul           |   75 -
+ .../chrome/content/foxmarks-server.js              | 1912 ---------
+ .../chrome/content/foxmarks-settings.js            |   13 -
+ .../chrome/content/foxmarks-setup.js               |  801 ----
+ .../chrome/content/foxmarks-setup.xul              |  353 --
+ .../chrome/content/foxmarks-statusbar.js           |  415 --
+ .../chrome/content/foxmarks-statusbar.xul          |   52 -
+ .../chrome/content/foxmarks-test.js                |   27 -
+ .../chrome/content/foxmarks-turbotags.js           |  561 ---
+ .../chrome/content/foxmarks-turbotags.xul          |   22 -
+ .../chrome/content/foxmarks-uitools.js             |  558 ---
+ .../chrome/content/foxmarks-unittest.js            |  324 --
+ .../chrome/content/foxmarks-update.js              |  129 -
+ .../chrome/content/foxmarks-utils.js               |  202 -
+ .../foxmarks@kei.com/chrome/content/newuser.js     |  122 -
+ .../foxmarks@kei.com/chrome/content/review.xml     |  418 --
+ .../chrome/content/shared/Base64.js                |  151 -
+ .../chrome/content/shared/CreateAESManager.js      |  454 --
+ .../chrome/content/shared/passwordmeter.js         |  205 -
+ .../foxmarks@kei.com/chrome/content/tabs.js        |  211 -
+ .../foxmarks@kei.com/chrome/content/tabs.xul       |   41 -
+ .../chrome/locale/ar/conflicts.dtd                 |   19 -
+ .../foxmarks@kei.com/chrome/locale/ar/foxmarks.dtd |  177 -
+ .../chrome/locale/ar/foxmarks.properties           |  373 --
+ .../foxmarks@kei.com/chrome/locale/ar/setup.dtd    |   80 -
+ .../chrome/locale/bg-BG/conflicts.dtd              |   19 -
+ .../chrome/locale/bg-BG/foxmarks.dtd               |  177 -
+ .../chrome/locale/bg-BG/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/bg-BG/setup.dtd |   80 -
+ .../chrome/locale/bn-IN/conflicts.dtd              |   19 -
+ .../chrome/locale/bn-IN/foxmarks.dtd               |  177 -
+ .../chrome/locale/bn-IN/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/bn-IN/setup.dtd |   80 -
+ .../chrome/locale/cs-CZ/conflicts.dtd              |   19 -
+ .../chrome/locale/cs-CZ/foxmarks.dtd               |  177 -
+ .../chrome/locale/cs-CZ/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/cs-CZ/setup.dtd |   80 -
+ .../chrome/locale/da-DK/conflicts.dtd              |   19 -
+ .../chrome/locale/da-DK/foxmarks.dtd               |  177 -
+ .../chrome/locale/da-DK/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/da-DK/setup.dtd |   80 -
+ .../chrome/locale/de/conflicts.dtd                 |   19 -
+ .../foxmarks@kei.com/chrome/locale/de/foxmarks.dtd |  177 -
+ .../chrome/locale/de/foxmarks.properties           |  373 --
+ .../foxmarks@kei.com/chrome/locale/de/setup.dtd    |   80 -
+ .../chrome/locale/el-GR/conflicts.dtd              |   19 -
+ .../chrome/locale/el-GR/foxmarks.dtd               |  177 -
+ .../chrome/locale/el-GR/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/el-GR/setup.dtd |   80 -
+ .../chrome/locale/en-US/conflicts.dtd              |   19 -
+ .../chrome/locale/en-US/foxmarks.dtd               |  177 -
+ .../chrome/locale/en-US/foxmarks.properties        |  352 --
+ .../foxmarks@kei.com/chrome/locale/en-US/setup.dtd |   81 -
+ .../chrome/locale/es-ES/conflicts.dtd              |   19 -
+ .../chrome/locale/es-ES/foxmarks.dtd               |  177 -
+ .../chrome/locale/es-ES/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/es-ES/setup.dtd |   80 -
+ .../chrome/locale/et-EE/conflicts.dtd              |   19 -
+ .../chrome/locale/et-EE/foxmarks.dtd               |  177 -
+ .../chrome/locale/et-EE/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/et-EE/setup.dtd |   80 -
+ .../chrome/locale/eu-ES/conflicts.dtd              |   19 -
+ .../chrome/locale/eu-ES/foxmarks.dtd               |  177 -
+ .../chrome/locale/eu-ES/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/eu-ES/setup.dtd |   80 -
+ .../chrome/locale/fi-FI/conflicts.dtd              |   19 -
+ .../chrome/locale/fi-FI/foxmarks.dtd               |  177 -
+ .../chrome/locale/fi-FI/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/fi-FI/setup.dtd |   80 -
+ .../chrome/locale/fr/conflicts.dtd                 |   19 -
+ .../foxmarks@kei.com/chrome/locale/fr/foxmarks.dtd |  177 -
+ .../chrome/locale/fr/foxmarks.properties           |  373 --
+ .../foxmarks@kei.com/chrome/locale/fr/setup.dtd    |   80 -
+ .../chrome/locale/fy-NL/conflicts.dtd              |   19 -
+ .../chrome/locale/fy-NL/foxmarks.dtd               |  177 -
+ .../chrome/locale/fy-NL/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/fy-NL/setup.dtd |   80 -
+ .../chrome/locale/hu-HU/conflicts.dtd              |   19 -
+ .../chrome/locale/hu-HU/foxmarks.dtd               |  177 -
+ .../chrome/locale/hu-HU/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/hu-HU/setup.dtd |   80 -
+ .../chrome/locale/it-IT/conflicts.dtd              |   19 -
+ .../chrome/locale/it-IT/foxmarks.dtd               |  177 -
+ .../chrome/locale/it-IT/foxmarks.properties        |  357 --
+ .../foxmarks@kei.com/chrome/locale/it-IT/setup.dtd |   80 -
+ .../chrome/locale/ja-JP/conflicts.dtd              |   19 -
+ .../chrome/locale/ja-JP/foxmarks.dtd               |  177 -
+ .../chrome/locale/ja-JP/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/ja-JP/setup.dtd |   80 -
+ .../chrome/locale/ko-KR/conflicts.dtd              |   19 -
+ .../chrome/locale/ko-KR/foxmarks.dtd               |  177 -
+ .../chrome/locale/ko-KR/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/ko-KR/setup.dtd |   80 -
+ .../chrome/locale/nl/conflicts.dtd                 |   19 -
+ .../foxmarks@kei.com/chrome/locale/nl/foxmarks.dtd |  177 -
+ .../chrome/locale/nl/foxmarks.properties           |  373 --
+ .../foxmarks@kei.com/chrome/locale/nl/setup.dtd    |   80 -
+ .../chrome/locale/nn-NO/conflicts.dtd              |   19 -
+ .../chrome/locale/nn-NO/foxmarks.dtd               |  177 -
+ .../chrome/locale/nn-NO/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/nn-NO/setup.dtd |   80 -
+ .../chrome/locale/pl-PL/conflicts.dtd              |   19 -
+ .../chrome/locale/pl-PL/foxmarks.dtd               |  177 -
+ .../chrome/locale/pl-PL/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/pl-PL/setup.dtd |   80 -
+ .../chrome/locale/pt-BR/conflicts.dtd              |   19 -
+ .../chrome/locale/pt-BR/foxmarks.dtd               |  177 -
+ .../chrome/locale/pt-BR/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/pt-BR/setup.dtd |   80 -
+ .../chrome/locale/pt-PT/conflicts.dtd              |   19 -
+ .../chrome/locale/pt-PT/foxmarks.dtd               |  177 -
+ .../chrome/locale/pt-PT/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/pt-PT/setup.dtd |   80 -
+ .../chrome/locale/ro/conflicts.dtd                 |   19 -
+ .../foxmarks@kei.com/chrome/locale/ro/foxmarks.dtd |  177 -
+ .../chrome/locale/ro/foxmarks.properties           |  373 --
+ .../foxmarks@kei.com/chrome/locale/ro/setup.dtd    |   80 -
+ .../chrome/locale/ru-RU/conflicts.dtd              |   19 -
+ .../chrome/locale/ru-RU/foxmarks.dtd               |  177 -
+ .../chrome/locale/ru-RU/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/ru-RU/setup.dtd |   80 -
+ .../chrome/locale/sk-SK/conflicts.dtd              |   19 -
+ .../chrome/locale/sk-SK/foxmarks.dtd               |  177 -
+ .../chrome/locale/sk-SK/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/sk-SK/setup.dtd |   80 -
+ .../chrome/locale/sv-SE/conflicts.dtd              |   19 -
+ .../chrome/locale/sv-SE/foxmarks.dtd               |  177 -
+ .../chrome/locale/sv-SE/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/sv-SE/setup.dtd |   80 -
+ .../chrome/locale/tr-TR/conflicts.dtd              |   19 -
+ .../chrome/locale/tr-TR/foxmarks.dtd               |  177 -
+ .../chrome/locale/tr-TR/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/tr-TR/setup.dtd |   80 -
+ .../chrome/locale/uk-UA/conflicts.dtd              |   19 -
+ .../chrome/locale/uk-UA/foxmarks.dtd               |  177 -
+ .../chrome/locale/uk-UA/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/uk-UA/setup.dtd |   80 -
+ .../chrome/locale/vi/conflicts.dtd                 |   19 -
+ .../foxmarks@kei.com/chrome/locale/vi/foxmarks.dtd |  177 -
+ .../chrome/locale/vi/foxmarks.properties           |  373 --
+ .../foxmarks@kei.com/chrome/locale/vi/setup.dtd    |   80 -
+ .../chrome/locale/zh-CN/conflicts.dtd              |   19 -
+ .../chrome/locale/zh-CN/foxmarks.dtd               |  177 -
+ .../chrome/locale/zh-CN/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/zh-CN/setup.dtd |   80 -
+ .../chrome/locale/zh-TW/conflicts.dtd              |   19 -
+ .../chrome/locale/zh-TW/foxmarks.dtd               |  177 -
+ .../chrome/locale/zh-TW/foxmarks.properties        |  373 --
+ .../foxmarks@kei.com/chrome/locale/zh-TW/setup.dtd |   80 -
+ .../chrome/skin/modern/foxmarks.css                |  271 --
+ .../chrome/skin/modern/images/Throbber-small.gif   |  Bin 825 -> 0 bytes
+ .../chrome/skin/modern/images/browser_chrome.png   |  Bin 985 -> 0 bytes
+ .../chrome/skin/modern/images/browser_firefox.png  |  Bin 938 -> 0 bytes
+ .../chrome/skin/modern/images/browser_ie.png       |  Bin 1044 -> 0 bytes
+ .../chrome/skin/modern/images/browser_safari.png   |  Bin 931 -> 0 bytes
+ .../chrome/skin/modern/images/bubble_bkg.png       |  Bin 5214 -> 0 bytes
+ .../chrome/skin/modern/images/bubble_close.png     |  Bin 290 -> 0 bytes
+ .../chrome/skin/modern/images/check-24.png         |  Bin 858 -> 0 bytes
+ .../chrome/skin/modern/images/computer.png         |  Bin 780 -> 0 bytes
+ .../chrome/skin/modern/images/dirty.png            |  Bin 1013 -> 0 bytes
+ .../chrome/skin/modern/images/error.png            |  Bin 1069 -> 0 bytes
+ .../chrome/skin/modern/images/foxmarks-active.png  |  Bin 547 -> 0 bytes
+ .../chrome/skin/modern/images/foxmarks-default.png |  Bin 545 -> 0 bytes
+ .../chrome/skin/modern/images/foxmarks-hover.png   |  Bin 549 -> 0 bytes
+ .../chrome/skin/modern/images/foxmarks.ico         |  Bin 4286 -> 0 bytes
+ .../chrome/skin/modern/images/foxmarks_bug.png     |  Bin 472 -> 0 bytes
+ .../skin/modern/images/foxmarks_my_toolbutton.png  |  Bin 1513 -> 0 bytes
+ .../modern/images/foxmarks_my_toolbutton_down.png  |  Bin 1617 -> 0 bytes
+ .../modern/images/foxmarks_settings_toolbutton.png |  Bin 1401 -> 0 bytes
+ .../images/foxmarks_settings_toolbutton_down.png   |  Bin 1543 -> 0 bytes
+ .../images/foxmarks_similarsites_toolbutton.png    |  Bin 1135 -> 0 bytes
+ .../foxmarks_similarsites_toolbutton_down.png      |  Bin 1304 -> 0 bytes
+ .../modern/images/foxmarks_sync_toolbutton.png     |  Bin 1583 -> 0 bytes
+ .../images/foxmarks_sync_toolbutton_down.png       |  Bin 1638 -> 0 bytes
+ .../chrome/skin/modern/images/foxmarks_tiny.png    |  Bin 472 -> 0 bytes
+ .../chrome/skin/modern/images/get-info-18x18.png   |  Bin 474 -> 0 bytes
+ .../chrome/skin/modern/images/getinfo.ico          |  Bin 894 -> 0 bytes
+ .../chrome/skin/modern/images/info_button.png      |  Bin 1198 -> 0 bytes
+ .../chrome/skin/modern/images/info_button_cap.png  |  Bin 413 -> 0 bytes
+ .../chrome/skin/modern/images/info_icon.png        |  Bin 1320 -> 0 bytes
+ .../chrome/skin/modern/images/information.png      |  Bin 778 -> 0 bytes
+ .../chrome/skin/modern/images/logo_poweredby.png   |  Bin 2146 -> 0 bytes
+ .../chrome/skin/modern/images/myfoxmarks_bug.png   |  Bin 47946 -> 0 bytes
+ .../skin/modern/images/pane-selector-advanced.png  |  Bin 2536 -> 0 bytes
+ .../skin/modern/images/pane-selector-bg-hover.png  |  Bin 1742 -> 0 bytes
+ .../modern/images/pane-selector-bg-selected.png    |  Bin 232 -> 0 bytes
+ .../chrome/skin/modern/images/pane-selector-bg.png |  Bin 231 -> 0 bytes
+ .../skin/modern/images/pane-selector-discovery.png |  Bin 1624 -> 0 bytes
+ .../skin/modern/images/pane-selector-general.png   |  Bin 1305 -> 0 bytes
+ .../skin/modern/images/pane-selector-icons.png     |  Bin 3797 -> 0 bytes
+ .../modern/images/pane-selector-macosx-bg-sel.png  |  Bin 211 -> 0 bytes
+ .../skin/modern/images/pane-selector-macosx-bg.png |  Bin 880 -> 0 bytes
+ .../modern/images/pane-selector-profiles_TEMP.png  |  Bin 1971 -> 0 bytes
+ .../skin/modern/images/pane-selector-restore.png   |  Bin 1990 -> 0 bytes
+ .../skin/modern/images/pane-selector-types.png     |  Bin 1064 -> 0 bytes
+ .../chrome/skin/modern/images/progress-good.png    |  Bin 1068 -> 0 bytes
+ .../chrome/skin/modern/images/rating_0_stars.png   |  Bin 1483 -> 0 bytes
+ .../chrome/skin/modern/images/rating_1.5_stars.png |  Bin 2151 -> 0 bytes
+ .../chrome/skin/modern/images/rating_1_stars.png   |  Bin 1868 -> 0 bytes
+ .../chrome/skin/modern/images/rating_2.5_stars.png |  Bin 2162 -> 0 bytes
+ .../chrome/skin/modern/images/rating_2_stars.png   |  Bin 2006 -> 0 bytes
+ .../chrome/skin/modern/images/rating_3.5_stars.png |  Bin 2051 -> 0 bytes
+ .../chrome/skin/modern/images/rating_3_stars.png   |  Bin 1984 -> 0 bytes
+ .../chrome/skin/modern/images/rating_4.5_stars.png |  Bin 1866 -> 0 bytes
+ .../chrome/skin/modern/images/rating_4_stars.png   |  Bin 1790 -> 0 bytes
+ .../chrome/skin/modern/images/rating_5_stars.png   |  Bin 1656 -> 0 bytes
+ .../chrome/skin/modern/images/rating_stars.png     |  Bin 9225 -> 0 bytes
+ .../chrome/skin/modern/images/ready.png            |  Bin 781 -> 0 bytes
+ .../chrome/skin/modern/images/restore_icon.png     |  Bin 262 -> 0 bytes
+ .../skin/modern/images/restore_icon_selected.png   |  Bin 242 -> 0 bytes
+ .../chrome/skin/modern/images/security-icon-bg.png |  Bin 1143 -> 0 bytes
+ .../skin/modern/images/similar-sites-icon.png      |  Bin 574 -> 0 bytes
+ .../chrome/skin/modern/images/small-ginkgo.png     |  Bin 47946 -> 0 bytes
+ .../chrome/skin/modern/images/status-bad.png       |  Bin 1406 -> 0 bytes
+ .../chrome/skin/modern/images/status-dirty.png     |  Bin 1361 -> 0 bytes
+ .../chrome/skin/modern/images/status-good.png      |  Bin 4127 -> 0 bytes
+ .../chrome/skin/modern/images/wheel.gif            |  Bin 1522 -> 0 bytes
+ .../chrome/skin/modern/images/wheel36x28.gif       |  Bin 1488 -> 0 bytes
+ .../chrome/skin/modern/images/wheel_16.gif         |  Bin 60781 -> 0 bytes
+ .../chrome/skin/modern/images/working.gif          |  Bin 60781 -> 0 bytes
+ .../chrome/skin/modern/images/xmarks_logo.png      |  Bin 2484 -> 0 bytes
+ .../chrome/skin/modern/turbotags-mac.css           |   26 -
+ .../components/foxmarks-service.js                 |   50 -
+ .../components/foxmarks-service.xpt                |  Bin 825 -> 0 bytes
+ .../foxmarks@kei.com/defaults/preferences/prefs.js |   18 -
+ .../shared/extensions/foxmarks@kei.com/install.rdf |   34 -
+ .../extensions/foxmarks@kei.com/modules/base64.jsm |   11 -
+ .../foxmarks@kei.com/modules/history.jsm           |  489 ---
+ .../foxmarks@kei.com/modules/network.jsm           |  356 --
+ .../foxmarks@kei.com/modules/reviews.jsm           |  263 --
+ .../foxmarks@kei.com/modules/service.jsm           | 1010 -----
+ .../foxmarks@kei.com/modules/settings.jsm          | 1669 --------
+ .../foxmarks@kei.com/modules/tabsync.jsm           |  200 -
+ .../extensions/foxyproxy@eric.h.jung/LICENSE       |   24 -
+ .../foxyproxy@eric.h.jung/chrome.manifest          |   95 -
+ .../foxyproxy@eric.h.jung/chrome/content/about.js  |   28 -
+ .../foxyproxy@eric.h.jung/chrome/content/about.xul |  106 -
+ .../chrome/content/addeditproxy.js                 |  442 --
+ .../chrome/content/addeditproxy.xul                |  392 --
+ .../chrome/content/blockedpagepattern.js           |   35 -
+ .../chrome/content/blockedpagepattern.xul          |   42 -
+ .../chrome/content/chooseproxy.js                  |   56 -
+ .../chrome/content/chooseproxy.xul                 |   88 -
+ .../chrome/content/colorpicker2.css                |  109 -
+ .../chrome/content/colorpicker2.xml                |  472 ---
+ .../chrome/content/colorvalidator.js               |  222 -
+ .../chrome/content/firefoxOptionsOverlay.xul       |   14 -
+ .../chrome/content/firefoxOverlay-svg.xul          |  124 -
+ .../chrome/content/firefoxOverlay.xul              |   92 -
+ .../chrome/content/foxyproxy-win.css               |   19 -
+ .../chrome/content/foxyproxy.css                   |  303 --
+ .../chrome/content/foxyproxySongbird.css           |   26 -
+ .../chrome/content/images/16x16.gif                |  Bin 630 -> 0 bytes
+ .../chrome/content/images/arrow_refresh.png        |  Bin 685 -> 0 bytes
+ .../chrome/content/images/cbox-check.gif           |  Bin 54 -> 0 bytes
+ .../chrome/content/images/delete-disabled.png      |  Bin 672 -> 0 bytes
+ .../chrome/content/images/delete.png               |  Bin 715 -> 0 bytes
+ .../chrome/content/images/dialog-information.png   |  Bin 863 -> 0 bytes
+ .../chrome/content/images/disk-disabled.png        |  Bin 585 -> 0 bytes
+ .../chrome/content/images/disk.png                 |  Bin 620 -> 0 bytes
+ .../chrome/content/images/edit-clear-disabled.png  |  Bin 767 -> 0 bytes
+ .../chrome/content/images/edit-clear.png           |  Bin 773 -> 0 bytes
+ .../chrome/content/images/emblem-favorite.png      |  Bin 788 -> 0 bytes
+ .../chrome/content/images/foxyproxy-nocopy.gif     |  Bin 1552 -> 0 bytes
+ .../chrome/content/images/fpplus.png               |  Bin 992 -> 0 bytes
+ .../chrome/content/images/go-down-disabled.png     |  Bin 628 -> 0 bytes
+ .../chrome/content/images/go-down.png              |  Bin 683 -> 0 bytes
+ .../chrome/content/images/go-up-disabled.png       |  Bin 614 -> 0 bytes
+ .../chrome/content/images/go-up.png                |  Bin 652 -> 0 bytes
+ .../chrome/content/images/help-browser.png         |  Bin 932 -> 0 bytes
+ .../chrome/content/images/internet-web-browser.png |  Bin 928 -> 0 bytes
+ .../chrome/content/images/lightning_add.png        |  Bin 746 -> 0 bytes
+ .../chrome/content/images/monitor.png              |  Bin 612 -> 0 bytes
+ .../chrome/content/images/monitor_add.png          |  Bin 692 -> 0 bytes
+ .../content/images/monitor_delete-disabled.png     |  Bin 653 -> 0 bytes
+ .../chrome/content/images/monitor_delete.png       |  Bin 691 -> 0 bytes
+ .../content/images/monitor_edit-disabled.png       |  Bin 713 -> 0 bytes
+ .../chrome/content/images/monitor_edit.png         |  Bin 769 -> 0 bytes
+ .../chrome/content/images/monitor_go-disabled.png  |  Bin 636 -> 0 bytes
+ .../chrome/content/images/monitor_go.png           |  Bin 696 -> 0 bytes
+ .../chrome/content/images/monitor_link.png         |  Bin 736 -> 0 bytes
+ .../chrome/content/images/page.png                 |  Bin 635 -> 0 bytes
+ .../chrome/content/images/page_add.png             |  Bin 739 -> 0 bytes
+ .../chrome/content/images/page_copy.png            |  Bin 663 -> 0 bytes
+ .../chrome/content/images/page_delete.png          |  Bin 740 -> 0 bytes
+ .../chrome/content/images/page_edit.png            |  Bin 807 -> 0 bytes
+ .../chrome/content/images/page_white_copy.png      |  Bin 309 -> 0 bytes
+ .../chrome/content/images/preferences-system.png   |  Bin 611 -> 0 bytes
+ .../chrome/content/images/satval.png               |  Bin 10343 -> 0 bytes
+ .../chrome/content/images/slide.gif                |  Bin 70 -> 0 bytes
+ .../chrome/content/images/slidehue.gif             |  Bin 68 -> 0 bytes
+ .../chrome/content/images/tab_go-disabled.png      |  Bin 556 -> 0 bytes
+ .../chrome/content/images/tab_go.png               |  Bin 552 -> 0 bytes
+ .../chrome/content/images/text_align_justify.png   |  Bin 209 -> 0 bytes
+ .../chrome/content/images/tick.png                 |  Bin 537 -> 0 bytes
+ .../chrome/content/images/wand.png                 |  Bin 570 -> 0 bytes
+ .../chrome/content/images/world.png                |  Bin 923 -> 0 bytes
+ .../chrome/content/includes.xul                    |  354 --
+ .../chrome/content/options.js                      |  679 ---
+ .../chrome/content/options.xul                     | 1067 -----
+ .../chrome/content/optionsOverlay.js               |   38 -
+ .../chrome/content/overlay.js                      |  991 -----
+ .../chrome/content/pattern.js                      |   59 -
+ .../chrome/content/pattern.xul                     |   93 -
+ .../chrome/content/selection.js                    |  144 -
+ .../chrome/content/strings.xml                     |  117 -
+ .../chrome/content/superadd.js                     |   73 -
+ .../chrome/content/superadd.xul                    |  108 -
+ .../chrome/content/tbirdOverlay.xul                |   80 -
+ .../chrome/content/torwizhelp.xhtml                |   67 -
+ .../chrome/content/triquestion.js                  |   28 -
+ .../chrome/content/triquestion.xul                 |   35 -
+ .../chrome/icons/default/foxyproxyaboutdlg2.ico    |  Bin 1150 -> 0 bytes
+ .../chrome/icons/default/foxyproxyaddproxydlg2.ico |  Bin 1150 -> 0 bytes
+ .../chrome/icons/default/foxyproxyoptions2.ico     |  Bin 1150 -> 0 bytes
+ .../chrome/icons/default/foxyproxypatterndlg2.ico  |  Bin 1150 -> 0 bytes
+ .../chrome/icons/default/foxyproxyquickadddlg2.ico |  Bin 1150 -> 0 bytes
+ .../chrome/locale/ar/amo.properties                |    3 -
+ .../chrome/locale/ar/foxyproxy.dtd                 |  481 ---
+ .../chrome/locale/ar/foxyproxy.properties          |  166 -
+ .../chrome/locale/ar/torwizhelp.dtd                |   13 -
+ .../chrome/locale/cs/amo.properties                |    3 -
+ .../chrome/locale/cs/foxyproxy.dtd                 |  481 ---
+ .../chrome/locale/cs/foxyproxy.properties          |  166 -
+ .../chrome/locale/cs/torwizhelp.dtd                |   13 -
+ .../chrome/locale/da-DK/amo.properties             |    3 -
+ .../chrome/locale/da-DK/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/da-DK/foxyproxy.properties       |  166 -
+ .../chrome/locale/da-DK/torwizhelp.dtd             |   13 -
+ .../chrome/locale/de/amo.properties                |    3 -
+ .../chrome/locale/de/foxyproxy.dtd                 |  481 ---
+ .../chrome/locale/de/foxyproxy.properties          |  166 -
+ .../chrome/locale/de/torwizhelp.dtd                |   13 -
+ .../chrome/locale/el-GR/amo.properties             |    3 -
+ .../chrome/locale/el-GR/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/el-GR/foxyproxy.properties       |  166 -
+ .../chrome/locale/el-GR/torwizhelp.dtd             |   13 -
+ .../chrome/locale/en-US/amo.properties             |    3 -
+ .../chrome/locale/en-US/foxyproxy.dtd              |  615 ---
+ .../chrome/locale/en-US/foxyproxy.properties       |  161 -
+ .../chrome/locale/en-US/torwizhelp.dtd             |   13 -
+ .../chrome/locale/es-AR/amo.properties             |    3 -
+ .../chrome/locale/es-AR/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/es-AR/foxyproxy.properties       |  166 -
+ .../chrome/locale/es-AR/torwizhelp.dtd             |   13 -
+ .../chrome/locale/es-ES/amo.properties             |    3 -
+ .../chrome/locale/es-ES/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/es-ES/foxyproxy.properties       |  166 -
+ .../chrome/locale/es-ES/torwizhelp.dtd             |   13 -
+ .../chrome/locale/fa-IR/amo.properties             |    3 -
+ .../chrome/locale/fa-IR/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/fa-IR/foxyproxy.properties       |  166 -
+ .../chrome/locale/fa-IR/torwizhelp.dtd             |   13 -
+ .../chrome/locale/fi-FI/amo.properties             |    3 -
+ .../chrome/locale/fi-FI/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/fi-FI/foxyproxy.properties       |  166 -
+ .../chrome/locale/fi-FI/torwizhelp.dtd             |   13 -
+ .../chrome/locale/fr/amo.properties                |    3 -
+ .../chrome/locale/fr/foxyproxy.dtd                 |  481 ---
+ .../chrome/locale/fr/foxyproxy.properties          |  166 -
+ .../chrome/locale/fr/torwizhelp.dtd                |   13 -
+ .../chrome/locale/gl-ES/amo.properties             |    3 -
+ .../chrome/locale/gl-ES/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/gl-ES/foxyproxy.properties       |  166 -
+ .../chrome/locale/gl-ES/torwizhelp.dtd             |   13 -
+ .../chrome/locale/hr-HR/amo.properties             |    3 -
+ .../chrome/locale/hr-HR/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/hr-HR/foxyproxy.properties       |  166 -
+ .../chrome/locale/hr-HR/torwizhelp.dtd             |   13 -
+ .../chrome/locale/hu-HU/amo.properties             |    3 -
+ .../chrome/locale/hu-HU/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/hu-HU/foxyproxy.properties       |  166 -
+ .../chrome/locale/hu-HU/torwizhelp.dtd             |   13 -
+ .../chrome/locale/it-IT/amo.properties             |    3 -
+ .../chrome/locale/it-IT/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/it-IT/foxyproxy.properties       |  160 -
+ .../chrome/locale/it-IT/torwizhelp.dtd             |   13 -
+ .../chrome/locale/ja-JP/amo.properties             |    3 -
+ .../chrome/locale/ja-JP/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/ja-JP/foxyproxy.properties       |  166 -
+ .../chrome/locale/ja-JP/torwizhelp.dtd             |   13 -
+ .../chrome/locale/lv-LV/amo.properties             |    3 -
+ .../chrome/locale/lv-LV/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/lv-LV/foxyproxy.properties       |  160 -
+ .../chrome/locale/lv-LV/torwizhelp.dtd             |   13 -
+ .../chrome/locale/nl/amo.properties                |    3 -
+ .../chrome/locale/nl/foxyproxy.dtd                 |  481 ---
+ .../chrome/locale/nl/foxyproxy.properties          |  166 -
+ .../chrome/locale/nl/torwizhelp.dtd                |   13 -
+ .../chrome/locale/pl-PL/amo.properties             |    3 -
+ .../chrome/locale/pl-PL/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/pl-PL/foxyproxy.properties       |  166 -
+ .../chrome/locale/pl-PL/torwizhelp.dtd             |   13 -
+ .../chrome/locale/pt-BR/amo.properties             |    3 -
+ .../chrome/locale/pt-BR/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/pt-BR/foxyproxy.properties       |  166 -
+ .../chrome/locale/pt-BR/torwizhelp.dtd             |   13 -
+ .../chrome/locale/pt-PT/amo.properties             |    3 -
+ .../chrome/locale/pt-PT/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/pt-PT/foxyproxy.properties       |  166 -
+ .../chrome/locale/pt-PT/torwizhelp.dtd             |   13 -
+ .../chrome/locale/ru-RU/amo.properties             |    3 -
+ .../chrome/locale/ru-RU/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/ru-RU/foxyproxy.properties       |  166 -
+ .../chrome/locale/ru-RU/torwizhelp.dtd             |   13 -
+ .../chrome/locale/sk/amo.properties                |    3 -
+ .../chrome/locale/sk/foxyproxy.dtd                 |  481 ---
+ .../chrome/locale/sk/foxyproxy.properties          |  166 -
+ .../chrome/locale/sk/torwizhelp.dtd                |   13 -
+ .../chrome/locale/sr/amo.properties                |    3 -
+ .../chrome/locale/sr/foxyproxy.dtd                 |  481 ---
+ .../chrome/locale/sr/foxyproxy.properties          |  166 -
+ .../chrome/locale/sr/torwizhelp.dtd                |   13 -
+ .../chrome/locale/sv-SE/amo.properties             |    3 -
+ .../chrome/locale/sv-SE/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/sv-SE/foxyproxy.properties       |  166 -
+ .../chrome/locale/sv-SE/torwizhelp.dtd             |   13 -
+ .../chrome/locale/th-TH/amo.properties             |    3 -
+ .../chrome/locale/th-TH/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/th-TH/foxyproxy.properties       |  166 -
+ .../chrome/locale/th-TH/torwizhelp.dtd             |   13 -
+ .../chrome/locale/tr-TR/amo.properties             |    3 -
+ .../chrome/locale/tr-TR/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/tr-TR/foxyproxy.properties       |  166 -
+ .../chrome/locale/tr-TR/torwizhelp.dtd             |   13 -
+ .../chrome/locale/uk-UA/amo.properties             |    3 -
+ .../chrome/locale/uk-UA/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/uk-UA/foxyproxy.properties       |  166 -
+ .../chrome/locale/uk-UA/torwizhelp.dtd             |   13 -
+ .../chrome/locale/vi/amo.properties                |    3 -
+ .../chrome/locale/vi/foxyproxy.dtd                 |  481 ---
+ .../chrome/locale/vi/foxyproxy.properties          |  166 -
+ .../chrome/locale/vi/torwizhelp.dtd                |   13 -
+ .../chrome/locale/zh-CN/amo.properties             |    3 -
+ .../chrome/locale/zh-CN/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/zh-CN/foxyproxy.properties       |  166 -
+ .../chrome/locale/zh-CN/torwizhelp.dtd             |   13 -
+ .../chrome/locale/zh-TW/amo.properties             |    3 -
+ .../chrome/locale/zh-TW/foxyproxy.dtd              |  481 ---
+ .../chrome/locale/zh-TW/foxyproxy.properties       |  166 -
+ .../chrome/locale/zh-TW/torwizhelp.dtd             |   13 -
+ .../foxyproxy@eric.h.jung/components/autoconf.js   |  493 ---
+ .../components/commandlinehandler.js               |   63 -
+ .../foxyproxy@eric.h.jung/components/common.js     |  320 --
+ .../foxyproxy@eric.h.jung/components/foxyproxy.js  | 1771 --------
+ .../components/foxyproxyprotocolhandler.js         |  198 -
+ .../foxyproxy@eric.h.jung/components/match.js      |  171 -
+ .../foxyproxy@eric.h.jung/components/proxy.js      |  546 ---
+ .../components/relativeprotocolhandler.js          |   73 -
+ .../defaults/preferences/prefs.js                  |    3 -
+ .../extensions/foxyproxy@eric.h.jung/install.rdf   |   73 -
+ .../foxyproxy@eric.h.jung/modules/superadd.js      |  388 --
+ .../inspector@mozilla.org/chrome.manifest          |   25 -
+ .../inspector@mozilla.org/chrome/inspector.jar     |  Bin 695328 -> 0 bytes
+ .../components/inspector-cmdline.js                |   93 -
+ .../defaults/preferences/inspector.js              |   47 -
+ .../extensions/inspector@mozilla.org/install.rdf   |   79 -
+ .../chrome/icons/default/winInspectorMain.xpm      |   41 -
+ .../chrome/icons/default/winInspectorMain16.xpm    |   25 -
+ .../OS2/chrome/icons/default/winInspectorMain.ico  |  Bin 7824 -> 0 bytes
+ .../chrome/icons/default/winInspectorMain.ico      |  Bin 3638 -> 0 bytes
+ .../isreaditlater@ideashower.com/chrome.manifest   |    9 -
+ .../chrome/isreaditlater.jar                       |  Bin 133225 -> 0 bytes
+ .../components/RILAPIRequest.js                    |  190 -
+ .../components/RILAPIRequest.xpt                   |  Bin 317 -> 0 bytes
+ .../components/RILassetManager.js                  |  339 --
+ .../components/RILassetManager.xpt                 |  Bin 743 -> 0 bytes
+ .../components/RILdelegate.js                      | 1291 ------
+ .../components/RILlist.js                          | 1226 ------
+ .../components/RILofflineQueue.js                  |  446 --
+ .../components/RILprefs.js                         |  190 -
+ .../components/RILsync.js                          |  673 ---
+ .../components/RILtextDownloader.js                |  151 -
+ .../components/RILtextDownloader.xpt               |  Bin 493 -> 0 bytes
+ .../components/RILwebDownloader.js                 |  795 ----
+ .../components/RILwebDownloader.xpt                |  Bin 411 -> 0 bytes
+ .../defaults/preferences/prefs.js                  |    1 -
+ .../isreaditlater@ideashower.com/install.rdf       |   30 -
+ .../savesession@noasobi.net/chrome.manifest        |   12 -
+ .../chrome/content/savesession.xul                 |  117 -
+ .../chrome/locale/de-DE/savesession.dtd            |    8 -
+ .../chrome/locale/en-US/savesession.dtd            |    8 -
+ .../chrome/locale/en-US/savesession.properties     |    1 -
+ .../chrome/locale/es-ES/savesession.dtd            |    8 -
+ .../chrome/locale/es-ES/savesession.properties     |    2 -
+ .../chrome/locale/it-IT/savesession.dtd            |    8 -
+ .../chrome/locale/it-IT/savesession.properties     |    2 -
+ .../chrome/locale/ja/savesession.dtd               |    8 -
+ .../chrome/locale/ja/savesession.properties        |    3 -
+ .../chrome/locale/sv-SE/savesession.dtd            |    8 -
+ .../chrome/locale/sv-SE/savesession.properties     |    2 -
+ .../chrome/locale/zh-TW/savesession.dtd            |    8 -
+ .../chrome/locale/zh-TW/savesession.properties     |    2 -
+ .../chrome/skin/SaveExit16x16.png                  |  Bin 767 -> 0 bytes
+ .../chrome/skin/SaveExit24x24.png                  |  Bin 939 -> 0 bytes
+ .../chrome/skin/savesession.css                    |   20 -
+ .../chrome/skin/savesession16x16.png               |  Bin 691 -> 0 bytes
+ .../chrome/skin/savesession24x24.png               |  Bin 1502 -> 0 bytes
+ .../defaults/preferences/savesession.js            |    2 -
+ .../extensions/savesession@noasobi.net/install.rdf |   27 -
+ .../trunk/profiles/shared/extensions/setVersion.sh |   10 -
+ .../sharing@addons.mozilla.org/chrome.manifest     |   77 -
+ .../chrome/bandwagon.jar                           |  Bin 1534620 -> 0 bytes
+ .../components/bandwagon-service.js                | 1821 --------
+ .../defaults/preferences/bandwagon.js              |   63 -
+ .../sharing@addons.mozilla.org/install.rdf         |  469 ---
+ .../shared/extensions/websaver2@xiaoranzzz.myplace |    1 -
+ .../shared/extensions/zhreader@xiaoranzzz.myplace  |    1 -
+ .../chrome.manifest                                |   16 -
+ .../chrome/content/binding.xml                     |   26 -
+ .../chrome/content/gladder.js                      | 1282 ------
+ .../chrome/content/gladder.xul                     |   85 -
+ .../chrome/content/options.xul                     |  160 -
+ .../chrome/locale/en-US/gladder.dtd                |   91 -
+ .../chrome/locale/en-US/gladder.properties         |   14 -
+ .../chrome/locale/zh-CN/gladder.dtd                |   91 -
+ .../chrome/locale/zh-CN/gladder.properties         |   14 -
+ .../chrome/skin/classic/gladder.css                |   27 -
+ .../chrome/skin/classic/gladder.png                |  Bin 709 -> 0 bytes
+ .../chrome/skin/classic/gladderD.png               |  Bin 505 -> 0 bytes
+ .../chrome/skin/classic/gladderG.png               |  Bin 526 -> 0 bytes
+ .../chrome/skin/classic/options.css                |   70 -
+ .../chrome/skin/classic/proxyIcon.png              |  Bin 902 -> 0 bytes
+ .../components/glNetworkStatus.js                  |  208 -
+ .../components/glNetworkStatus.xpt                 |  Bin 181 -> 0 bytes
+ .../components/glPHProxy.js                        |  303 --
+ .../components/glPHProxy.xpt                       |  Bin 229 -> 0 bytes
+ .../components/glPHProxyManager.js                 |  412 --
+ .../components/glPHProxyManager.xpt                |  Bin 323 -> 0 bytes
+ .../defaults/preferences/options.js                |   18 -
+ .../install.rdf                                    |   36 -
+ .../license.txt                                    |   23 -
+ .../chrome.manifest                                |   21 -
+ .../chrome/littlefox.jar                           |  Bin 435248 -> 0 bytes
+ .../icon.png                                       |  Bin 393 -> 0 bytes
+ .../install.rdf                                    |   20 -
+ .../preview.png                                    |  Bin 5656 -> 0 bytes
+ .../META-INF/manifest.mf                           |  148 -
+ .../META-INF/zigbert.rsa                           |  Bin 3056 -> 0 bytes
+ .../META-INF/zigbert.sf                            |  151 -
+ .../chrome.manifest                                |   62 -
+ .../chrome/deliciousBookmarks.jar                  |  Bin 1051536 -> 0 bytes
+ .../components/build.sh                            |   16 -
+ .../components/deliciousAwesomebarSearch.js        |  325 --
+ .../components/nsIAutoCompleteSearchShare.js       |  225 -
+ .../components/nsISocialStore.idl                  |  179 -
+ .../components/nsISocialStore.xpt                  |  Bin 934 -> 0 bytes
+ .../components/nsISocialStoreCallback.idl          |    9 -
+ .../components/nsISocialStoreCallback.xpt          |  Bin 207 -> 0 bytes
+ .../components/nsIYBookmark.idl                    |   27 -
+ .../components/nsIYBookmark.xpt                    |  Bin 900 -> 0 bytes
+ .../components/nsIYBookmarkSyncService.idl         |   48 -
+ .../components/nsIYBookmarkSyncService.xpt         |  Bin 353 -> 0 bytes
+ .../components/nsIYBundle.idl                      |   11 -
+ .../components/nsIYBundle.xpt                      |  Bin 290 -> 0 bytes
+ .../components/nsIYDebugService.idl                |   30 -
+ .../components/nsIYDebugService.xpt                |  Bin 178 -> 0 bytes
+ .../components/nsIYDelLocalStore.idl               |  661 ---
+ .../components/nsIYDelLocalStore.xpt               |  Bin 2869 -> 0 bytes
+ .../components/nsYBookmarkSyncService.js           | 1853 --------
+ .../components/nsYDebugService.js                  |  161 -
+ .../components/nsYDelLocalStore.js                 | 4413 --------------------
+ .../components/ssrDelicious.js                     | 1815 --------
+ .../components/ybAutoComplete.js                   |  193 -
+ .../defaults/preferences/ybookmarks.js             |   98 -
+ .../install.rdf                                    |   20 -
+ .../resource/modules/ybjson.jsm                    |   83 -
+ .../searchplugins/delicious.png                    |  Bin 897 -> 0 bytes
+ .../searchplugins/delicious.src                    |   18 -
+ .../LICENSE.txt                                    |  133 -
+ .../META-INF/manifest.mf                           |  168 -
+ .../META-INF/zigbert.rsa                           |  Bin 3312 -> 0 bytes
+ .../META-INF/zigbert.sf                            |  171 -
+ .../chrome.manifest                                |   83 -
+ .../chrome/google-toolbar.jar                      |  Bin 1145650 -> 0 bytes
+ .../components/bootstrap.js                        |  376 --
+ .../components/googletoolbar.xpt                   |  Bin 4320 -> 0 bytes
+ .../components/metrics-module.js                   |   23 -
+ .../defaults/components/dictionaries_config.json   |  582 ---
+ .../defaults/components/html-sanitizer-minified.js |   24 -
+ .../defaults/components/json_comp.js               |   21 -
+ .../defaults/components/share_providers.json       |   83 -
+ .../defaults/components/suggest_window.html        |  113 -
+ .../defaults/contenthandling/doc.ico               |  Bin 22486 -> 0 bytes
+ .../defaults/custombuttons/books.google.com.xml    |  116 -
+ .../defaults/custombuttons/calendar.google.com.xml |  118 -
+ .../defaults/custombuttons/docs.google.com.xml     |  116 -
+ .../custombuttons/google.com_blog_search.xml       |  102 -
+ .../defaults/custombuttons/google.com_finance.xml  |  116 -
+ .../defaults/custombuttons/google.com_patents.xml  |  116 -
+ .../defaults/custombuttons/google.com_scholar.xml  |  116 -
+ .../defaults/custombuttons/photos.google.com.xml   |  116 -
+ .../toolbar.google.com_CTK0Y7F4MTG6NKYH03WT.xml    |  117 -
+ .../toolbar.google.com_J66T77NJDBMW4FEUU7FA.xml    |  198 -
+ .../toolbar.google.com_O8Y91YHB24Z6SR0SGYSK.xml    |  162 -
+ .../defaults/custombuttons/video.google.com.xml    |  117 -
+ .../defaults/preferences/options.js                |  117 -
+ .../install.rdf                                    |   72 -
+ .../lib/metrics.js                                 |   97 -
+ .../lib/toolbar.js                                 | 2741 ------------
+ .../lib/unitsdata.bz2                              |  Bin 4081 -> 0 bytes
+ .../chrome.manifest                                |   21 -
+ .../chrome/microfox.jar                            |  Bin 319618 -> 0 bytes
+ .../icon.png                                       |  Bin 244 -> 0 bytes
+ .../install.rdf                                    |   20 -
+ .../preview.png                                    |  Bin 1650 -> 0 bytes
+ .../chrome.manifest                                |    5 -
+ .../chrome/mc.xpi                                  |  Bin 1015164 -> 0 bytes
+ .../icon.png                                       |  Bin 3423 -> 0 bytes
+ .../install.rdf                                    |   20 -
+ .../preview.png                                    |  Bin 7265 -> 0 bytes
+ .../LICENSE.txt                                    |   36 -
+ .../chrome.manifest                                |   36 -
+ .../chrome/scrapbook.jar                           |  Bin 1073746 -> 0 bytes
+ .../defaults/preferences/scrapbook-prefs.js        |   27 -
+ .../install.rdf                                    |   51 -
+ .../chrome.manifest                                |   14 -
+ .../chrome/linux/browser/Go-arrow-rtl.png          |  Bin 570 -> 0 bytes
+ .../chrome/linux/browser/Go-arrow.png              |  Bin 573 -> 0 bytes
+ .../chrome/linux/browser/Info.png                  |  Bin 767 -> 0 bytes
+ .../chrome/linux/browser/Search-glass-rtl.png      |  Bin 324 -> 0 bytes
+ .../chrome/linux/browser/Search-glass.png          |  Bin 385 -> 0 bytes
+ .../chrome/linux/browser/Secure.png                |  Bin 373 -> 0 bytes
+ .../chrome/linux/browser/Security-broken.png       |  Bin 443 -> 0 bytes
+ .../chrome/linux/browser/Throbber-small.png        |  Bin 214 -> 0 bytes
+ .../chrome/linux/browser/Throbber.gif              |  Bin 913 -> 0 bytes
+ .../chrome/linux/browser/Throbber.png              |  Bin 223 -> 0 bytes
+ .../chrome/linux/browser/Toolbar-small.png         |  Bin 5754 -> 0 bytes
+ .../chrome/linux/browser/Toolbar.png               |  Bin 8668 -> 0 bytes
+ .../chrome/linux/browser/bf-drop-small.png         |  Bin 163 -> 0 bytes
+ .../chrome/linux/browser/bf-drop.png               |  Bin 165 -> 0 bytes
+ .../chrome/linux/browser/browser-default.css       | 1339 ------
+ .../browser/browser-newwave-menu-statusbar.css     |  110 -
+ .../chrome/linux/browser/browser-newwave.css       |  402 --
+ .../chrome/linux/browser/browser.css               |    7 -
+ .../chrome/linux/browser/browser.xml               |   18 -
+ .../chrome/linux/browser/engineManager.css         |    9 -
+ .../chrome/linux/browser/feeds/audioFeedIcon.png   |  Bin 1794 -> 0 bytes
+ .../chrome/linux/browser/feeds/audioFeedIcon16.png |  Bin 799 -> 0 bytes
+ .../chrome/linux/browser/feeds/feedIcon.png        |  Bin 1794 -> 0 bytes
+ .../chrome/linux/browser/feeds/feedIcon16.png      |  Bin 799 -> 0 bytes
+ .../chrome/linux/browser/feeds/subscribe.css       |  183 -
+ .../chrome/linux/browser/feeds/videoFeedIcon.png   |  Bin 1794 -> 0 bytes
+ .../chrome/linux/browser/feeds/videoFeedIcon16.png |  Bin 799 -> 0 bytes
+ .../chrome/linux/browser/identity.png              |  Bin 10096 -> 0 bytes
+ .../chrome/linux/browser/monitor.png               |  Bin 6217 -> 0 bytes
+ .../chrome/linux/browser/monitor_16-10.png         |  Bin 6787 -> 0 bytes
+ .../chrome/linux/browser/newtab.png                |  Bin 206 -> 0 bytes
+ .../linux/browser/newwave-gradient-reverse.png     |  Bin 232 -> 0 bytes
+ .../chrome/linux/browser/newwave-gradient.png      |  Bin 233 -> 0 bytes
+ .../chrome/linux/browser/newwave-list-selected.png |  Bin 331 -> 0 bytes
+ .../chrome/linux/browser/newwave-menubar.png       |  Bin 172 -> 0 bytes
+ .../chrome/linux/browser/newwave-newtab.png        |  Bin 185 -> 0 bytes
+ .../chrome/linux/browser/newwave-shadow-top.png    |  Bin 208 -> 0 bytes
+ .../chrome/linux/browser/newwave-statusbar.png     |  Bin 231 -> 0 bytes
+ .../chrome/linux/browser/newwave-tab-active.png    |  Bin 191 -> 0 bytes
+ .../chrome/linux/browser/newwave-tab-animated.png  |  Bin 985 -> 0 bytes
+ .../browser/newwave-tab-close-active-hover.png     |  Bin 630 -> 0 bytes
+ .../browser/newwave-tab-close-active-pressed.png   |  Bin 703 -> 0 bytes
+ .../linux/browser/newwave-tab-close-active.png     |  Bin 448 -> 0 bytes
+ .../browser/newwave-tab-close-inactive-hover.png   |  Bin 554 -> 0 bytes
+ .../browser/newwave-tab-close-inactive-pressed.png |  Bin 715 -> 0 bytes
+ .../linux/browser/newwave-tab-close-inactive.png   |  Bin 463 -> 0 bytes
+ .../chrome/linux/browser/newwave-tab-over.png      |  Bin 985 -> 0 bytes
+ .../chrome/linux/browser/newwave-tab.png           |  Bin 226 -> 0 bytes
+ .../linux/browser/newwave-tabs-container.png       |  Bin 228 -> 0 bytes
+ .../chrome/linux/browser/newwave-toolbar.png       |  Bin 216 -> 0 bytes
+ .../chrome/linux/browser/page-livemarks.png        |  Bin 830 -> 0 bytes
+ .../chrome/linux/browser/pageInfo.css              |  259 --
+ .../chrome/linux/browser/pageInfo.png              |  Bin 8874 -> 0 bytes
+ .../chrome/linux/browser/places/MenuBarBg.png      |  Bin 201 -> 0 bytes
+ .../linux/browser/places/bookmarkProperties.css    |   68 -
+ .../chrome/linux/browser/places/bookmarksMenu.png  |  Bin 461 -> 0 bytes
+ .../linux/browser/places/bookmarksToolbar.png      |  Bin 508 -> 0 bytes
+ .../chrome/linux/browser/places/calendar.png       |  Bin 670 -> 0 bytes
+ .../linux/browser/places/editBookmarkOverlay.css   |   71 -
+ .../chrome/linux/browser/places/livemark-item.png  |  Bin 732 -> 0 bytes
+ .../chrome/linux/browser/places/organizer.css      |  313 --
+ .../chrome/linux/browser/places/organizer.xml      |   18 -
+ .../chrome/linux/browser/places/pageStarred.png    |  Bin 767 -> 0 bytes
+ .../chrome/linux/browser/places/places.css         |  204 -
+ .../chrome/linux/browser/places/query.png          |  Bin 678 -> 0 bytes
+ .../chrome/linux/browser/places/searching_16.png   |  Bin 4167 -> 0 bytes
+ .../chrome/linux/browser/places/starPage.png       |  Bin 595 -> 0 bytes
+ .../chrome/linux/browser/places/starred48.png      |  Bin 2658 -> 0 bytes
+ .../chrome/linux/browser/places/tag.png            |  Bin 877 -> 0 bytes
+ .../linux/browser/places/toolbarDropMarker.png     |  Bin 575 -> 0 bytes
+ .../chrome/linux/browser/places/twisty-closed.gif  |  Bin 372 -> 0 bytes
+ .../chrome/linux/browser/places/twisty-open.gif    |  Bin 372 -> 0 bytes
+ .../linux/browser/places/unsortedBookmarks.png     |  Bin 748 -> 0 bytes
+ .../chrome/linux/browser/places/unstarred48.png    |  Bin 2255 -> 0 bytes
+ .../chrome/linux/browser/places/wrench.png         |  Bin 610 -> 0 bytes
+ .../chrome/linux/browser/preferences/Options.png   |  Bin 12334 -> 0 bytes
+ .../chrome/linux/browser/preferences/alwaysAsk.png |  Bin 637 -> 0 bytes
+ .../linux/browser/preferences/application.png      |  Bin 547 -> 0 bytes
+ .../linux/browser/preferences/applications.css     |   98 -
+ .../chrome/linux/browser/preferences/mail.png      |  Bin 548 -> 0 bytes
+ .../linux/browser/preferences/preferences.css      |  146 -
+ .../chrome/linux/browser/searchbar.css             |   99 -
+ .../chrome/linux/browser/setDesktopBackground.css  |   14 -
+ .../chrome/linux/browser/statusgrip.png            |  Bin 436 -> 0 bytes
+ .../linux/browser/tabbrowser/tab-arrow-end.png     |  Bin 255 -> 0 bytes
+ .../linux/browser/tabbrowser/tab-arrow-start.png   |  Bin 277 -> 0 bytes
+ .../linux/browser/tabbrowser/tabDragIndicator.png  |  Bin 451 -> 0 bytes
+ .../chrome/linux/browser/urlbar-favicon-glow.png   |  Bin 619 -> 0 bytes
+ .../linux/browser/urlbar/sb_smoothline-active.png  |  Bin 1038 -> 0 bytes
+ .../linux/browser/urlbar/sb_smoothline-over.png    |  Bin 1032 -> 0 bytes
+ .../chrome/linux/browser/urlbar/sb_smoothline.png  |  Bin 275 -> 0 bytes
+ .../chrome/linux/communicator/b_favicon.png        |  Bin 475 -> 0 bytes
+ .../chrome/linux/communicator/bookmark-24.png      |  Bin 970 -> 0 bytes
+ .../chrome/linux/communicator/bookmark-icons.png   |  Bin 1197 -> 0 bytes
+ .../linux/communicator/bookmark_calendar.png       |  Bin 1443 -> 0 bytes
+ .../linux/communicator/bookmark_facebook.png       |  Bin 1310 -> 0 bytes
+ .../chrome/linux/communicator/bookmark_google.png  |  Bin 1810 -> 0 bytes
+ .../chrome/linux/communicator/bookmark_mail.png    |  Bin 1765 -> 0 bytes
+ .../chrome/linux/communicator/bookmarks-small.png  |  Bin 855 -> 0 bytes
+ .../chrome/linux/communicator/bookmarks.png        |  Bin 1025 -> 0 bytes
+ .../chrome/linux/communicator/communicator.css     |    2 -
+ .../chrome/linux/communicator/copy-small.png       |  Bin 1461 -> 0 bytes
+ .../chrome/linux/communicator/copy.png             |  Bin 1987 -> 0 bytes
+ .../chrome/linux/communicator/cut-small.png        |  Bin 1595 -> 0 bytes
+ .../chrome/linux/communicator/cut.png              |  Bin 2368 -> 0 bytes
+ .../chrome/linux/communicator/dl_manager-small.png |  Bin 1006 -> 0 bytes
+ .../chrome/linux/communicator/dl_manager.png       |  Bin 1380 -> 0 bytes
+ .../chrome/linux/communicator/history-16.png       |  Bin 793 -> 0 bytes
+ .../chrome/linux/communicator/history-small.png    |  Bin 1550 -> 0 bytes
+ .../chrome/linux/communicator/history1.png         |  Bin 1948 -> 0 bytes
+ .../chrome/linux/communicator/history2.png         |  Bin 2098 -> 0 bytes
+ .../chrome/linux/communicator/home-16-bg.png       |  Bin 462 -> 0 bytes
+ .../chrome/linux/communicator/home-16.png          |  Bin 713 -> 0 bytes
+ .../chrome/linux/communicator/home-small.png       |  Bin 1065 -> 0 bytes
+ .../chrome/linux/communicator/home.png             |  Bin 1357 -> 0 bytes
+ .../chrome/linux/communicator/newTab-small.png     |  Bin 950 -> 0 bytes
+ .../chrome/linux/communicator/newTab.png           |  Bin 1381 -> 0 bytes
+ .../chrome/linux/communicator/new_window-small.png |  Bin 1100 -> 0 bytes
+ .../chrome/linux/communicator/new_window.png       |  Bin 1618 -> 0 bytes
+ .../chrome/linux/communicator/newtabbar.png        |  Bin 294 -> 0 bytes
+ .../chrome/linux/communicator/paste-small.png      |  Bin 1593 -> 0 bytes
+ .../chrome/linux/communicator/paste.png            |  Bin 2138 -> 0 bytes
+ .../chrome/linux/communicator/print-small.png      |  Bin 886 -> 0 bytes
+ .../chrome/linux/communicator/print.png            |  Bin 1073 -> 0 bytes
+ .../chrome/linux/communicator/progress.png         |  Bin 165 -> 0 bytes
+ .../chrome/linux/mozapps/downloads/buttons.png     |  Bin 2288 -> 0 bytes
+ .../linux/mozapps/downloads/downloadIcon.png       |  Bin 1533 -> 0 bytes
+ .../linux/mozapps/downloads/downloadStatusIcon.png |  Bin 744 -> 0 bytes
+ .../chrome/linux/mozapps/downloads/downloads.css   |  110 -
+ .../mozapps/downloads/newwave-list-selected.png    |  Bin 331 -> 0 bytes
+ .../linux/mozapps/downloads/unknownContentType.css |   26 -
+ .../chrome/linux/mozapps/plugins/missingPlugin.css |   37 -
+ .../linux/mozapps/plugins/pluginGeneric-16.png     |  Bin 794 -> 0 bytes
+ .../chrome/linux/mozapps/plugins/pluginGeneric.png |  Bin 1894 -> 0 bytes
+ .../chrome/linux/mozapps/shared/itemFader.png      |  Bin 849 -> 0 bytes
+ .../chrome/linux/mozapps/shared/itemSelected.png   |  Bin 1589 -> 0 bytes
+ .../chrome/linux/mozapps/shared/richview.css       |   21 -
+ .../chrome/linux/mozapps/shared/richview.xml       |   22 -
+ .../chrome/linux/mozapps/shared/viewFader.png      |  Bin 849 -> 0 bytes
+ .../chrome/linux/mozapps/viewsource/viewsource.css |   49 -
+ .../icon.png                                       |  Bin 1121 -> 0 bytes
+ .../install.rdf                                    |   33 -
+ .../preview.png                                    |  Bin 7061 -> 0 bytes
+ .../chrome.manifest                                |    3 -
+ .../chrome/internal.jar                            |  Bin 495826 -> 0 bytes
+ .../icon.png                                       |  Bin 1944 -> 0 bytes
+ .../install.rdf                                    |   35 -
+ .../preview.png                                    |  Bin 12991 -> 0 bytes
+ .../7zip.bat                                       |   20 -
+ .../build.py                                       |  136 -
+ .../chrome.manifest                                |   10 -
+ .../chrome/icons/default/extensionbuilder.ico      |  Bin 1150 -> 0 bytes
+ .../chrome/icons/default/extensionbuilder.xbm      |    6 -
+ .../chrome/icons/default/htmledit.ico              |  Bin 1406 -> 0 bytes
+ .../chrome/icons/default/htmledit.xbm              |    6 -
+ .../chrome/icons/default/jrx.ico                   |  Bin 1406 -> 0 bytes
+ .../chrome/icons/default/jrx.xbm                   |    6 -
+ .../chrome/icons/default/jsenvironment.ico         |  Bin 1406 -> 0 bytes
+ .../chrome/icons/default/jsenvironment.xbm         |    6 -
+ .../chrome/icons/default/jsshell.ico               |  Bin 1406 -> 0 bytes
+ .../chrome/icons/default/jsshell.xbm               |    6 -
+ .../chrome/icons/default/xpathtester.ico           |  Bin 1406 -> 0 bytes
+ .../chrome/icons/default/xpathtester.xbm           |    6 -
+ .../chrome/icons/default/xuledit.ico               |  Bin 1406 -> 0 bytes
+ .../chrome/icons/default/xuledit.xbm               |    6 -
+ .../config_build.sh                                |    6 -
+ .../content/chromeShellExtras.js                   |  128 -
+ .../content/commonOverlay.xul                      |   10 -
+ .../content/contents.rdf                           |   38 -
+ .../content/extensionbuilder.js                    | 1212 ------
+ .../content/extensionbuilder.xul                   |   72 -
+ .../content/extensiondevOverlay.js                 |  165 -
+ .../content/firefoxOverlay.xul                     |   87 -
+ .../content/htmledit.xul                           |   53 -
+ .../content/htmledit/editbox.html                  |   57 -
+ .../content/htmledit/index.html                    |   13 -
+ .../content/injector.js                            |   48 -
+ .../content/injector.xul                           |   42 -
+ .../content/install-edit.js                        |  419 --
+ .../content/install-edit.xul                       |  174 -
+ .../content/jrx.html                               | 1493 -------
+ .../content/jrx.xul                                |   20 -
+ .../content/jsenv.js                               |   62 -
+ .../content/jsenv.xul                              |   44 -
+ .../content/jsenv/blank.html                       |    1 -
+ .../content/jsenv/index.html                       |   21 -
+ .../content/jsenv/input.html                       |   31 -
+ .../content/jsenv/jsenv.diff                       |   36 -
+ .../content/jsenv/toolbar.html                     |  196 -
+ .../content/loadsaveutils.js                       |  110 -
+ .../content/options.xul                            |   84 -
+ .../content/rdfhistory.js                          |  150 -
+ .../content/read-install-rdf.js                    |  128 -
+ .../content/seamonkeyOverlay.xul                   |   60 -
+ .../content/shell.html                             |  776 ----
+ .../content/shell.xul                              |   20 -
+ .../content/thunderbirdOverlay.xul                 |   85 -
+ .../content/xpath.js                               |  135 -
+ .../content/xpath.xul                              |   59 -
+ .../content/xpathblank.html                        |   33 -
+ .../content/xuledit.js                             |   82 -
+ .../content/xuledit.xul                            |   38 -
+ .../cygzip.bat                                     |   21 -
+ .../install.js                                     |   49 -
+ .../install.rdf                                    |   59 -
+ .../locale/en-US/contents.rdf                      |   22 -
+ .../locale/en-US/extensiondev.dtd                  |  109 -
+ .../locale/en-US/prefwindow.dtd                    |    9 -
+ .../skin/contents.rdf                              |   32 -
+ .../skin/extensionbuilder-large.png                |  Bin 1066 -> 0 bytes
+ .../skin/extensionbuilder-small.png                |  Bin 653 -> 0 bytes
+ .../skin/extensiondev.css                          |  100 -
+ .../skin/extensiondev.png                          |  Bin 1230 -> 0 bytes
+ .../skin/htmledit-large.png                        |  Bin 349 -> 0 bytes
+ .../skin/htmledit-small.png                        |  Bin 298 -> 0 bytes
+ .../skin/jrx-large.png                             |  Bin 398 -> 0 bytes
+ .../skin/jrx-small.png                             |  Bin 183 -> 0 bytes
+ .../skin/jsenv-large.png                           |  Bin 394 -> 0 bytes
+ .../skin/jsenv-small.png                           |  Bin 318 -> 0 bytes
+ .../skin/jsinj-large.png                           |  Bin 291 -> 0 bytes
+ .../skin/jsinj-small.png                           |  Bin 334 -> 0 bytes
+ .../skin/jsshell-large.png                         |  Bin 165 -> 0 bytes
+ .../skin/jsshell-small.png                         |  Bin 134 -> 0 bytes
+ .../skin/reloadchrome-large.png                    |  Bin 1893 -> 0 bytes
+ .../skin/reloadchrome-small.png                    |  Bin 983 -> 0 bytes
+ .../skin/xpath-large.png                           |  Bin 187 -> 0 bytes
+ .../skin/xpath-small.png                           |  Bin 161 -> 0 bytes
+ .../skin/xpath.css                                 |    6 -
+ .../skin/xuledit-large.png                         |  Bin 258 -> 0 bytes
+ .../skin/xuledit-small.png                         |  Bin 246 -> 0 bytes
+ .../version-notes.html                             |   30 -
+ .../winrar.bat                                     |   18 -
+ .../winzip.bat                                     |   18 -
+ .../wzcline.bat                                    |   18 -
+ .../{75739dec-72db-4020-aa9a-6afa6744759b}/zip.bat |   15 -
+ .../{75739dec-72db-4020-aa9a-6afa6744759b}/zip.sh  |    9 -
+ .../chrome.manifest                                |   14 -
+ .../defaults/preferences/tamperdata.js             |   62 -
+ .../install.rdf                                    |   46 -
+ .../tamperdata.jar                                 |  Bin 81214 -> 0 bytes
+ .../META-INF/manifest.mf                           |   29 -
+ .../META-INF/zigbert.rsa                           |  Bin 3070 -> 0 bytes
+ .../META-INF/zigbert.sf                            |   32 -
+ .../chrome.manifest                                |   16 -
+ .../chrome/stumbleupon.jar                         |  Bin 336800 -> 0 bytes
+ .../components/stumbleuponService.js               |  894 ----
+ .../install.js                                     |   88 -
+ .../install.rdf                                    |   50 -
+ .../{DDC359D1-844A-42a7-9AA1-88A850A938A8}/GPL     |  340 --
+ .../{DDC359D1-844A-42a7-9AA1-88A850A938A8}/LGPL    |  504 ---
+ .../{DDC359D1-844A-42a7-9AA1-88A850A938A8}/LICENSE |   24 -
+ .../{DDC359D1-844A-42a7-9AA1-88A850A938A8}/MPL     |  470 ---
+ .../chrome.manifest                                |   99 -
+ .../chrome/chrome.jar                              |  Bin 1376323 -> 0 bytes
+ .../chrome/icons/default/DownThemAll.ico           |  Bin 11926 -> 0 bytes
+ .../chrome/icons/default/DownThemAll.xpm           |  325 --
+ .../components/contentHandling.js                  |  112 -
+ .../components/contenthandling.idl                 |   51 -
+ .../components/contenthandling.xpt                 |  Bin 192 -> 0 bytes
+ .../components/debugService.idl                    |   55 -
+ .../components/debugService.js                     |  160 -
+ .../components/debugService.xpt                    |  Bin 293 -> 0 bytes
+ .../components/filterManager.idl                   |   78 -
+ .../components/filterManager.js                    |  472 ---
+ .../components/filterManager.xpt                   |  Bin 757 -> 0 bytes
+ .../components/migrationService.js                 |  223 -
+ .../components/privacycontrol.js                   |  131 -
+ .../defaults/preferences/dta.js                    |   43 -
+ .../defaults/preferences/filters.js                |   47 -
+ .../defaults/preferences/privacycontrol.js         |    4 -
+ .../icon.png                                       |  Bin 1926 -> 0 bytes
+ .../install.rdf                                    |   57 -
+ .../modules/cothread.jsm                           |  164 -
+ .../modules/loggedprompter.jsm                     |   92 -
+ .../modules/mediator.jsm                           |  153 -
+ .../modules/preallocator.jsm                       |  155 -
+ .../modules/preferences.jsm                        |  208 -
+ .../modules/prompts.jsm                            |  130 -
+ .../modules/utils.jsm                              |  238 --
+ .../modules/version.jsm                            |   21 -
+ .../META-INF/manifest.mf                           |   58 -
+ .../META-INF/zigbert.rsa                           |  Bin 3291 -> 0 bytes
+ .../META-INF/zigbert.sf                            |   61 -
+ .../application.ini                                |    9 -
+ .../chrome.manifest                                |    2 -
+ .../chrome/jslib.jar                               |  Bin 171635 -> 0 bytes
+ .../chrome/jsliblive/contents.rdf                  |   47 -
+ .../chrome/jsliblive/jsliblive.xul                 |   34 -
+ .../components/jslib-dom.js                        |  147 -
+ .../components/jslib-service.js                    |  519 ---
+ .../components/jslib.xpt                           |  Bin 135 -> 0 bytes
+ .../defaults/preferences/prefs.js                  |    1 -
+ .../install.js                                     |  231 -
+ .../install.rdf                                    |  123 -
+ .../chrome.manifest                                |  164 -
+ .../chrome/dwhelper.jar                            |  Bin 493938 -> 0 bytes
+ .../components/dhAddToBlackListProcessor.js        |   84 -
+ .../components/dhConvConfHandler.js                |  227 -
+ .../components/dhConvertMgr.js                     | 1279 ------
+ .../components/dhCopyUrlProcessor.js               |   86 -
+ .../components/dhCore.js                           | 1713 --------
+ .../components/dhDOMHook.js                        |  209 -
+ .../components/dhDownloadConvertProcessor.js       |   80 -
+ .../components/dhDownloadMgr.js                    |  391 --
+ .../components/dhDownloadProcessor.js              |   76 -
+ .../components/dhDumpProcessor.js                  |   84 -
+ .../components/dhFlashgotDownloadProcessor.js      |   87 -
+ .../components/dhIContextItem.xpt                  |  Bin 308 -> 0 bytes
+ .../components/dhIConversionListener.xpt           |  Bin 248 -> 0 bytes
+ .../components/dhIConvertMgr.xpt                   |  Bin 1039 -> 0 bytes
+ .../components/dhICore.xpt                         |  Bin 1122 -> 0 bytes
+ .../components/dhIDOMHook.xpt                      |  Bin 179 -> 0 bytes
+ .../components/dhIDownloadListener.xpt             |  Bin 248 -> 0 bytes
+ .../components/dhIDownloadMgr.xpt                  |  Bin 713 -> 0 bytes
+ .../components/dhIMP3Tunes.xpt                     |  Bin 395 -> 0 bytes
+ .../components/dhIMediaListMgr.xpt                 |  Bin 372 -> 0 bytes
+ .../components/dhIPreProcessor.xpt                 |  Bin 234 -> 0 bytes
+ .../components/dhIProbe.xpt                        |  Bin 324 -> 0 bytes
+ .../components/dhIProbeMouseListener.xpt           |  Bin 215 -> 0 bytes
+ .../components/dhIProcessor.xpt                    |  Bin 352 -> 0 bytes
+ .../components/dhISmartNamer.xpt                   |  Bin 464 -> 0 bytes
+ .../components/dhITwitter.xpt                      |  Bin 232 -> 0 bytes
+ .../components/dhIUtilService.xpt                  |  Bin 3732 -> 0 bytes
+ .../components/dhIYTHQChecker.xpt                  |  Bin 269 -> 0 bytes
+ .../components/dhIYTHQCheckerListener.xpt          |  Bin 203 -> 0 bytes
+ .../components/dhIYTInfo.xpt                       |  Bin 303 -> 0 bytes
+ .../components/dhIYTLinkFinder.xpt                 |  Bin 271 -> 0 bytes
+ .../components/dhIYoutubeTool.xpt                  |  Bin 196 -> 0 bytes
+ .../components/dhLicenseHandler.js                 |  183 -
+ .../components/dhMP3Tunes.js                       |  372 --
+ .../components/dhMP3TunesLockerProcessor.js        |   77 -
+ .../components/dhMP3TunesMobileProcessor.js        |   79 -
+ .../components/dhMediaListMgr.js                   |  243 --
+ .../components/dhMedialinkProbe.js                 |  208 -
+ .../components/dhNetworkProbe.js                   |  454 --
+ .../components/dhQuickDownloadProcessor.js         |   75 -
+ .../components/dhSafeModeHandler.js                |  261 --
+ .../components/dhSecretHelperProcessor.js          |   88 -
+ .../components/dhSmartNamer.js                     |  669 ---
+ .../components/dhTwitterProcessor.js               |  335 --
+ .../components/dhUtilService.js                    | 1165 ------
+ .../components/dhYTInfo.js                         |  113 -
+ .../components/dhYoutubeLinksContextItem.js        |  325 --
+ .../components/dhYoutubeProbe.js                   |  263 --
+ .../defaults/preferences/prefs-dwhelper.js         |   90 -
+ .../install.rdf                                    |   94 -
+ .../local/wm.png                                   |  Bin 2494 -> 0 bytes
+ .../chrome.manifest                                |   24 -
+ .../chrome/wmlbrowser.jar                          |  Bin 98008 -> 0 bytes
+ .../components/wml-service.js                      |  363 --
+ .../defaults/preferences/prefs.js                  |    1 -
+ .../install.js                                     |  231 -
+ .../install.rdf                                    |   66 -
+ .../META-INF/manifest.mf                           |  118 -
+ .../META-INF/zigbert.rsa                           |  Bin 4746 -> 0 bytes
+ .../META-INF/zigbert.sf                            |  121 -
+ .../chrome.manifest                                |   69 -
+ .../chrome/adblockplus.jar                         |  Bin 1456436 -> 0 bytes
+ .../components/Initializer.js                      |  107 -
+ .../defaults/patterns.ini                          |   14 -
+ .../defaults/preferences/adblockplus.js            |   32 -
+ .../icon.png                                       |  Bin 708 -> 0 bytes
+ .../install.rdf                                    |  499 ---
+ .../modules/AppIntegration.jsm                     | 1264 ------
+ .../modules/AppIntegrationFennec.jsm               |  270 --
+ .../modules/Bootstrap.jsm                          |  255 --
+ .../modules/ContentPolicy.jsm                      |  632 ---
+ .../modules/ElemHide.jsm                           |  377 --
+ .../modules/FilterClasses.jsm                      |  773 ----
+ .../modules/FilterListener.jsm                     |  210 -
+ .../modules/FilterStorage.jsm                      |  766 ----
+ .../modules/Matcher.jsm                            |  391 --
+ .../modules/ObjectTabs.jsm                         |  523 ---
+ .../modules/Prefs.jsm                              |  316 --
+ .../modules/Public.jsm                             |  209 -
+ .../modules/RequestNotifier.jsm                    |  401 --
+ .../modules/SubscriptionClasses.jsm                |  460 --
+ .../modules/Synchronizer.jsm                       |  568 ---
+ .../modules/Utils.jsm                              |  449 --
+ .../chrome.manifest                                |    5 -
+ .../chrome/chrome.jar                              |  Bin 514447 -> 0 bytes
+ .../icon.png                                       |  Bin 1832 -> 0 bytes
+ .../install.rdf                                    |   32 -
+ .../preview.png                                    |  Bin 3400 -> 0 bytes
+ .../chrome.manifest                                |   45 -
+ .../components/gmIBrowserWindow.xpt                |  Bin 265 -> 0 bytes
+ .../components/gmIGreasemonkeyService.xpt          |  Bin 267 -> 0 bytes
+ .../components/gmIMenuCommand.xpt                  |  Bin 378 -> 0 bytes
+ .../components/greasemonkey.js                     |  552 ---
+ .../content/accelimation.js                        |  123 -
+ .../content/browser.js                             |  666 ---
+ .../content/browser.xul                            |  135 -
+ .../content/config.js                              |  642 ---
+ .../content/convert2RegExp.js                      |   53 -
+ .../content/icon_medium.png                        |  Bin 2421 -> 0 bytes
+ .../content/icon_small.png                         |  Bin 889 -> 0 bytes
+ .../content/icon_small_disabled.png                |  Bin 885 -> 0 bytes
+ .../content/install.js                             |  117 -
+ .../content/install.xul                            |   75 -
+ .../content/manage.css                             |   61 -
+ .../content/manage.js                              |  267 --
+ .../content/manage.xul                             |   73 -
+ .../content/menucommander.js                       |  174 -
+ .../content/miscapis.js                            |  124 -
+ .../content/newscript.js                           |  102 -
+ .../content/newscript.xul                          |   48 -
+ .../content/pages-overlay.js                       |  142 -
+ .../content/pages-overlay.xul                      |   61 -
+ .../content/prefmanager.js                         |  150 -
+ .../content/scriptdownloader.js                    |  290 --
+ .../content/template.user.js                       |    6 -
+ .../content/test.html                              |   25 -
+ .../content/utils.js                               |  368 --
+ .../content/xmlhttprequester.js                    |  139 -
+ .../defaults/preferences/greasemonkey.js           |    4 -
+ .../install.rdf                                    |   67 -
+ .../license.txt                                    |   28 -
+ .../locale/ar-SA/gm-browser.properties             |   27 -
+ .../locale/ar-SA/gm-manage.properties              |    6 -
+ .../locale/ar-SA/greasemonkey.dtd                  |   37 -
+ .../locale/ar-SA/greasemonkey.properties           |    1 -
+ .../locale/ar/gm-browser.properties                |   27 -
+ .../locale/ar/gm-manage.properties                 |    6 -
+ .../locale/ar/greasemonkey.dtd                     |   37 -
+ .../locale/ar/greasemonkey.properties              |    1 -
+ .../locale/bn-IN/gm-browser.properties             |   27 -
+ .../locale/bn-IN/gm-manage.properties              |    6 -
+ .../locale/bn-IN/greasemonkey.dtd                  |   37 -
+ .../locale/bn-IN/greasemonkey.properties           |    1 -
+ .../locale/ca-AD/gm-browser.properties             |   27 -
+ .../locale/ca-AD/gm-manage.properties              |    6 -
+ .../locale/ca-AD/greasemonkey.dtd                  |   37 -
+ .../locale/ca-AD/greasemonkey.properties           |    1 -
+ .../locale/ca-ES/gm-browser.properties             |   27 -
+ .../locale/ca-ES/gm-manage.properties              |    6 -
+ .../locale/ca-ES/greasemonkey.dtd                  |   37 -
+ .../locale/ca-ES/greasemonkey.properties           |    1 -
+ .../locale/cs-CZ/gm-browser.properties             |   27 -
+ .../locale/cs-CZ/gm-manage.properties              |    6 -
+ .../locale/cs-CZ/greasemonkey.dtd                  |   37 -
+ .../locale/cs-CZ/greasemonkey.properties           |    1 -
+ .../locale/cs/gm-browser.properties                |   27 -
+ .../locale/cs/gm-manage.properties                 |    6 -
+ .../locale/cs/greasemonkey.dtd                     |   37 -
+ .../locale/cs/greasemonkey.properties              |    1 -
+ .../locale/da-DK/gm-browser.properties             |   27 -
+ .../locale/da-DK/gm-manage.properties              |    6 -
+ .../locale/da-DK/greasemonkey.dtd                  |   37 -
+ .../locale/da-DK/greasemonkey.properties           |    1 -
+ .../locale/de-DE/gm-browser.properties             |   27 -
+ .../locale/de-DE/gm-manage.properties              |    6 -
+ .../locale/de-DE/greasemonkey.dtd                  |   37 -
+ .../locale/de-DE/greasemonkey.properties           |    1 -
+ .../locale/en-US/gm-browser.properties             |   27 -
+ .../locale/en-US/gm-manage.properties              |    6 -
+ .../locale/en-US/greasemonkey.dtd                  |   37 -
+ .../locale/en-US/greasemonkey.properties           |    1 -
+ .../locale/es-ES/gm-browser.properties             |   27 -
+ .../locale/es-ES/gm-manage.properties              |    6 -
+ .../locale/es-ES/greasemonkey.dtd                  |   37 -
+ .../locale/es-ES/greasemonkey.properties           |    1 -
+ .../locale/eu-ES/gm-browser.properties             |   27 -
+ .../locale/eu-ES/gm-manage.properties              |    6 -
+ .../locale/eu-ES/greasemonkey.dtd                  |   37 -
+ .../locale/eu-ES/greasemonkey.properties           |    1 -
+ .../locale/fa-IR/gm-browser.properties             |   27 -
+ .../locale/fa-IR/gm-manage.properties              |    6 -
+ .../locale/fa-IR/greasemonkey.dtd                  |   37 -
+ .../locale/fa-IR/greasemonkey.properties           |    1 -
+ .../locale/fi-FI/gm-browser.properties             |   27 -
+ .../locale/fi-FI/gm-manage.properties              |    6 -
+ .../locale/fi-FI/greasemonkey.dtd                  |   37 -
+ .../locale/fi-FI/greasemonkey.properties           |    1 -
+ .../locale/fr-FR/gm-browser.properties             |   27 -
+ .../locale/fr-FR/gm-manage.properties              |    6 -
+ .../locale/fr-FR/greasemonkey.dtd                  |   37 -
+ .../locale/fr-FR/greasemonkey.properties           |    1 -
+ .../locale/fr/gm-browser.properties                |   27 -
+ .../locale/fr/gm-manage.properties                 |    6 -
+ .../locale/fr/greasemonkey.dtd                     |   37 -
+ .../locale/fr/greasemonkey.properties              |    1 -
+ .../locale/gl-ES/gm-browser.properties             |   27 -
+ .../locale/gl-ES/gm-manage.properties              |    6 -
+ .../locale/gl-ES/greasemonkey.dtd                  |   37 -
+ .../locale/gl-ES/greasemonkey.properties           |    1 -
+ .../locale/he-IL/gm-browser.properties             |   27 -
+ .../locale/he-IL/gm-manage.properties              |    6 -
+ .../locale/he-IL/greasemonkey.dtd                  |   37 -
+ .../locale/he-IL/greasemonkey.properties           |    1 -
+ .../locale/he/gm-browser.properties                |   27 -
+ .../locale/he/gm-manage.properties                 |    6 -
+ .../locale/he/greasemonkey.dtd                     |   37 -
+ .../locale/he/greasemonkey.properties              |    1 -
+ .../locale/hr-HR/gm-browser.properties             |   27 -
+ .../locale/hr-HR/gm-manage.properties              |    6 -
+ .../locale/hr-HR/greasemonkey.dtd                  |   37 -
+ .../locale/hr-HR/greasemonkey.properties           |    1 -
+ .../locale/hu-HU/gm-browser.properties             |   27 -
+ .../locale/hu-HU/gm-manage.properties              |    6 -
+ .../locale/hu-HU/greasemonkey.dtd                  |   37 -
+ .../locale/hu-HU/greasemonkey.properties           |    1 -
+ .../locale/id-ID/gm-browser.properties             |   27 -
+ .../locale/id-ID/gm-manage.properties              |    6 -
+ .../locale/id-ID/greasemonkey.dtd                  |   37 -
+ .../locale/id-ID/greasemonkey.properties           |    1 -
+ .../locale/it-IT/gm-browser.properties             |   27 -
+ .../locale/it-IT/gm-manage.properties              |    6 -
+ .../locale/it-IT/greasemonkey.dtd                  |   37 -
+ .../locale/it-IT/greasemonkey.properties           |    1 -
+ .../locale/ja-JP/gm-browser.properties             |   27 -
+ .../locale/ja-JP/gm-manage.properties              |    6 -
+ .../locale/ja-JP/greasemonkey.dtd                  |   37 -
+ .../locale/ja-JP/greasemonkey.properties           |    1 -
+ .../locale/ko-KR/gm-browser.properties             |   27 -
+ .../locale/ko-KR/gm-manage.properties              |    6 -
+ .../locale/ko-KR/greasemonkey.dtd                  |   37 -
+ .../locale/ko-KR/greasemonkey.properties           |    1 -
+ .../locale/nl-NL/gm-browser.properties             |   27 -
+ .../locale/nl-NL/gm-manage.properties              |    6 -
+ .../locale/nl-NL/greasemonkey.dtd                  |   37 -
+ .../locale/nl-NL/greasemonkey.properties           |    1 -
+ .../locale/nl/gm-browser.properties                |   27 -
+ .../locale/nl/gm-manage.properties                 |    6 -
+ .../locale/nl/greasemonkey.dtd                     |   37 -
+ .../locale/nl/greasemonkey.properties              |    1 -
+ .../locale/pl-PL/gm-browser.properties             |   27 -
+ .../locale/pl-PL/gm-manage.properties              |    6 -
+ .../locale/pl-PL/greasemonkey.dtd                  |   37 -
+ .../locale/pl-PL/greasemonkey.properties           |    1 -
+ .../locale/pt-BR/gm-browser.properties             |   27 -
+ .../locale/pt-BR/gm-manage.properties              |    6 -
+ .../locale/pt-BR/greasemonkey.dtd                  |   37 -
+ .../locale/pt-BR/greasemonkey.properties           |    1 -
+ .../locale/pt-PT/gm-browser.properties             |   27 -
+ .../locale/pt-PT/gm-manage.properties              |    6 -
+ .../locale/pt-PT/greasemonkey.dtd                  |   37 -
+ .../locale/pt-PT/greasemonkey.properties           |    1 -
+ .../locale/ro-RO/gm-browser.properties             |   27 -
+ .../locale/ro-RO/gm-manage.properties              |    6 -
+ .../locale/ro-RO/greasemonkey.dtd                  |   37 -
+ .../locale/ro-RO/greasemonkey.properties           |    1 -
+ .../locale/ru-RU/gm-browser.properties             |   27 -
+ .../locale/ru-RU/gm-manage.properties              |    6 -
+ .../locale/ru-RU/greasemonkey.dtd                  |   37 -
+ .../locale/ru-RU/greasemonkey.properties           |    1 -
+ .../locale/sk-SK/gm-browser.properties             |   27 -
+ .../locale/sk-SK/gm-manage.properties              |    6 -
+ .../locale/sk-SK/greasemonkey.dtd                  |   37 -
+ .../locale/sk-SK/greasemonkey.properties           |    1 -
+ .../locale/sl-SI/gm-browser.properties             |   27 -
+ .../locale/sl-SI/gm-manage.properties              |    6 -
+ .../locale/sl-SI/greasemonkey.dtd                  |   37 -
+ .../locale/sl-SI/greasemonkey.properties           |    1 -
+ .../locale/sr-RS/gm-browser.properties             |   27 -
+ .../locale/sr-RS/gm-manage.properties              |    6 -
+ .../locale/sr-RS/greasemonkey.dtd                  |   37 -
+ .../locale/sr-RS/greasemonkey.properties           |    1 -
+ .../locale/sv-SE/gm-browser.properties             |   27 -
+ .../locale/sv-SE/gm-manage.properties              |    6 -
+ .../locale/sv-SE/greasemonkey.dtd                  |   37 -
+ .../locale/sv-SE/greasemonkey.properties           |    1 -
+ .../locale/tr-TR/gm-browser.properties             |   27 -
+ .../locale/tr-TR/gm-manage.properties              |    6 -
+ .../locale/tr-TR/greasemonkey.dtd                  |   37 -
+ .../locale/tr-TR/greasemonkey.properties           |    1 -
+ .../locale/uk-UA/gm-browser.properties             |   27 -
+ .../locale/uk-UA/gm-manage.properties              |    6 -
+ .../locale/uk-UA/greasemonkey.dtd                  |   37 -
+ .../locale/uk-UA/greasemonkey.properties           |    1 -
+ .../locale/vi-VN/gm-browser.properties             |   27 -
+ .../locale/vi-VN/gm-manage.properties              |    6 -
+ .../locale/vi-VN/greasemonkey.dtd                  |   37 -
+ .../locale/vi-VN/greasemonkey.properties           |    1 -
+ .../locale/vi/gm-browser.properties                |   27 -
+ .../locale/vi/gm-manage.properties                 |    6 -
+ .../locale/vi/greasemonkey.dtd                     |   37 -
+ .../locale/vi/greasemonkey.properties              |    1 -
+ .../locale/zh-CN/gm-browser.properties             |   27 -
+ .../locale/zh-CN/gm-manage.properties              |    6 -
+ .../locale/zh-CN/greasemonkey.dtd                  |   37 -
+ .../locale/zh-CN/greasemonkey.properties           |    1 -
+ .../locale/zh-TW/gm-browser.properties             |   27 -
+ .../locale/zh-TW/gm-manage.properties              |    6 -
+ .../locale/zh-TW/greasemonkey.dtd                  |   37 -
+ .../locale/zh-TW/greasemonkey.properties           |    1 -
+ .../chrome.manifest                                |   36 -
+ .../chrome/foxlingo.jar                            |  Bin 1711144 -> 0 bytes
+ .../defaults/preferences/foxlingo.js               |  342 --
+ .../install.rdf                                    |   54 -
+ firefox/trunk/profiles/shared/gm_scripts           |    1 -
+ firefox/trunk/profiles/shared/lnshare.sh           |   17 -
+ firefox/trunk/profiles/shared/proxy.pac            |    3 -
+ firefox/trunk/profiles/shared/proxy2.pac           |    3 -
+ .../profiles/shared/searchplugins/baidu-image.xml  |   12 -
+ .../profiles/shared/searchplugins/baidu-music.xml  |    9 -
+ .../trunk/profiles/shared/searchplugins/baidu.xml  |    9 -
+ .../profiles/shared/searchplugins/baidutorrent.xml |    8 -
+ .../trunk/profiles/shared/searchplugins/bing.xml   |    9 -
+ .../profiles/shared/searchplugins/btchina.xml      |    8 -
+ .../profiles/shared/searchplugins/btjunkie.xml     |    8 -
+ .../shared/searchplugins/celebscentralnet.xml      |    9 -
+ .../shared/searchplugins/codeigniter-search.xml    |   12 -
+ .../profiles/shared/searchplugins/codeproject.xml  |   11 -
+ .../profiles/shared/searchplugins/dictcn-.xml      |    8 -
+ .../profiles/shared/searchplugins/dictionary.xml   |    9 -
+ .../profiles/shared/searchplugins/google-en.xml    |    8 -
+ .../profiles/shared/searchplugins/google-hk.xml    |    9 -
+ .../shared/searchplugins/google-image-en.xml       |    8 -
+ .../profiles/shared/searchplugins/google-music.xml |    9 -
+ .../shared/searchplugins/google-search-.xml        |    9 -
+ .../searchplugins/google-snaapacom-in-url.xml      |    9 -
+ .../shared/searchplugins/google-snaapacom.xml      |    9 -
+ .../profiles/shared/searchplugins/google-tw.xml    |    9 -
+ .../profiles/shared/searchplugins/google-zh-tw.xml |   12 -
+ .../profiles/shared/searchplugins/google-zh.xml    |   12 -
+ .../shared/searchplugins/googletorrent.xml         |    8 -
+ .../profiles/shared/searchplugins/gutenberg.xml    |   10 -
+ .../searchplugins/hankyung-korean-racing-model.xml |    9 -
+ .../trunk/profiles/shared/searchplugins/imdb.xml   |    9 -
+ .../profiles/shared/searchplugins/isohunt.xml      |    8 -
+ .../profiles/shared/searchplugins/mininova.xml     |    8 -
+ .../profiles/shared/searchplugins/monovaorg.xml    |    8 -
+ .../searchplugins/msdn-search-with-google.xml      |    9 -
+ ...h-for-files-on-wwwhotfilecom-through-google.xml |    9 -
+ ...-for-rapidsharecom-downloads-through-google.xml |    9 -
+ .../profiles/shared/searchplugins/sogou-music.xml  |    9 -
+ .../profiles/shared/searchplugins/torrentz.xml     |   12 -
+ .../profiles/shared/searchplugins/wikipedia-zh.xml |   11 -
+ .../trunk/profiles/shared/searchplugins/xciba.xml  |    8 -
+ .../profiles/shared/searchplugins/yahoo---hk.xml   |    9 -
+ .../profiles/shared/searchplugins/yahoo-cn.xml     |    9 -
+ .../profiles/shared/searchplugins/yahoo-images.xml |   12 -
+ .../profiles/shared/searchplugins/yahoo-video.xml  |    9 -
+ .../trunk/profiles/shared/searchplugins/yahoo.xml  |   12 -
+ firefox/trunk/realsaver/chrome.manifest            |    9 -
+ firefox/trunk/realsaver/content/contmenu.js        |  166 -
+ firefox/trunk/realsaver/content/contmenu.xul       |   70 -
+ firefox/trunk/realsaver/content/managestore.js     |  519 ---
+ firefox/trunk/realsaver/content/managestore.xul    |   93 -
+ firefox/trunk/realsaver/content/options.js         |  378 --
+ firefox/trunk/realsaver/content/options.xul        |  127 -
+ firefox/trunk/realsaver/content/realsaverapp.js    |   42 -
+ firefox/trunk/realsaver/content/realsavervar.js    |  243 --
+ firefox/trunk/realsaver/content/savestore.js       |  167 -
+ firefox/trunk/realsaver/content/savestore.xul      |   23 -
+ firefox/trunk/realsaver/content/setfolder.js       |   83 -
+ firefox/trunk/realsaver/content/setfolder.xul      |   76 -
+ firefox/trunk/realsaver/content/statusbar.js       |   31 -
+ firefox/trunk/realsaver/content/statusbar.xul      |   28 -
+ firefox/trunk/realsaver/content/xrlin.debug.js     |   14 -
+ firefox/trunk/realsaver/content/xrlin.fileio.js    |   48 -
+ firefox/trunk/realsaver/content/xrlin.pref.js      |   39 -
+ firefox/trunk/realsaver/content/xrlin.system.js    |   22 -
+ firefox/trunk/realsaver/content/xrlin.xml.js       |   26 -
+ firefox/trunk/realsaver/content/xrlin.zip.js       |   33 -
+ firefox/trunk/realsaver/convert.sh                 |    3 -
+ .../trunk/realsaver/defaults/preferences/prefs.js  |    1 -
+ firefox/trunk/realsaver/install.rdf                |   25 -
+ firefox/trunk/realsaver/locale/en-US/contents.rdf  |   23 -
+ .../realsaver/locale/en-US/realsaver.description   |    1 -
+ firefox/trunk/realsaver/locale/en-US/realsaver.dtd |   56 -
+ .../realsaver/locale/en-US/realsaver.properties    |   35 -
+ firefox/trunk/realsaver/skin/classic/browse.png    |  Bin 391 -> 0 bytes
+ firefox/trunk/realsaver/skin/classic/contents.rdf  |   26 -
+ firefox/trunk/realsaver/skin/classic/delete.png    |  Bin 192 -> 0 bytes
+ firefox/trunk/realsaver/skin/classic/down.png      |  Bin 511 -> 0 bytes
+ firefox/trunk/realsaver/skin/classic/edit.png      |  Bin 161 -> 0 bytes
+ .../trunk/realsaver/skin/classic/managestore.css   |   32 -
+ firefox/trunk/realsaver/skin/classic/new.png       |  Bin 214 -> 0 bytes
+ firefox/trunk/realsaver/skin/classic/options.css   |   60 -
+ firefox/trunk/realsaver/skin/classic/realsaver.css |    7 -
+ .../trunk/realsaver/skin/classic/realsaver16.png   |  Bin 1166 -> 0 bytes
+ .../trunk/realsaver/skin/classic/realsaver24.png   |  Bin 2454 -> 0 bytes
+ .../trunk/realsaver/skin/classic/realsaver32.png   |  Bin 4254 -> 0 bytes
+ firefox/trunk/realsaver/skin/classic/separator.png |  Bin 214 -> 0 bytes
+ firefox/trunk/realsaver/skin/classic/up.png        |  Bin 512 -> 0 bytes
+ firefox/trunk/saveimginfolder/chrome.manifest      |   38 -
+ firefox/trunk/saveimginfolder/content/contents.rdf |   28 -
+ firefox/trunk/saveimginfolder/content/notify.xul   |   87 -
+ firefox/trunk/saveimginfolder/content/options.xul  |  794 ----
+ .../saveimginfolder/content/saveimageinfolder.xul  |  874 ----
+ .../trunk/saveimginfolder/content/setfolder.xul    |  262 --
+ firefox/trunk/searchplugins/baidu-image.xml        |   12 +
+ firefox/trunk/searchplugins/baidu-music.xml        |    9 +
+ firefox/trunk/searchplugins/baidu.xml              |    9 +
+ firefox/trunk/searchplugins/baidutorrent.xml       |    8 +
+ firefox/trunk/searchplugins/bing.xml               |    9 +
+ firefox/trunk/searchplugins/btchina.xml            |    8 +
+ firefox/trunk/searchplugins/btjunkie.xml           |    8 +
+ firefox/trunk/searchplugins/celebscentralnet.xml   |    9 +
+ firefox/trunk/searchplugins/codeigniter-search.xml |   12 +
+ firefox/trunk/searchplugins/codeproject.xml        |   11 +
+ firefox/trunk/searchplugins/dictcn-.xml            |    8 +
+ firefox/trunk/searchplugins/dictionary.xml         |    9 +
+ firefox/trunk/searchplugins/google-en.xml          |    8 +
+ firefox/trunk/searchplugins/google-hk.xml          |    9 +
+ firefox/trunk/searchplugins/google-image-en.xml    |    8 +
+ firefox/trunk/searchplugins/google-music.xml       |    9 +
+ firefox/trunk/searchplugins/google-search-.xml     |    9 +
+ .../searchplugins/google-snaapacom-in-url.xml      |    9 +
+ firefox/trunk/searchplugins/google-snaapacom.xml   |    9 +
+ firefox/trunk/searchplugins/google-tw.xml          |    9 +
+ firefox/trunk/searchplugins/google-zh-tw.xml       |   12 +
+ firefox/trunk/searchplugins/google-zh.xml          |   12 +
+ firefox/trunk/searchplugins/googletorrent.xml      |    8 +
+ firefox/trunk/searchplugins/gutenberg.xml          |   10 +
+ .../searchplugins/hankyung-korean-racing-model.xml |    9 +
+ firefox/trunk/searchplugins/imdb.xml               |    9 +
+ firefox/trunk/searchplugins/isohunt.xml            |    8 +
+ firefox/trunk/searchplugins/mininova.xml           |    8 +
+ firefox/trunk/searchplugins/monovaorg.xml          |    8 +
+ .../searchplugins/msdn-search-with-google.xml      |    9 +
+ ...h-for-files-on-wwwhotfilecom-through-google.xml |    9 +
+ ...-for-rapidsharecom-downloads-through-google.xml |    9 +
+ firefox/trunk/searchplugins/sogou-music.xml        |    9 +
+ firefox/trunk/searchplugins/torrentz.xml           |   12 +
+ firefox/trunk/searchplugins/wikipedia-zh.xml       |   11 +
+ firefox/trunk/searchplugins/xciba.xml              |    8 +
+ firefox/trunk/searchplugins/yahoo---hk.xml         |    9 +
+ firefox/trunk/searchplugins/yahoo-cn.xml           |    9 +
+ firefox/trunk/searchplugins/yahoo-images.xml       |   12 +
+ firefox/trunk/searchplugins/yahoo-video.xml        |    9 +
+ firefox/trunk/searchplugins/yahoo.xml              |   12 +
+ firefox/trunk/setmod.sh                            |    3 +
+ firefox/trunk/xrzlib/chrome.manifest               |    3 -
+ firefox/trunk/xrzlib/chrome/content/base.js        |   62 -
+ firefox/trunk/xrzlib/chrome/content/debug.js       |   25 -
+ firefox/trunk/xrzlib/chrome/content/dom.js         |   22 -
+ firefox/trunk/xrzlib/chrome/content/fileio.js      |   50 -
+ firefox/trunk/xrzlib/chrome/content/menu.js        |   38 -
+ firefox/trunk/xrzlib/chrome/content/pref.js        |   78 -
+ firefox/trunk/xrzlib/chrome/content/string.js      |   24 -
+ firefox/trunk/xrzlib/chrome/content/system.js      |   64 -
+ firefox/trunk/xrzlib/chrome/content/utils.js       |   34 -
+ firefox/trunk/xrzlib/chrome/content/window.js      |   14 -
+ firefox/trunk/xrzlib/chrome/content/xml.js         |   26 -
+ firefox/trunk/xrzlib/chrome/content/zip.js         |   34 -
+ firefox/trunk/xrzlib/install.rdf                   |   24 -
+ firefox/trunk/zhreader/chrome.manifest             |    8 -
+ firefox/trunk/zhreader/content/overlay.js          |  201 -
+ firefox/trunk/zhreader/content/overlay.xul         |   14 -
+ firefox/trunk/zhreader/content/pref.js             |  110 -
+ firefox/trunk/zhreader/content/xrlin.pref.js       |   37 -
+ firefox/trunk/zhreader/install.rdf                 |   23 -
+ firefox/trunk/zhreader/locale/en-US/overlay.dtd    |    2 -
+ firefox/trunk/zhreader/locale/en-US/zhreader.dtd   |    2 -
+ firefox/trunk/zhreader/skin/zhreader.png           |  Bin 4270 -> 0 bytes
+ 2890 files changed, 159931 insertions(+), 159972 deletions(-)

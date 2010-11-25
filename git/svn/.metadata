@@ -1,0 +1,5 @@
+; This file is used internally by git-svn
+; You should not have to edit it
+[svn-remote "svn"]
+	reposRoot = file:///myplace/workspace/tmp/zrepos/workspace/trunk/svn
+	uuid = a8330270-cc75-4588-81b2-ce32834bf887

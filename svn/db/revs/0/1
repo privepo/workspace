@@ -1,0 +1,61 @@
+id: 3-1.0.r1/0
+type: dir
+count: 0
+cpath: /trunk
+copyroot: 0 /
+
+id: 4-1.0.r1/63
+type: dir
+count: 0
+cpath: /wiki
+copyroot: 0 /
+
+id: 0-1.0.r1/126
+type: dir
+count: 0
+cpath: /branches
+copyroot: 0 /
+
+id: 2-1.0.r1/194
+type: dir
+count: 0
+cpath: /tags
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 14
+dir 3-1.0.r1/0
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r1/401
+type: dir
+pred: 0.0.r0/17
+count: 1
+text: 1 258 130 130 a895e3bcfa0c5e63d3deb639113f3a49
+cpath: /
+copyroot: 0 /
+
+_3.0.t0-0 add-dir false false /trunk
+
+_4.0.t0-0 add-dir false false /wiki
+
+_0.0.t0-0 add-dir false false /branches
+
+_2.0.t0-0 add-dir false false /tags
+
+
+401 528

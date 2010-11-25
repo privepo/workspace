@@ -1,0 +1,116 @@
+PLAIN
+K 13
+svn:externals
+V 54
+nightgun    https://nightgun.googlecode.com/svn/trunk
+
+END
+ENDREP
+id: 1-2.0.r43/96
+type: dir
+pred: 1-2.0.r42/9777
+count: 29
+text: 42 0 9722 9722 34a80e79e46a1c483bda0e9dd0c410ff
+props: 43 0 83 0 212d55349ee47a5a29a4946906e8c723
+cpath: /trunk/perl
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 23
+dir 1-23.0.r23/12908022
+K 5
+blogs
+V 24
+dir 44-23.0.r23/13192519
+K 1
+c
+V 24
+dir 4q-23.0.r23/13145630
+K 3
+cpp
+V 25
+dir 189-23.0.r23/13163761
+K 7
+drawing
+V 25
+dir 1b9-23.0.r23/13201193
+K 7
+firefox
+V 19
+dir 1-4.0.r17/77534
+K 9
+freebasic
+V 25
+dir 1bt-23.0.r23/13188735
+K 4
+perl
+V 16
+dir 1-2.0.r43/96
+K 7
+reading
+V 25
+dir 1fv-23.0.r23/13197236
+K 11
+shellscript
+V 20
+dir 1-5.0.r36/236333
+K 4
+usys
+V 22
+dir 1-10.0.r10/9335201
+K 3
+vb6
+V 25
+dir 1g5-23.0.r23/14130687
+K 4
+wiki
+V 21
+dir 1-18.0.r36/221898
+K 8
+writting
+V 25
+dir 59s-23.0.r23/13195768
+END
+ENDREP
+id: 3-1.0.r43/861
+type: dir
+pred: 3-1.0.r42/10550
+count: 42
+text: 43 292 556 556 7c7998d610ebb44c88957fd18ba32dc9
+props: 22 9750 47 0 f557e852c538d8c9e39890daeee63e71
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 17
+dir 3-1.0.r43/861
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r43/1203
+type: dir
+pred: 0.0.r42/10897
+count: 43
+text: 43 1057 133 133 864cbb680914ea4373fb88c2d3fbec7a
+cpath: /
+copyroot: 0 /
+
+1-2.0.t42-16 modify-dir false true /trunk/perl
+
+
+1203 1339

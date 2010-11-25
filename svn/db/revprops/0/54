@@ -1,0 +1,17 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-06-03T14:08:49.884036Z
+K 7
+svn:log
+V 55
+reconstruct directory from /trunk/blogs to /batch/blogs
+END

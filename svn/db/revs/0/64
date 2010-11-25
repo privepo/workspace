@@ -1,0 +1,103 @@
+id: 59s-23.0-64.r64/0
+type: dir
+pred: 59s-23.0.r23/13195768
+count: 1
+text: 23 13195280 475 475 d8f24a139cbfb6037ae19fbd1244f547
+cpath: /writting/trunk
+copyfrom: 48 /trunk/writting
+
+PLAIN
+K 5
+trunk
+V 21
+dir 59s-23.0-64.r64/0
+END
+ENDREP
+id: 0-64.0.r64/235
+type: dir
+count: 0
+text: 64 181 41 41 0f2f78df1f784fb8012c0379503b57f3
+cpath: /writting
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 9
+freebasic
+V 18
+dir 0-58.0.r58/237
+K 4
+perl
+V 20
+dir 0-59.0.r59/11628
+K 7
+reading
+V 18
+dir 0-60.0.r60/233
+K 11
+shellscript
+V 18
+dir 0-61.0.r61/232
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 4
+text
+V 18
+dir 0-62.0.r62/217
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+usys
+V 18
+dir 0-63.0.r63/219
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+K 8
+writting
+V 18
+dir 0-64.0.r64/235
+END
+ENDREP
+id: 0.0.r64/924
+type: dir
+pred: 0.0.r63/867
+count: 64
+text: 64 357 554 554 19611db10be663359dd315559e7c2952
+cpath: /
+copyroot: 0 /
+
+_0.0.t63-1r add-dir false false /writting
+
+59s-23._0.t63-1r add-dir false false /writting/trunk
+48 /trunk/writting
+
+924 1056

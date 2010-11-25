@@ -1,0 +1,17 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-06-03T14:12:02.343672Z
+K 7
+svn:log
+V 63
+reconstruct directory from /trunk/freebasic to /freebasic/trunk
+END

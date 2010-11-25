@@ -1,0 +1,20 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-06-04T17:01:18.271508Z
+K 7
+svn:log
+V 136
+perl:
+    epub_text2xhtml:    added for converting plain text to xhtml
+    epub_blank:         added for creating epub project template
+
+END

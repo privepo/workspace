@@ -1,0 +1,91 @@
+id: 1-5.0-61.r61/0
+type: dir
+pred: 1-5.0.r36/236333
+count: 5
+text: 36 222320 14000 14000 69502789592f6df6a173da681bb13707
+cpath: /shellscript/trunk
+copyfrom: 48 /trunk/shellscript
+
+PLAIN
+K 5
+trunk
+V 18
+dir 1-5.0-61.r61/0
+END
+ENDREP
+id: 0-61.0.r61/232
+type: dir
+count: 0
+text: 61 181 38 38 1675be22c767fc714c91271a152bf97c
+cpath: /shellscript
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 9
+freebasic
+V 18
+dir 0-58.0.r58/237
+K 4
+perl
+V 20
+dir 0-59.0.r59/11628
+K 7
+reading
+V 18
+dir 0-60.0.r60/233
+K 11
+shellscript
+V 18
+dir 0-61.0.r61/232
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r61/821
+type: dir
+pred: 0.0.r60/777
+count: 61
+text: 61 357 451 451 5ee597f3d4cd7b39af7811e232b4f06e
+cpath: /
+copyroot: 0 /
+
+_0.0.t60-1o add-dir false false /shellscript
+
+1-5._0.t60-1o add-dir false false /shellscript/trunk
+48 /trunk/shellscript
+
+821 953

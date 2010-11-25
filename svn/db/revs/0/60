@@ -1,0 +1,87 @@
+id: 1fv-23.0-60.r60/0
+type: dir
+pred: 1fv-23.0.r23/13197236
+count: 1
+text: 23 13196994 229 229 9e331607da04efe3d9497a078f8fbba3
+cpath: /reading/trunk
+copyfrom: 48 /trunk/reading
+
+PLAIN
+K 5
+trunk
+V 21
+dir 1fv-23.0-60.r60/0
+END
+ENDREP
+id: 0-60.0.r60/233
+type: dir
+count: 0
+text: 60 179 41 41 143749f4b99672422878466f6fa5637f
+cpath: /reading
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 9
+freebasic
+V 18
+dir 0-58.0.r58/237
+K 4
+perl
+V 20
+dir 0-59.0.r59/11628
+K 7
+reading
+V 18
+dir 0-60.0.r60/233
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r60/777
+type: dir
+pred: 0.0.r59/12137
+count: 60
+text: 60 354 410 410 b20df5adaffcb08d0678cd15097a0ded
+cpath: /
+copyroot: 0 /
+
+_0.0.t59-1n add-dir false false /reading
+
+1fv-23._0.t59-1n add-dir false false /reading/trunk
+48 /trunk/reading
+
+777 911

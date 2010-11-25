@@ -1,0 +1,154 @@
+id: 59s-23.0-92.r92/0
+type: dir
+pred: 59s-23.0-64.r64/0
+count: 2
+text: 23 13195280 475 475 d8f24a139cbfb6037ae19fbd1244f547
+cpath: /text/trunk/writting
+copyfrom: 91 /writting/trunk
+
+PLAIN
+K 4
+blog
+V 20
+dir 3-50.0.r50/23283
+K 7
+myplace
+V 23
+dir e-50.0-62.r91/13853
+K 7
+sandbox
+V 23
+dir 174-50.0.r50/231469
+K 4
+wiki
+V 24
+dir 17k-50.0-62.r79/5804
+K 8
+writting
+V 21
+dir 59s-23.0-92.r92/0
+END
+ENDREP
+id: 1-50.0-62.r92/395
+type: dir
+pred: 1-50.0-62.r91/14205
+count: 4
+text: 92 182 200 200 20b4f12868f783322a9ac3c7d5c84cb7
+cpath: /text/trunk
+copyroot: 62 /text/trunk
+
+PLAIN
+K 5
+trunk
+V 21
+dir 1-50.0-62.r92/395
+END
+ENDREP
+id: 0-62.0.r92/615
+type: dir
+pred: 0-62.0.r91/14430
+count: 3
+text: 92 561 41 41 4ff71ee39a3ced778fa646bc4f3481bb
+cpath: /text
+copyroot: 0 /
+
+PLAIN
+END
+ENDREP
+id: 0-64.0.r92/773
+type: dir
+pred: 0-64.0.r64/235
+count: 1
+text: 92 756 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /writting
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 3
+cpp
+V 18
+dir 0-56.0.r56/225
+K 7
+drawing
+V 18
+dir 0-57.0.r57/233
+K 4
+epub
+V 23
+dir 0-75.0.r83/13329241
+K 7
+firefox
+V 23
+dir 0-66.0.r87/12557701
+K 9
+freebasic
+V 18
+dir 0-58.0.r58/237
+K 7
+reading
+V 18
+dir 0-60.0.r60/233
+K 11
+shellscript
+V 20
+dir 0-61.0.r90/14914
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 4
+text
+V 18
+dir 0-62.0.r92/615
+K 5
+trunk
+V 17
+dir 3-1.0.r69/456
+K 4
+usys
+V 18
+dir 0-63.0.r63/219
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+K 8
+writting
+V 18
+dir 0-64.0.r92/773
+K 3
+www
+V 20
+dir 0-65.0.r80/36672
+END
+ENDREP
+id: 0.0.r92/1559
+type: dir
+pred: 0.0.r91/15221
+count: 92
+text: 92 914 632 632 41fcfe9cfbb2070887a44a760e5d59a5
+cpath: /
+copyroot: 0 /
+
+59s-23.0-64.r64/0 delete-dir false false /writting/trunk
+
+59s-23._0.t91-2j add-dir false false /text/trunk/writting
+91 /writting/trunk
+
+1559 1694

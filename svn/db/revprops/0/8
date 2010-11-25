@@ -1,0 +1,22 @@
+K 13
+google:author
+V 6
+eotect
+K 10
+svn:author
+V 6
+eotect
+K 8
+svn:date
+V 27
+2010-05-09T19:26:24.351387Z
+K 7
+svn:log
+V 163
+nightgun:
+    Make ContentView go_back, go_forward functional.
+    Make ContentView textview zoomable.
+arconv:
+    support convert archive from chm (7zip needed).
+
+END

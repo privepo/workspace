@@ -1,0 +1,19 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-05-18T17:22:03.096517Z
+K 7
+svn:log
+V 139
+clean codes of "ContentView.pm", make it acts as a super class, split orignal codes to "TextView.pm" and "HTMLView.pm"
+set version to 1.15
+
+END

@@ -1,0 +1,21 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-05-27T05:22:16.212073Z
+K 7
+svn:log
+V 240
+perl:
+    MyPlace::Config     rewrite 'add' method for processing on 'keys' instead of 'querys'
+    r-config            updated, according changes from MyPlace::Config
+    urlrule_task        updated, according changes from MyPlace::Config
+
+END

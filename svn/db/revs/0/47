@@ -1,0 +1,236 @@
+PLAIN
+END
+ENDREP
+id: 1-18.0-47.r47/17
+type: dir
+pred: 1-18.0.r36/221898
+count: 6
+text: 47 0 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /trunk/text
+copyfrom: 46 /trunk/wiki
+
+id: 1s0-18.6-47.r47/174
+type: dir
+pred: 1s0-18.0.r36/210060
+count: 5
+text: 36 209504 543 543 9cbe0f0c21a48ad66e6a8dc8de39974d
+cpath: /trunk/www/source
+copyfrom: 46 /trunk/wiki/source
+
+id: 3-18.1-47.r47/358
+type: dir
+pred: 3-18.0.r18/3425562
+count: 1
+text: 18 3425079 470 470 60ecd2cde0af8e7fe69f2776810e7ebd
+cpath: /trunk/www/blog
+copyfrom: 46 /trunk/wiki/blog
+
+id: 241-18.7-47.r47/536
+type: dir
+pred: 241-18.0.r34/83119
+count: 2
+text: 34 82840 266 266 f5625ef1f0a89921e7e1575fdd04a087
+cpath: /trunk/www/wiki
+copyfrom: 46 /trunk/wiki/wiki
+
+id: 4a-18.3-47.r47/714
+type: dir
+pred: 4a-18.0.r18/3477291
+count: 1
+text: 18 3476781 497 497 05c68fd919f6955f7ce57ab0d4461c6f
+cpath: /trunk/www/html
+copyfrom: 46 /trunk/wiki/html
+
+id: 2a-18.2-47.r47/894
+type: dir
+pred: 2a-18.0.r34/84716
+count: 3
+text: 34 84434 269 269 5f17df3d3c7d653a7b348f85bcd665a3
+cpath: /trunk/www/cgi-bin
+copyfrom: 46 /trunk/wiki/cgi-bin
+
+id: aa-18.4-47.r47/1076
+type: dir
+pred: aa-18.0.r36/220313
+count: 6
+text: 36 219693 607 607 489801a4c092e0e0a0313f2eb23a2c98
+cpath: /trunk/www/myplace
+copyfrom: 46 /trunk/wiki/myplace
+
+id: 1qq-18.5-47.r47/1261
+type: dir
+pred: 1qq-18.0.r36/221441
+count: 4
+text: 36 221000 428 428 b7c49a94a442aa7940b53a427df332cb
+cpath: /trunk/www/sandbox
+copyfrom: 46 /trunk/wiki/sandbox
+
+PLAIN
+K 4
+blog
+V 21
+dir 3-18.1-47.r47/358
+K 7
+cgi-bin
+V 22
+dir 2a-18.2-47.r47/894
+K 4
+html
+V 22
+dir 4a-18.3-47.r47/714
+K 7
+myplace
+V 23
+dir aa-18.4-47.r47/1076
+K 7
+sandbox
+V 24
+dir 1qq-18.5-47.r47/1261
+K 6
+source
+V 23
+dir 1s0-18.6-47.r47/174
+K 4
+wiki
+V 23
+dir 241-18.7-47.r47/536
+END
+ENDREP
+id: 3-47.0.r47/1739
+type: dir
+count: 0
+text: 47 1448 278 278 6bbea90d74c47341494e226a3d6336ff
+cpath: /trunk/www
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 23
+dir 1-23.0.r23/12908022
+K 5
+blogs
+V 24
+dir 44-23.0.r23/13192519
+K 1
+c
+V 24
+dir 4q-23.0.r23/13145630
+K 3
+cpp
+V 25
+dir 189-23.0.r23/13163761
+K 7
+drawing
+V 25
+dir 1b9-23.0.r23/13201193
+K 7
+firefox
+V 17
+dir 1-4.0.r44/458
+K 9
+freebasic
+V 25
+dir 1bt-23.0.r23/13188735
+K 4
+perl
+V 19
+dir 1-2.0.r45/10965
+K 7
+reading
+V 25
+dir 1fv-23.0.r23/13197236
+K 11
+shellscript
+V 20
+dir 1-5.0.r36/236333
+K 4
+text
+V 20
+dir 1-18.0-47.r47/17
+K 4
+usys
+V 22
+dir 1-10.0.r10/9335201
+K 8
+writting
+V 25
+dir 59s-23.0.r23/13195768
+K 3
+www
+V 19
+dir 3-47.0.r47/1739
+END
+ENDREP
+id: 3-1.0.r47/2429
+type: dir
+pred: 3-1.0.r46/531
+count: 46
+text: 47 1866 550 550 290d98600e90f4399780652a24c4dd34
+props: 45 11735 120 0 0ef64165309ce58f6ae3d5bbc5bd75a8
+cpath: /trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 18
+dir 3-1.0.r47/2429
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r47/2774
+type: dir
+pred: 0.0.r46/873
+count: 47
+text: 47 2627 134 134 97576ca9a4d7f63a319f246a4114a707
+cpath: /
+copyroot: 0 /
+
+1-18.0.r36/221898 delete-dir false false /trunk/wiki
+
+3-18._1.t46-1a add-dir false false /trunk/www/blog
+46 /trunk/wiki/blog
+3-18.0.r18/3425562 delete-dir false false /trunk/text/blog
+
+aa-18._4.t46-1a add-dir false false /trunk/www/myplace
+46 /trunk/wiki/myplace
+aa-18.0.r36/220313 delete-dir false false /trunk/text/myplace
+
+1qq-18._5.t46-1a add-dir false false /trunk/www/sandbox
+46 /trunk/wiki/sandbox
+1qq-18.0.r36/221441 delete-dir false false /trunk/text/sandbox
+
+1s0-18._6.t46-1a add-dir false false /trunk/www/source
+46 /trunk/wiki/source
+_3.0.t46-1a add-dir false false /trunk/www
+
+1s0-18.0.r36/210060 delete-dir false false /trunk/text/source
+
+1-18._0.t46-1a add-dir false false /trunk/text
+46 /trunk/wiki
+241-18._7.t46-1a add-dir false false /trunk/www/wiki
+46 /trunk/wiki/wiki
+241-18.0.r34/83119 delete-dir false false /trunk/text/wiki
+
+4a-18._3.t46-1a add-dir false false /trunk/www/html
+46 /trunk/wiki/html
+4a-18.0.r18/3477291 delete-dir false false /trunk/text/html
+
+2a-18._2.t46-1a add-dir false false /trunk/www/cgi-bin
+46 /trunk/wiki/cgi-bin
+2a-18.0.r34/84716 delete-dir false false /trunk/text/cgi-bin
+
+
+2774 2908

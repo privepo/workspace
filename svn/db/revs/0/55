@@ -1,0 +1,67 @@
+id: 4q-23.0-55.r55/0
+type: dir
+pred: 4q-23.0.r23/13145630
+count: 1
+text: 23 13144007 1610 1610 7d5ca1a88df4e800a35bfae4e122d3c0
+cpath: /c/trunk
+copyfrom: 48 /trunk/c
+
+PLAIN
+K 5
+trunk
+V 20
+dir 4q-23.0-55.r55/0
+END
+ENDREP
+id: 0-55.0.r55/220
+type: dir
+count: 0
+text: 55 167 40 40 eef05b453b931be008194fa739d77299
+cpath: /c
+copyroot: 0 /
+
+PLAIN
+K 5
+batch
+V 18
+dir 0-53.0.r53/225
+K 5
+blogs
+V 18
+dir 0-54.0.r54/224
+K 8
+branches
+V 16
+dir 0-1.0.r1/126
+K 1
+c
+V 18
+dir 0-55.0.r55/220
+K 4
+tags
+V 16
+dir 2-1.0.r1/194
+K 5
+trunk
+V 19
+dir 3-1.0.r52/78560
+K 4
+wiki
+V 15
+dir 4-1.0.r1/63
+END
+ENDREP
+id: 0.0.r55/581
+type: dir
+pred: 0.0.r54/559
+count: 55
+text: 55 335 233 233 1915e24a21be7fa5daf7242965552498
+cpath: /
+copyroot: 0 /
+
+_0.0.t54-1i add-dir false false /c
+
+4q-23._0.t54-1i add-dir false false /c/trunk
+48 /trunk/c
+
+581 713

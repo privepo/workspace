@@ -1,0 +1,20 @@
+K 13
+google:author
+V 10
+xiaoranzzz
+K 10
+svn:author
+V 10
+xiaoranzzz
+K 8
+svn:date
+V 27
+2010-05-25T10:22:28.536488Z
+K 7
+svn:log
+V 141
+perl:
+    batchget,download   updated for supporting downloading timeout(max-time)
+    urlrule_get         timeout option for batchget added
+
+END
